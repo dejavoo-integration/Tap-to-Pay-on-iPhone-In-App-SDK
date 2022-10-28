@@ -1,0 +1,6 @@
+framework module Pods_itop {
+  umbrella header "Pods-itop-umbrella.h"
+
+  export *
+  module * { export * }
+}
