@@ -11,7 +11,6 @@
 		183E40B129011DAC00D92F9F /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E40B029011DAC00D92F9F /* UIButton.swift */; };
 		185074E8290274F9008D30B5 /* SMSReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185074E7290274F9008D30B5 /* SMSReceiptViewController.swift */; };
 		18518CEF28F9330400B661DF /* SMSReceiptViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18518CEE28F9330400B661DF /* SMSReceiptViewController.storyboard */; };
-		188A3E05290A832900212D5B /* SettlementScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188A3E04290A832900212D5B /* SettlementScreen.storyboard */; };
 		188A3E0A290A855100212D5B /* SettlementScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A3E09290A855100212D5B /* SettlementScreenViewController.swift */; };
 		18958BF128FD8A5D00C3A966 /* Hexadecimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18958BF028FD8A5D00C3A966 /* Hexadecimal.swift */; };
 		18CCB04F28F8250100E8F159 /* FeedbackViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CCB04E28F8250100E8F159 /* FeedbackViewController.storyboard */; };
@@ -61,6 +60,34 @@
 		192A1725288F2D93004F93D1 /* CardTapOnScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192A1724288F2D93004F93D1 /* CardTapOnScreenViewController.storyboard */; };
 		192A172A288FA2CC004F93D1 /* CustomerCopyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A1729288FA2CC004F93D1 /* CustomerCopyViewController.swift */; };
 		192A172C288FA2E5004F93D1 /* CustomerCopyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192A172B288FA2E5004F93D1 /* CustomerCopyViewController.storyboard */; };
+		19D6F59A2939E902000FCA9A /* BatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5952939E902000FCA9A /* BatchTableViewCell.swift */; };
+		19D6F59B2939E902000FCA9A /* SettlementScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5962939E902000FCA9A /* SettlementScreen.swift */; };
+		19D6F59C2939E902000FCA9A /* SettlementScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D6F5972939E902000FCA9A /* SettlementScreenViewController.storyboard */; };
+		19D6F59D2939E902000FCA9A /* PageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D6F5982939E902000FCA9A /* PageViewController.storyboard */; };
+		19D6F59E2939E902000FCA9A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5992939E902000FCA9A /* PageViewController.swift */; };
+		19D6F5A22939EA8B000FCA9A /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5A02939EA8B000FCA9A /* FavouritesViewController.swift */; };
+		19D6F5A32939EA8B000FCA9A /* FavouritesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D6F5A12939EA8B000FCA9A /* FavouritesViewController.storyboard */; };
+		19D6F5AE2939EAA8000FCA9A /* SummaryReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5A72939EAA8000FCA9A /* SummaryReportTableViewCell.swift */; };
+		19D6F5AF2939EAA8000FCA9A /* DailyReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5A82939EAA8000FCA9A /* DailyReportTableViewCell.swift */; };
+		19D6F5B02939EAA8000FCA9A /* ReportViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D6F5A92939EAA8000FCA9A /* ReportViewController.storyboard */; };
+		19D6F5B12939EAA8000FCA9A /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5AB2939EAA8000FCA9A /* FeedbackViewController.swift */; };
+		19D6F5B22939EAA8000FCA9A /* FeedbackViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D6F5AC2939EAA8000FCA9A /* FeedbackViewController.storyboard */; };
+		19D6F5B92939EAB8000FCA9A /* UpgradeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D6F5B52939EAB8000FCA9A /* UpgradeViewController.storyboard */; };
+		19D6F5BA2939EAB8000FCA9A /* UpgradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5B62939EAB8000FCA9A /* UpgradeViewController.swift */; };
+		19D6F5BB2939EAB8000FCA9A /* UpgradeAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5B72939EAB8000FCA9A /* UpgradeAppViewController.swift */; };
+		19D6F5BC2939EAB8000FCA9A /* UpgradeAppViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D6F5B82939EAB8000FCA9A /* UpgradeAppViewController.storyboard */; };
+		19D6F5BF2939EAD0000FCA9A /* ReprintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5BE2939EAD0000FCA9A /* ReprintViewController.swift */; };
+		19D6F5C32939EAE7000FCA9A /* SupportViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D6F5C12939EAE7000FCA9A /* SupportViewController.storyboard */; };
+		19D6F5C42939EAE7000FCA9A /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5C22939EAE7000FCA9A /* SupportViewController.swift */; };
+		19D6F5C82939EAF8000FCA9A /* WifiViewControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D6F5C62939EAF8000FCA9A /* WifiViewControllerStoryboard.storyboard */; };
+		19D6F5C92939EAF8000FCA9A /* WifiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5C72939EAF8000FCA9A /* WifiViewController.swift */; };
+		19D6F5CD2939EB34000FCA9A /* GPRSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5CB2939EB34000FCA9A /* GPRSViewController.swift */; };
+		19D6F5CE2939EB34000FCA9A /* GPRS ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D6F5CC2939EB34000FCA9A /* GPRS ViewController.storyboard */; };
+		19D6F5D52939EC21000FCA9A /* CallMeBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5D02939EC21000FCA9A /* CallMeBackViewController.swift */; };
+		19D6F5D62939EC21000FCA9A /* CallMeBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5D12939EC21000FCA9A /* CallMeBack.swift */; };
+		19D6F5D72939EC21000FCA9A /* CallMeBack.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D6F5D22939EC21000FCA9A /* CallMeBack.storyboard */; };
+		19D6F5D82939EC21000FCA9A /* HelpSupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6F5D32939EC21000FCA9A /* HelpSupportViewController.swift */; };
+		19D6F5D92939EC21000FCA9A /* HelpSupportViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D6F5D42939EC21000FCA9A /* HelpSupportViewController.storyboard */; };
 		19FA0FFC28A327C7001FBE43 /* AmountEntryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FA0FFA28A327C6001FBE43 /* AmountEntryViewController.storyboard */; };
 		19FA0FFD28A327C7001FBE43 /* AmountEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FA0FFB28A327C6001FBE43 /* AmountEntryViewController.swift */; };
 		1FBCE33E410C08F6C6ECA3BD /* Pods_itop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3D8A70E722FF796F1E1CC3 /* Pods_itop.framework */; };
@@ -92,7 +119,6 @@
 		183E40B029011DAC00D92F9F /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		185074E7290274F9008D30B5 /* SMSReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSReceiptViewController.swift; sourceTree = "<group>"; };
 		18518CEE28F9330400B661DF /* SMSReceiptViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SMSReceiptViewController.storyboard; sourceTree = "<group>"; };
-		188A3E04290A832900212D5B /* SettlementScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettlementScreen.storyboard; sourceTree = "<group>"; };
 		188A3E09290A855100212D5B /* SettlementScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementScreenViewController.swift; sourceTree = "<group>"; };
 		18958BF028FD8A5D00C3A966 /* Hexadecimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Hexadecimal.swift; path = itop/Hexadecimal.swift; sourceTree = SOURCE_ROOT; };
 		18CCB04E28F8250100E8F159 /* FeedbackViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedbackViewController.storyboard; sourceTree = "<group>"; };
@@ -146,6 +172,34 @@
 		192A1724288F2D93004F93D1 /* CardTapOnScreenViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardTapOnScreenViewController.storyboard; sourceTree = "<group>"; };
 		192A1729288FA2CC004F93D1 /* CustomerCopyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCopyViewController.swift; sourceTree = "<group>"; };
 		192A172B288FA2E5004F93D1 /* CustomerCopyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomerCopyViewController.storyboard; sourceTree = "<group>"; };
+		19D6F5952939E902000FCA9A /* BatchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatchTableViewCell.swift; sourceTree = "<group>"; };
+		19D6F5962939E902000FCA9A /* SettlementScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettlementScreen.swift; sourceTree = "<group>"; };
+		19D6F5972939E902000FCA9A /* SettlementScreenViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettlementScreenViewController.storyboard; sourceTree = "<group>"; };
+		19D6F5982939E902000FCA9A /* PageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageViewController.storyboard; sourceTree = "<group>"; };
+		19D6F5992939E902000FCA9A /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		19D6F5A02939EA8B000FCA9A /* FavouritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		19D6F5A12939EA8B000FCA9A /* FavouritesViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FavouritesViewController.storyboard; sourceTree = "<group>"; };
+		19D6F5A72939EAA8000FCA9A /* SummaryReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryReportTableViewCell.swift; sourceTree = "<group>"; };
+		19D6F5A82939EAA8000FCA9A /* DailyReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyReportTableViewCell.swift; sourceTree = "<group>"; };
+		19D6F5A92939EAA8000FCA9A /* ReportViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReportViewController.storyboard; sourceTree = "<group>"; };
+		19D6F5AB2939EAA8000FCA9A /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		19D6F5AC2939EAA8000FCA9A /* FeedbackViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FeedbackViewController.storyboard; sourceTree = "<group>"; };
+		19D6F5B52939EAB8000FCA9A /* UpgradeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UpgradeViewController.storyboard; sourceTree = "<group>"; };
+		19D6F5B62939EAB8000FCA9A /* UpgradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradeViewController.swift; sourceTree = "<group>"; };
+		19D6F5B72939EAB8000FCA9A /* UpgradeAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradeAppViewController.swift; sourceTree = "<group>"; };
+		19D6F5B82939EAB8000FCA9A /* UpgradeAppViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UpgradeAppViewController.storyboard; sourceTree = "<group>"; };
+		19D6F5BE2939EAD0000FCA9A /* ReprintViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReprintViewController.swift; sourceTree = "<group>"; };
+		19D6F5C12939EAE7000FCA9A /* SupportViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SupportViewController.storyboard; sourceTree = "<group>"; };
+		19D6F5C22939EAE7000FCA9A /* SupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		19D6F5C62939EAF8000FCA9A /* WifiViewControllerStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WifiViewControllerStoryboard.storyboard; sourceTree = "<group>"; };
+		19D6F5C72939EAF8000FCA9A /* WifiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiViewController.swift; sourceTree = "<group>"; };
+		19D6F5CB2939EB34000FCA9A /* GPRSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPRSViewController.swift; sourceTree = "<group>"; };
+		19D6F5CC2939EB34000FCA9A /* GPRS ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "GPRS ViewController.storyboard"; sourceTree = "<group>"; };
+		19D6F5D02939EC21000FCA9A /* CallMeBackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallMeBackViewController.swift; sourceTree = "<group>"; };
+		19D6F5D12939EC21000FCA9A /* CallMeBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallMeBack.swift; sourceTree = "<group>"; };
+		19D6F5D22939EC21000FCA9A /* CallMeBack.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CallMeBack.storyboard; sourceTree = "<group>"; };
+		19D6F5D32939EC21000FCA9A /* HelpSupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpSupportViewController.swift; sourceTree = "<group>"; };
+		19D6F5D42939EC21000FCA9A /* HelpSupportViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HelpSupportViewController.storyboard; sourceTree = "<group>"; };
 		19FA0FFA28A327C6001FBE43 /* AmountEntryViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AmountEntryViewController.storyboard; sourceTree = "<group>"; };
 		19FA0FFB28A327C6001FBE43 /* AmountEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountEntryViewController.swift; sourceTree = "<group>"; };
 		51F66159E335BA1848013EAF /* Pods_itop_itopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_itop_itopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -245,7 +299,11 @@
 		188A3E06290A83C300212D5B /* SettlementScreen */ = {
 			isa = PBXGroup;
 			children = (
-				188A3E04290A832900212D5B /* SettlementScreen.storyboard */,
+				19D6F5952939E902000FCA9A /* BatchTableViewCell.swift */,
+				19D6F5982939E902000FCA9A /* PageViewController.storyboard */,
+				19D6F5992939E902000FCA9A /* PageViewController.swift */,
+				19D6F5962939E902000FCA9A /* SettlementScreen.swift */,
+				19D6F5972939E902000FCA9A /* SettlementScreenViewController.storyboard */,
 				188A3E09290A855100212D5B /* SettlementScreenViewController.swift */,
 			);
 			path = SettlementScreen;
@@ -460,6 +518,14 @@
 		192A16D32889D68F004F93D1 /* TopScene */ = {
 			isa = PBXGroup;
 			children = (
+				19D6F5CF2939EC21000FCA9A /* CallMeBack */,
+				19D6F5CA2939EB34000FCA9A /* GPRS */,
+				19D6F5C52939EAF8000FCA9A /* Wifi */,
+				19D6F5C02939EAE7000FCA9A /* Support */,
+				19D6F5BD2939EAD0000FCA9A /* Re-Print */,
+				19D6F5B42939EAB8000FCA9A /* UpgradeApp */,
+				19D6F5A42939EAA8000FCA9A /* FeedbackScreen */,
+				19D6F59F2939EA8B000FCA9A /* Favourites */,
 				18CCB04A28F822A800E8F159 /* SideMenu */,
 				192A1726288FA232004F93D1 /* CustomerCopyScreen */,
 				192A171B288F2A0B004F93D1 /* CardTapOnScreen */,
@@ -546,6 +612,109 @@
 				192A172B288FA2E5004F93D1 /* CustomerCopyViewController.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		19D6F59F2939EA8B000FCA9A /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				19D6F5A02939EA8B000FCA9A /* FavouritesViewController.swift */,
+				19D6F5A12939EA8B000FCA9A /* FavouritesViewController.storyboard */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		19D6F5A42939EAA8000FCA9A /* FeedbackScreen */ = {
+			isa = PBXGroup;
+			children = (
+				19D6F5A52939EAA8000FCA9A /* ViewModel */,
+				19D6F5AA2939EAA8000FCA9A /* View */,
+			);
+			path = FeedbackScreen;
+			sourceTree = "<group>";
+		};
+		19D6F5A52939EAA8000FCA9A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				19D6F5A62939EAA8000FCA9A /* Report */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		19D6F5A62939EAA8000FCA9A /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				19D6F5A72939EAA8000FCA9A /* SummaryReportTableViewCell.swift */,
+				19D6F5A82939EAA8000FCA9A /* DailyReportTableViewCell.swift */,
+				19D6F5A92939EAA8000FCA9A /* ReportViewController.storyboard */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		19D6F5AA2939EAA8000FCA9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19D6F5AB2939EAA8000FCA9A /* FeedbackViewController.swift */,
+				19D6F5AC2939EAA8000FCA9A /* FeedbackViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19D6F5B42939EAB8000FCA9A /* UpgradeApp */ = {
+			isa = PBXGroup;
+			children = (
+				19D6F5B52939EAB8000FCA9A /* UpgradeViewController.storyboard */,
+				19D6F5B62939EAB8000FCA9A /* UpgradeViewController.swift */,
+				19D6F5B72939EAB8000FCA9A /* UpgradeAppViewController.swift */,
+				19D6F5B82939EAB8000FCA9A /* UpgradeAppViewController.storyboard */,
+			);
+			path = UpgradeApp;
+			sourceTree = "<group>";
+		};
+		19D6F5BD2939EAD0000FCA9A /* Re-Print */ = {
+			isa = PBXGroup;
+			children = (
+				19D6F5BE2939EAD0000FCA9A /* ReprintViewController.swift */,
+			);
+			path = "Re-Print";
+			sourceTree = "<group>";
+		};
+		19D6F5C02939EAE7000FCA9A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				19D6F5C12939EAE7000FCA9A /* SupportViewController.storyboard */,
+				19D6F5C22939EAE7000FCA9A /* SupportViewController.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		19D6F5C52939EAF8000FCA9A /* Wifi */ = {
+			isa = PBXGroup;
+			children = (
+				19D6F5C62939EAF8000FCA9A /* WifiViewControllerStoryboard.storyboard */,
+				19D6F5C72939EAF8000FCA9A /* WifiViewController.swift */,
+			);
+			path = Wifi;
+			sourceTree = "<group>";
+		};
+		19D6F5CA2939EB34000FCA9A /* GPRS */ = {
+			isa = PBXGroup;
+			children = (
+				19D6F5CB2939EB34000FCA9A /* GPRSViewController.swift */,
+				19D6F5CC2939EB34000FCA9A /* GPRS ViewController.storyboard */,
+			);
+			path = GPRS;
+			sourceTree = "<group>";
+		};
+		19D6F5CF2939EC21000FCA9A /* CallMeBack */ = {
+			isa = PBXGroup;
+			children = (
+				19D6F5D02939EC21000FCA9A /* CallMeBackViewController.swift */,
+				19D6F5D12939EC21000FCA9A /* CallMeBack.swift */,
+				19D6F5D22939EC21000FCA9A /* CallMeBack.storyboard */,
+				19D6F5D32939EC21000FCA9A /* HelpSupportViewController.swift */,
+				19D6F5D42939EC21000FCA9A /* HelpSupportViewController.storyboard */,
+			);
+			path = CallMeBack;
 			sourceTree = "<group>";
 		};
 		19FA0FF928A327C6001FBE43 /* View */ = {
@@ -689,16 +858,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D6F5D92939EC21000FCA9A /* HelpSupportViewController.storyboard in Resources */,
+				19D6F59D2939E902000FCA9A /* PageViewController.storyboard in Resources */,
 				18CEDD4E28FFD77C0021CB50 /* SideMenuViewController.storyboard in Resources */,
+				19D6F5B02939EAA8000FCA9A /* ReportViewController.storyboard in Resources */,
 				192A16DA2889D8CE004F93D1 /* AmountEntryViewController.storyboard in Resources */,
+				19D6F5B22939EAA8000FCA9A /* FeedbackViewController.storyboard in Resources */,
+				19D6F5D72939EC21000FCA9A /* CallMeBack.storyboard in Resources */,
 				19154CDC28AAFFEF00032441 /* Cashin.xib in Resources */,
+				19D6F5BC2939EAB8000FCA9A /* UpgradeAppViewController.storyboard in Resources */,
 				18CCB04F28F8250100E8F159 /* FeedbackViewController.storyboard in Resources */,
 				192A172C288FA2E5004F93D1 /* CustomerCopyViewController.storyboard in Resources */,
+				19D6F5B92939EAB8000FCA9A /* UpgradeViewController.storyboard in Resources */,
 				192A16782888974F004F93D1 /* LaunchScreen.storyboard in Resources */,
 				18518CEF28F9330400B661DF /* SMSReceiptViewController.storyboard in Resources */,
 				192A1725288F2D93004F93D1 /* CardTapOnScreenViewController.storyboard in Resources */,
+				19D6F5A32939EA8B000FCA9A /* FavouritesViewController.storyboard in Resources */,
+				19D6F5CE2939EB34000FCA9A /* GPRS ViewController.storyboard in Resources */,
+				19D6F59C2939E902000FCA9A /* SettlementScreenViewController.storyboard in Resources */,
 				19FA0FFC28A327C7001FBE43 /* AmountEntryViewController.storyboard in Resources */,
 				19154CDA28A838C000032441 /* KeyBoardPad.xib in Resources */,
+				19D6F5C32939EAE7000FCA9A /* SupportViewController.storyboard in Resources */,
+				19D6F5C82939EAF8000FCA9A /* WifiViewControllerStoryboard.storyboard in Resources */,
 				192A16752888974F004F93D1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -707,7 +888,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				188A3E05290A832900212D5B /* SettlementScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,43 +1008,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D6F5CD2939EB34000FCA9A /* GPRSViewController.swift in Sources */,
 				192A16DE288BAAC0004F93D1 /* RoundButton.swift in Sources */,
+				19D6F5C92939EAF8000FCA9A /* WifiViewController.swift in Sources */,
 				192A16D02889D523004F93D1 /* Observable.swift in Sources */,
+				19D6F5C42939EAE7000FCA9A /* SupportViewController.swift in Sources */,
 				192A16C32889CCFB004F93D1 /* CGSize+ScaledSize.swift in Sources */,
 				1830617B29093DD300466CDC /* FeedbackViewController.swift in Sources */,
+				19D6F5D52939EC21000FCA9A /* CallMeBackViewController.swift in Sources */,
 				192A16C12889CCFB004F93D1 /* UIViewController+ActivityIndicator.swift in Sources */,
 				192A16DC2889D8F9004F93D1 /* AmountEntryViewModel.swift in Sources */,
+				19D6F59A2939E902000FCA9A /* BatchTableViewCell.swift in Sources */,
 				19154CDE28AB001800032441 /* Cashin.swift in Sources */,
 				188A3E0A290A855100212D5B /* SettlementScreenViewController.swift in Sources */,
 				192A16C42889CCFB004F93D1 /* UIViewController+AddBehaviors.swift in Sources */,
 				192A16AB2888B241004F93D1 /* DataTransferService.swift in Sources */,
 				192A16D22889D523004F93D1 /* LoadingView.swift in Sources */,
+				19D6F5AE2939EAA8000FCA9A /* SummaryReportTableViewCell.swift in Sources */,
 				192A16CC2889D482004F93D1 /* StoryboardInstantiable.swift in Sources */,
+				19D6F5D62939EC21000FCA9A /* CallMeBack.swift in Sources */,
 				192A16A92888B241004F93D1 /* NetworkService.swift in Sources */,
 				192A16D82889D8A6004F93D1 /* AmountEntryViewController.swift in Sources */,
 				190195B52891C950008F239C /* UIViewController+Extension.swift in Sources */,
 				18958BF128FD8A5D00C3A966 /* Hexadecimal.swift in Sources */,
 				192A16AE2888B2D5004F93D1 /* ConnectionError.swift in Sources */,
+				19D6F5A22939EA8B000FCA9A /* FavouritesViewController.swift in Sources */,
 				192A16702888974E004F93D1 /* ViewController.swift in Sources */,
 				18CEDD5028FFD7A50021CB50 /* SideMenuViewController.swift in Sources */,
+				19D6F59B2939E902000FCA9A /* SettlementScreen.swift in Sources */,
 				192A1723288F2D53004F93D1 /* CardTapOnScreenViewController.swift in Sources */,
 				18CEDD5228FFDB2E0021CB50 /* SideMenuTableViewCell.swift in Sources */,
+				19D6F5AF2939EAA8000FCA9A /* DailyReportTableViewCell.swift in Sources */,
 				192A16B52888B50E004F93D1 /* TopSceneDIContainer.swift in Sources */,
 				192A166C2888974E004F93D1 /* AppDelegate.swift in Sources */,
 				192A16A82888B241004F93D1 /* NetworkConfig.swift in Sources */,
 				192A16B22888B438004F93D1 /* RepositoryTask.swift in Sources */,
+				19D6F5BF2939EAD0000FCA9A /* ReprintViewController.swift in Sources */,
 				192A16B62888B50E004F93D1 /* AppDIContainer.swift in Sources */,
 				19154CD928A838C000032441 /* KeyBoardPad.swift in Sources */,
 				183E40B129011DAC00D92F9F /* UIButton.swift in Sources */,
+				19D6F5D82939EC21000FCA9A /* HelpSupportViewController.swift in Sources */,
 				192A16AA2888B241004F93D1 /* Endpoint.swift in Sources */,
 				192A16AF2888B2D5004F93D1 /* Cancelable.swift in Sources */,
 				192A172A288FA2CC004F93D1 /* CustomerCopyViewController.swift in Sources */,
 				185074E8290274F9008D30B5 /* SMSReceiptViewController.swift in Sources */,
+				19D6F5BB2939EAB8000FCA9A /* UpgradeAppViewController.swift in Sources */,
 				192A16CB2889D482004F93D1 /* Alertable.swift in Sources */,
+				19D6F59E2939E902000FCA9A /* PageViewController.swift in Sources */,
 				192A16D12889D523004F93D1 /* AccessibilityIdentifier.swift in Sources */,
 				192A166E2888974E004F93D1 /* SceneDelegate.swift in Sources */,
+				19D6F5BA2939EAB8000FCA9A /* UpgradeViewController.swift in Sources */,
 				190195B32890B19E008F239C /* File.swift in Sources */,
 				192A16C02889CCFB004F93D1 /* DataTransferError+ConnectionError.swift in Sources */,
+				19D6F5B12939EAA8000FCA9A /* FeedbackViewController.swift in Sources */,
 				192A16C52889CCFB004F93D1 /* UIViewController+AddChild.swift in Sources */,
 				192A16C22889CCFB004F93D1 /* UIImageView+ImageSizeAfterAspectFit.swift in Sources */,
 				192A16B82888B5B2004F93D1 /* AppConfigurations.swift in Sources */,
