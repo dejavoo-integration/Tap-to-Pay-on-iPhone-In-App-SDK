@@ -9,6 +9,10 @@ target 'itop' do
 
   pod 'CountryPickerView'
 
+  pod 'Alamofire' 
+
+   pod 'SwiftyJSON'
+
   # Pods for itop
 
   target 'itopTests' do

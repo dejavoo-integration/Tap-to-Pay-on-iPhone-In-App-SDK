@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXV-07-LYY">
-                    <rect key="frame" x="0.0" y="4" width="400" height="456"/>
+                    <rect key="frame" x="10" y="4" width="394" height="436"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="iIB-cH-1rg">
                             <rect key="frame" x="30" y="23" width="355" height="405"/>
@@ -272,10 +271,10 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="PXV-07-LYY" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="10" id="6eI-81-hVe"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="PXV-07-LYY" secondAttribute="top" constant="44" id="Rjo-Ti-r9V"/>
-                <constraint firstItem="PXV-07-LYY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XpS-fV-wB0"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PXV-07-LYY" secondAttribute="trailing" constant="14" id="hjo-ai-JOw"/>
+                <constraint firstItem="PXV-07-LYY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="XpS-fV-wB0"/>
+                <constraint firstAttribute="bottom" secondItem="PXV-07-LYY" secondAttribute="bottom" constant="10" id="YS2-Hh-kU7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PXV-07-LYY" secondAttribute="trailing" constant="10" id="hjo-ai-JOw"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>

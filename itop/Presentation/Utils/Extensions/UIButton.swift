@@ -37,4 +37,15 @@ extension UIButton {
     func setBackgroundColor(_ color: UIColor, for state: UIControl.State) {
             self.setBackgroundImage(image(withColor: color), for: state)
         }
+    
+    
+    func addShadowToButton(color: UIColor = UIColor.gray, cornerRadius: CGFloat) {
+        self.backgroundColor = UIColor.white
+        self.layer.masksToBounds = false
+        self.layer.shadowColor = color.cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 0)
+        self.layer.shadowOpacity = 1.0
+        self.backgroundColor = .white
+        self.layer.cornerRadius = cornerRadius
+    }
 }

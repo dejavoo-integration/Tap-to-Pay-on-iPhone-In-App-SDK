@@ -8,8 +8,12 @@
 
 import UIKit
 import SideMenu
+import Alamofire
+import SwiftyJSON
 
 class AmountEntryViewController: UIViewController,UINavigationControllerDelegate {
+    
+    
     @IBOutlet weak var lblAmountEntry: UILabel!
     @IBOutlet weak var btnAmountEntryBack: UIButton!
     @IBOutlet weak var keyPad: KeyBoardPad!
@@ -23,21 +27,124 @@ class AmountEntryViewController: UIViewController,UINavigationControllerDelegate
     @IBOutlet weak var hamburgerImage: UIImageView!
     @IBOutlet weak var hamburgerBtn: UIButton!
     @IBOutlet weak var stackOptions: UIStackView!
-  
     @IBOutlet weak var settingsBtn: UIImageView!
     @IBOutlet weak var starBtn: UIImageView!
     @IBOutlet weak var profileBtn: UIImageView!
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var favouritesImage: UIImageView!
+    @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var reprintBtn: UIButton!
+    @IBOutlet weak var upgradeApp: UIButton!
+    @IBOutlet weak var showSettle: UIButton!
+    @IBOutlet weak var reportsBtn: UIButton!
+    @IBOutlet weak var adjustTip: UIButton!
+    @IBOutlet weak var preSaleTicket: UIButton!
+    @IBOutlet weak var giftLoyalty: UIButton!
+    @IBOutlet weak var cashBtn: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         keypadLogic()
         setUpCardUI()
         cornerRadius()
-
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        tapGesture()
+        settingsTap()
+        wifiAction()
+        supportAction()
+    }
+        
+    func supportAction() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapping(tapGestureRecognizer:)))
+           profileBtn.isUserInteractionEnabled = true
+           profileBtn.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc func imageTapping(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        let mainStoryboard = UIStoryboard(name: "SupportViewController", bundle: nil)
+        let supportVC = mainStoryboard.instantiateViewController(withIdentifier: "SupportViewController") as? SupportViewController
+        self.present(supportVC!, animated: true)
+    }
+    
+    
+    func wifiAction() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTap(tapGestureRecognizer:)))
+           wifiImage.isUserInteractionEnabled = true
+           wifiImage.addGestureRecognizer(tapGestureRecognizer)
+    }
+   
+    @objc func imageTap(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        let mainStoryboard = UIStoryboard(name: "WifiViewControllerStoryboard", bundle: nil)
+        
+        let wifiVC = mainStoryboard.instantiateViewController(withIdentifier: "WifiViewController") as? WifiViewController
+        
+        self.present(wifiVC!, animated: true)
+    }
+    
+    
+    func settingsTap() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapp(tapGestureRecognizer:)))
+           settingsBtn.isUserInteractionEnabled = true
+           settingsBtn.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    
+    @objc func imageTapp(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        
+        let mainStoryboard = UIStoryboard(name: "UpgradeAppViewController", bundle: nil)
+        
+        let UpgradeVC = mainStoryboard.instantiateViewController(withIdentifier: "UpgradeAppViewController") as? UpgradeAppViewController
+        
+        self.present(UpgradeVC!, animated: true)
+     
+    }
+    
+    
+    func tapGesture() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+           favouritesImage.isUserInteractionEnabled = true
+           favouritesImage.addGestureRecognizer(tapGestureRecognizer)
+        
+    }
+    
+    
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        stackOptions.isHidden = true
+        //bottomView.isHidden = false
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            
+            var screenHeight =  UIScreen.main.bounds.height / 2
+            print(screenHeight)
+            
+            self.heightConstraint.constant = 500
+            self.view.layoutIfNeeded()
+        }) {(status) in
+            
+        }
+    }
+    
+    
+    @IBAction func closeBtnClicked(_ sender: UIButton) {
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            self.heightConstraint.constant = 0
+            self.view.layoutIfNeeded()
+        }) { [self](status) in
+            stackOptions.isHidden = false
+        }
+    }
+    
+    
     func keypadLogic() {
+        UserDefaults.standard.removeObject(forKey: "upgradeApp")
         runningnumber = ""
         inum = ""
         keyPad.clear()
@@ -56,6 +163,15 @@ class AmountEntryViewController: UIViewController,UINavigationControllerDelegate
         settingsBtn.setImageColor(color: UIColor.red)
         profileBtn.setImageColor(color: UIColor(hexString: "#293687"))
         starBtn.setImageColor(color: UIColor(hexString: "#F5A540"))
+        
+        reprintBtn.layer.cornerRadius = 10
+        upgradeApp.layer.cornerRadius = 10
+        showSettle.layer.cornerRadius = 10
+        reportsBtn.layer.cornerRadius = 10
+        adjustTip.layer.cornerRadius = 10
+        preSaleTicket.layer.cornerRadius = 10
+        giftLoyalty.layer.cornerRadius = 10
+        cashBtn.layer.cornerRadius = 10
         
     }
     
@@ -93,9 +209,6 @@ class AmountEntryViewController: UIViewController,UINavigationControllerDelegate
             }
         lblAmountEntry.text = "$" + keyPad.inum
             //print ("Value:" + "\(textView.inum)")
-            
-        
-        
     }
 
     private func blockBackPad()
@@ -107,30 +220,24 @@ class AmountEntryViewController: UIViewController,UINavigationControllerDelegate
                 keyPad.inum = "0.00"
                 keyPad.runningnumber = keyPad.runningnumber.substring(to: keyPad.runningnumber.index(before: keyPad.runningnumber.endIndex))
             }
-            
         case 2 :
             if(keyPad.runningnumber.count > 0){
                 keyPad.inum = String(keyPad.inum.replacingOccurrences(of: keyPad.runningnumber.substring(to:1), with:"\("0" + keyPad.runningnumber.substring(to: 0))"))
                 keyPad.runningnumber = keyPad.runningnumber.substring(to: keyPad.runningnumber.index(before: keyPad.runningnumber.endIndex))
             }
-            
         case 3 :
             if(keyPad.runningnumber.count > 0){
                 keyPad.runningnumber = keyPad.runningnumber.substring(to: keyPad.runningnumber.index(before: keyPad.runningnumber.endIndex))
                 keyPad.inum = keyPad.runningnumber
                 keyPad.inum = keyPad.inum.replacingOccurrences(of: keyPad.runningnumber, with:"\("0." + keyPad.runningnumber.substring(from: keyPad.runningnumber.count-2))")
             }
-           
-            
         default:
             if(keyPad.runningnumber.count > 0){
                 keyPad.runningnumber = keyPad.runningnumber.substring(to: keyPad.runningnumber.index(before: keyPad.runningnumber.endIndex))
                 keyPad.inum = keyPad.runningnumber
                 keyPad.inum = keyPad.inum.replacingOccurrences(of: keyPad.runningnumber, with: keyPad.runningnumber.substring(to: keyPad.runningnumber.count - 3) + "\("." + keyPad.runningnumber.substring(from: keyPad.runningnumber.count - 2))")
             }
-           
         }
-        
         lblAmountEntry.text = "$" + keyPad.inum
        
     }
@@ -244,6 +351,122 @@ class AmountEntryViewController: UIViewController,UINavigationControllerDelegate
 
     }
     
+    
+    @IBAction func reportBtnClicked(_ sender: UIButton) {
+        
+//        let mainStoryboard = UIStoryboard(name: "ReportViewController", bundle: nil)
+//
+//        let reportVC = mainStoryboard.instantiateViewController(withIdentifier: "ReportViewController") as? ReportViewController
+//
+//        self.present(reportVC!, animated: true)
+        
+    }
+    
+    
+    @IBAction func showSettle(_ sender: UIButton) {
+        settlementSummary()
+    }
+    
+    
+    @IBAction func upgradeApp(_ sender: UIButton) {
+        let mainStoryboard = UIStoryboard(name: "UpgradeAppViewController", bundle: nil)
+        
+        let UpgradeVC = mainStoryboard.instantiateViewController(withIdentifier: "UpgradeAppViewController") as? UpgradeAppViewController
+        
+        self.present(UpgradeVC!, animated: true)
+        
+    }
+    
+    
+    func navigateToPageVC() {
+        let mainStoryboard = UIStoryboard(name: "PageViewController", bundle: nil)
+        let settleVC = mainStoryboard.instantiateViewController(withIdentifier: "PageViewController") as? PageViewController
+        self.present(settleVC!, animated: true)
+    }
+    
+    func settlementSummary() {
+        let url = "https://api.denovosystem.tech/v1/open-batch-test/999522600449"
+       let header : HTTPHeaders = ["Authorization": "api-key cG9ydGFsLVRlbXA9VG9rZW4tcGhhc2UtMQ=="]
+    
+        AF.request(url, method: .get,headers: header).responseJSON { [self] response in
+            print("isiLagi: \(response)")
+            switch response.result {
+            case .success(let data):
+                print("isi: \(data)")
+            let json = JSON(data)
+                
+            let batchProfile = json["batch_profiles"].arrayValue
+            print(batchProfile)
+                
+            if  let cashPayment = json["cash_payment"]["data"].array {
+                    print(cashPayment)
+                    UserDefaults.standard.set(true, forKey: "cash_payment")
+                  }
+        
+                if let alterPayment = json["alter_payments"]["data"].array
+                   {
+                    print(alterPayment)
+                    UserDefaults.standard.set(true, forKey: "alter_payments")
+                }
+    
+            for batchProfiles in batchProfile {
+                let batchSumarry = batchProfiles["batch_summary"].arrayValue
+                    print(batchSumarry)
+                
+                let batchDetails = batchProfiles["batch_details"].arrayValue
+                print(batchDetails)
+                
+                
+                if let batchNum = batchProfiles["batch_number"].string {
+                    print(batchNum)
+                    UserDefaults.standard.set(batchNum, forKey: "batchNumber")
+                }
+                if let without_Fee = batchProfiles["without_fee"].int  {
+                    print(without_Fee)
+                    UserDefaults.standard.set(without_Fee, forKey: "withoutFee")
+                    
+                }
+                if let Fee = batchProfiles["fee"].int  {
+                    print(Fee)
+                    UserDefaults.standard.set(Fee, forKey: "Fee")
+                }
+                if let without_tip = batchProfiles["without_tip"].int  {
+                    print(without_tip)
+                    UserDefaults.standard.set(without_tip, forKey: "withoutTip")
+                }
+                if let tip = batchProfiles["tip"].int  {
+                    print(tip)
+                    UserDefaults.standard.set(tip, forKey: "Tip")
+                }
+               
+                
+                for summaryList in batchSumarry {
+                    if let amount = summaryList["amount"].int{
+                        print(amount)
+                    }
+                    if let type = summaryList["type"].string {
+                        print(type)
+                    }
+                    if let transaction_no = summaryList["transaction_no"].int {
+                        print(transaction_no)
+                    }
+                }
+                
+                navigateToPageVC()
+            }
+            case .failure(let error):
+                print("Request failed with error: \(error)")
+            }
+        }
+    }
+    
+    
+    @IBAction func reprintPressed(_ sender: UIButton) {
+        let mainStoryboard = UIStoryboard(name: "ReprintViewController", bundle: nil)
+        let supportVC = mainStoryboard.instantiateViewController(withIdentifier: "ReprintViewController") as? ReprintViewController
+        self.present(supportVC!, animated: true)
+        
+    }
 }
 
 

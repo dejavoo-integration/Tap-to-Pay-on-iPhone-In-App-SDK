@@ -43,4 +43,10 @@ class SMSReceiptViewController: UIViewController,CountryPickerViewDelegate,Count
         backImg.setImageColor(color: UIColor.white)
         smsBackImage.setImageColor(color: UIColor.white)
     }
+    
+    @IBAction func backPress(_ sender: UIButton) {
+        
+        self.dismiss(animated: true)
+    }
+    
 }

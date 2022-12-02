@@ -24,7 +24,6 @@ class FeedbackViewController: UIViewController {
     
     func cornerRadius() {
         okBtn.layer.cornerRadius = 10
-        
         feedBackView.layer.cornerRadius = 20
         
         thankyouLbl.layer.cornerRadius = 10

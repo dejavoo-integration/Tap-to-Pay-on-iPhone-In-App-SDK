@@ -40,13 +40,18 @@ class KeyBoardPad: UIView {
     }
     
     @IBAction func numberPressed(_ sender: UIButton) {
-        
-        if runningnumber.count <= 10
-        {
-            runningnumber += "\(sender.tag)"
-            inum = "\(Double(Float(runningnumber)!))"
-            print ("Value:" + "\(inum)")
-            
+        if UserDefaults.standard.bool(forKey: "upgradeApp") == true {
+            runningnumber = "\(sender.tag)"
+            print(runningnumber)
+        }
+        else {
+            if runningnumber.count <= 10
+            {
+                runningnumber += "\(sender.tag)"
+                inum = "\(Double(Float(runningnumber)!))"
+                print ("Value:" + "\(inum)")
+                
+            }
         }
         onClickNumberBlock?()
     
@@ -77,7 +82,6 @@ class KeyBoardPad: UIView {
     @IBAction func btnActionOk(_ sender: Any) {
         onClickOKBlock?()
     }
-    
     
 //    private func setupUI(){
 //        [self.btnnumber].forEach{

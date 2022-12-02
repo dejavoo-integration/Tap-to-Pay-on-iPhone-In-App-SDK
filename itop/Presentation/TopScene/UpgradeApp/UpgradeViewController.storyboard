@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Upgrade View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="UpgradeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="UpgradeViewController" customModule="itop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="XlM-rK-qy2">
+                                <rect key="frame" x="0.0" y="59" width="187.66666666666666" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ci0-3J-naf">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="1ap-0V-uhC"/>
+                                            <constraint firstAttribute="height" constant="50" id="2Mp-pq-HLg"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="CancelIcon"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPGRADE APP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dV3-tV-EHZ">
+                                        <rect key="frame" x="69" y="0.0" width="118.66666666666669" height="50"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" red="0.18753942849999999" green="0.47776842120000002" blue="0.53749752039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHV-s2-9qy">
+                                <rect key="frame" x="327" y="59" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0S5-IX-JEx"/>
+                                    <constraint firstAttribute="width" constant="50" id="vUV-XF-mJz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="wifi"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TPN#" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kz5-v3-T10">
+                                <rect key="frame" x="36" y="180" width="43.333333333333343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43.329999999999998" id="Jh1-67-g9q"/>
+                                    <constraint firstAttribute="height" constant="30" id="fFM-LQ-9IY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ejh-4G-d6J">
+                                <rect key="frame" x="96" y="180" width="216" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="dGi-Qs-weT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNT-Ad-54o">
+                                <rect key="frame" x="30" y="234.00000000000003" width="137.66666666666666" height="85.333333333333343"/>
+                                <color key="backgroundColor" red="0.70818084479999999" green="0.1823172569" blue="0.3748886287" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Download App"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpF-SB-YxF">
+                                <rect key="frame" x="225.33333333333337" y="234.00000000000003" width="137.66666666666663" height="85.333333333333343"/>
+                                <color key="backgroundColor" red="0.12651711700000001" green="0.1720256805" blue="0.43094754219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Download Parameter"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWN-Qi-0WR" customClass="KeyBoardPad" customModule="itop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="389.33333333333326" width="393" height="410.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qHV-s2-9qy" secondAttribute="trailing" constant="16" id="4VH-uE-SOH"/>
+                            <constraint firstItem="JNT-Ad-54o" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="5lL-xd-aZy"/>
+                            <constraint firstItem="ejh-4G-d6J" firstAttribute="leading" secondItem="Kz5-v3-T10" secondAttribute="trailing" constant="16.670000000000002" id="65v-Zg-Xk7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mpF-SB-YxF" secondAttribute="trailing" constant="30" id="6dC-mb-2uR"/>
+                            <constraint firstItem="JNT-Ad-54o" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.1" id="7B5-BN-aIN"/>
+                            <constraint firstItem="JNT-Ad-54o" firstAttribute="top" secondItem="ejh-4G-d6J" secondAttribute="bottom" constant="20" id="8UD-N3-7lQ"/>
+                            <constraint firstItem="Kz5-v3-T10" firstAttribute="top" secondItem="XlM-rK-qy2" secondAttribute="bottom" constant="71" id="Bw7-6k-Ju3"/>
+                            <constraint firstItem="XlM-rK-qy2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="DSc-G5-Dsy"/>
+                            <constraint firstItem="mpF-SB-YxF" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.1" id="GRu-5J-6GM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="dWN-Qi-0WR" secondAttribute="bottom" constant="18" id="RVM-MG-vp3"/>
+                            <constraint firstItem="ejh-4G-d6J" firstAttribute="top" secondItem="XlM-rK-qy2" secondAttribute="bottom" constant="71" id="SG8-kc-axV"/>
+                            <constraint firstItem="ejh-4G-d6J" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.55" id="SMO-5w-Tdd"/>
+                            <constraint firstItem="mpF-SB-YxF" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.35" id="TEf-uY-pXv"/>
+                            <constraint firstItem="JNT-Ad-54o" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.35" id="TUz-Ts-76q"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dWN-Qi-0WR" secondAttribute="trailing" id="cQX-qL-7SU"/>
+                            <constraint firstItem="qHV-s2-9qy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="nnT-TF-fk4"/>
+                            <constraint firstItem="Kz5-v3-T10" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="20" id="pc7-pG-fwd"/>
+                            <constraint firstItem="dWN-Qi-0WR" firstAttribute="top" secondItem="JNT-Ad-54o" secondAttribute="bottom" constant="70" id="qij-iA-E4O"/>
+                            <constraint firstItem="mpF-SB-YxF" firstAttribute="top" secondItem="ejh-4G-d6J" secondAttribute="bottom" constant="20" id="sLL-xN-vOc"/>
+                            <constraint firstItem="XlM-rK-qy2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="uEU-iN-hrw"/>
+                            <constraint firstItem="dWN-Qi-0WR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vFB-7h-Cu3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="downloadApp" destination="JNT-Ad-54o" id="Z98-Mq-7PT"/>
+                        <outlet property="downloadParameter" destination="mpF-SB-YxF" id="rUF-uI-bRU"/>
+                        <outlet property="keyPad" destination="dWN-Qi-0WR" id="NlK-Va-vdY"/>
+                        <outlet property="tpnNumber" destination="ejh-4G-d6J" id="XVw-24-yUY"/>
+                        <outlet property="upgradeStackView" destination="XlM-rK-qy2" id="yoE-8r-CMI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-51.145038167938928" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CancelIcon" width="225" height="225"/>
+        <image name="wifi" width="240.30499267578125" height="240.30499267578125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
