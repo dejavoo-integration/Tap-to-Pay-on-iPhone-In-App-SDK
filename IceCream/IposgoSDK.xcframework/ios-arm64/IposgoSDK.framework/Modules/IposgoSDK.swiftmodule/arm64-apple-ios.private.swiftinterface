@@ -1,0 +1,1609 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name IposgoSDK
+import CommonCrypto
+import CoreData
+import CryptoKit
+import Foundation
+import Network
+import ProximityReader
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum Enviroment : Swift.String {
+  case dev
+  case uat
+  case preProd
+  case prod
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CurrencyCode : Swift.String, Swift.Codable {
+  case usd
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension IposgoSDK.CurrencyCode : Swift.CaseIterable {
+  public typealias AllCases = [IposgoSDK.CurrencyCode]
+  public static var allCases: [IposgoSDK.CurrencyCode] {
+    get
+  }
+}
+extension IposgoSDK.TransType : Swift.CaseIterable {
+  public typealias AllCases = [IposgoSDK.TransType]
+  public static var allCases: [IposgoSDK.TransType] {
+    get
+  }
+}
+public enum TransType : Swift.Int, Swift.Codable {
+  case SALE
+  case VOID
+  case REFUND
+  case PRE_AUTH
+  case TICKET
+  case TIP_ADJUST
+  case SETTLEMENT
+  case REVERSAL
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class UserDefaultsLocalManager {
+  @objc deinit
+}
+public func nullStringToEmpty(string: Swift.String?) -> Swift.String
+public protocol PayloadParameter : IposgoSDK.Command {
+  var amount: Swift.String { get }
+  var tipAmount: Swift.String? { get }
+  var currentCode: IposgoSDK.CurrencyCode { get }
+  var tranType: IposgoSDK.TransType { get }
+}
+public protocol Register : IposgoSDK.RegisterProtocol {
+  var tpn: Swift.String { get }
+  var merchantCode: Swift.String { get }
+}
+public protocol StatusCheckPayload : IposgoSDK.StatusCheck {
+  var txRefNo: Swift.String { get }
+  var txnTimeStamp: Swift.String { get }
+}
+public protocol TicketPayloadParameter : IposgoSDK.Command {
+  var amount: Swift.String { get }
+  var tipAmount: Swift.String? { get }
+  var currentCode: IposgoSDK.CurrencyCode { get }
+  var tranType: IposgoSDK.TransType { get }
+  var rrn: Swift.String { get }
+}
+public protocol VoidPayloadParameter : IposgoSDK.CommandVoid {
+  var tranType: IposgoSDK.TransType { get }
+  var rrn: Swift.String { get }
+}
+extension IposgoSDK.PayloadParameter {
+  public func prepareDict() -> [Swift.String : Swift.String]
+}
+extension IposgoSDK.StatusCheckPayload {
+  public func prepareDict() -> [Swift.String : Swift.String]
+}
+extension IposgoSDK.Register {
+  public func prepareDict() -> [Swift.String : Swift.String]
+}
+extension IposgoSDK.VoidPayloadParameter {
+  public func prepareDict() -> [Swift.String : Swift.String]
+}
+extension IposgoSDK.TicketPayloadParameter {
+  public func prepareDict() -> [Swift.String : Swift.String]
+}
+public protocol Command : Swift.Decodable, Swift.Encodable {
+  var currentCode: IposgoSDK.CurrencyCode { get }
+  var tranType: IposgoSDK.TransType { get }
+  func prepareDict() -> [Swift.String : Swift.String]
+  func prepareString() throws -> Swift.String?
+  func checkIsValid() -> Swift.Bool
+  func print()
+}
+public protocol RegisterProtocol : Swift.Decodable, Swift.Encodable {
+  func prepareDict() -> [Swift.String : Swift.String]
+  func prepareString() throws -> Swift.String?
+  func checkIsValid() -> Swift.Bool
+  func print()
+}
+public protocol StatusCheck : Swift.Decodable, Swift.Encodable {
+  func prepareDict() -> [Swift.String : Swift.String]
+  func prepareString() throws -> Swift.String?
+  func checkIsValid() -> Swift.Bool
+  func print()
+}
+extension IposgoSDK.Command {
+  public func checkIsValid() -> Swift.Bool
+  public func prepareString() throws -> Swift.String?
+  public func print()
+}
+extension IposgoSDK.StatusCheck {
+  public func checkIsValid() -> Swift.Bool
+  public func prepareString() throws -> Swift.String?
+  public func print()
+}
+extension IposgoSDK.RegisterProtocol {
+  public func checkIsValid() -> Swift.Bool
+  public func prepareString() throws -> Swift.String?
+  public func print()
+}
+public protocol CommandVoid : Swift.Decodable, Swift.Encodable {
+  var tranType: IposgoSDK.TransType { get }
+  func prepareDict() -> [Swift.String : Swift.String]
+  func prepareString() throws -> Swift.String?
+  func checkIsValid() -> Swift.Bool
+  func print()
+}
+extension IposgoSDK.CommandVoid {
+  public func checkIsValid() -> Swift.Bool
+  public func prepareString() throws -> Swift.String?
+  public func print()
+}
+@available(iOS 15.4, *)
+public class IposgoReader {
+  public var delegate: (any IposgoSDK.IposgoDelegate)?
+  public init()
+  @objc deinit
+}
+@available(iOS 15.4, *)
+extension IposgoSDK.IposgoReader {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func presentTermsAndConditions(jwToken: Swift.String) async throws
+  #endif
+}
+@available(iOS 15.4, *)
+extension IposgoSDK.IposgoReader {
+  public func checkDeviceConfiguration()
+}
+extension IposgoSDK.IposgoReader {
+  public func startTransaction(param: any IposgoSDK.PayloadParameter)
+  public func startCardBasedTXN(amount: Swift.String?, tipAmount: Swift.String?, currenyCode: IposgoSDK.CurrencyCode, tranType: IposgoSDK.TransType)
+}
+extension IposgoSDK.IposgoReader {
+  public func startTicket(param: any IposgoSDK.TicketPayloadParameter)
+  public func startVoid(param: any IposgoSDK.VoidPayloadParameter)
+  public func startBatchSettlement()
+  public func startStatusCheckforTXN(param: any IposgoSDK.StatusCheckPayload)
+}
+@available(iOS 15.4, *)
+extension IposgoSDK.IposgoReader {
+  public func cleanup(delegate: (any IposgoSDK.IposgoDelegate)?)
+}
+public func dictToJsonString(dict: [Swift.String : Any]) -> Swift.String
+public func isValidCurrencyFormat(_ input: Swift.String) -> Swift.Bool
+public func isValidTipFormat(_ input: Swift.String) -> Swift.Bool
+extension IposgoSDK.IposgoReader {
+  public func downloadParameter(param: any IposgoSDK.Register)
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+}
+public func getDeviceCharingDetail() -> Swift.Bool
+public func getBatteryPercentage() -> Swift.String?
+public func getAvaiableMemory() -> Swift.String?
+public func totalRAM() -> Swift.String?
+public func availableRAM() -> Swift.String?
+public enum ConnectionType {
+  case wifi
+  case ethernet
+  case cellular
+  case unknown
+  public static func == (a: IposgoSDK.ConnectionType, b: IposgoSDK.ConnectionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol IposgoDelegate {
+  func didReceiveError(error: Swift.String?, code: Swift.Int?)
+  func didReceiveSuccessData(message: Swift.String?, responseDict: [Swift.String : Any]?)
+}
+@_hasMissingDesignatedInitializers public class CoreDataManager {
+  public static let sharedInstance: IposgoSDK.CoreDataManager
+  @objc deinit
+}
+public enum PaymentSessionError : Swift.String {
+  case notAllowed
+  case backgroundRequestNotAllowed
+  case unsupported
+  case osVersionNotSupported
+  case modelNotSupported
+  case networkError
+  case networkAuthenticationError
+  case serviceConnectionError
+  case notReady
+  case emptyReaderToken
+  case prepareExpired
+  case tokenExpired
+  case readerMemoryFull
+  case accountNotLinked
+  case accountAlreadyLinked
+  case accountLinkingFailed
+  case accountLinkingRequiresiCloudSignIn
+  case accountLinkingCancelled
+  case merchantBlocked
+  case invalidMerchant
+  case somethingWentWrong
+  case refreshTokenGenerated
+  case noReaderSessionReady
+  case tokenExpiredError
+  case cardReadFailed
+  case invalidAmount
+  case invalidCurrencyCode
+  case nfcDisabled
+  case noReaderSession
+  case passcodeDisabled
+  case paymentCardDeclined
+  case paymentReadFailed
+  case pinCancelled
+  case pinNotAllowed
+  case pinEntryFailed
+  case pinEntryTimeout
+  case pinTokenInvalid
+  case readFromBackgroundError
+  case readNotAllowed
+  case readNotAllowedDuringCall
+  case readerServiceConnectionError
+  case readerServiceError
+  case readerSessionAuthenticationError
+  case readerSessionBusy
+  case readerSessionExpired
+  case readerSessionNetworkError
+  case readerTokenExpired
+  case vasReadFail
+  case invalidReaderToken
+  case prepareFailed
+  case entitlementIssue
+  case environmentIssue
+  case deviceSupportTapOnPay
+  case deviceUnSupportTapOnPay
+  case readerSessionCleanUp
+  case invalidTPN
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class FeeModule {
+  public init()
+  public func calculatePercentage(value: Swift.Double, percentageVal: Swift.Double) -> Swift.Double
+  @objc deinit
+}
+public func calculatePercentageString(value: Swift.Double, percentageVal: Swift.Double) -> Swift.String
+public func calculateAmountto100_String(_ value: Swift.String) -> Swift.String?
+public func enviromentHost() -> Swift.String?
+public func enviromentStreamHost() -> Swift.String?
+public func MPOS_GenerateTransactionId(digits: Swift.Int) -> Swift.String
+public enum ReachabilityError : Swift.Error {
+  case FailedToCreateWithAddress(Darwin.sockaddr_in)
+  case FailedToCreateWithHostname(Swift.String)
+  case UnableToSetCallback
+  case UnableToSetDispatchQueue
+}
+@available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
+public let ReachabilityChangedNotification: Foundation.NSNotification.Name
+extension Foundation.NSNotification.Name {
+  public static let reachabilityChanged: Foundation.Notification.Name
+}
+public class Reachability {
+  public typealias NetworkReachable = (IposgoSDK.Reachability) -> ()
+  public typealias NetworkUnreachable = (IposgoSDK.Reachability) -> ()
+  @available(*, unavailable, renamed: "Conection")
+  public enum NetworkStatus : Swift.CustomStringConvertible {
+    case notReachable, reachableViaWiFi, reachableViaWWAN
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: IposgoSDK.Reachability.NetworkStatus, b: IposgoSDK.Reachability.NetworkStatus) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Connection : Swift.CustomStringConvertible {
+    case none, wifi, cellular
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: IposgoSDK.Reachability.Connection, b: IposgoSDK.Reachability.Connection) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var whenReachable: IposgoSDK.Reachability.NetworkReachable?
+  public var whenUnreachable: IposgoSDK.Reachability.NetworkUnreachable?
+  @available(*, deprecated, renamed: "allowsCellularConnection")
+  final public let reachableOnWWAN: Swift.Bool
+  public var allowsCellularConnection: Swift.Bool
+  public var notificationCenter: Foundation.NotificationCenter
+  @available(*, deprecated, renamed: "connection.description")
+  public var currentReachabilityString: Swift.String {
+    get
+  }
+  @available(*, unavailable, renamed: "connection")
+  public var currentReachabilityStatus: IposgoSDK.Reachability.Connection {
+    get
+  }
+  public var connection: IposgoSDK.Reachability.Connection {
+    get
+  }
+  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability)
+  convenience public init?(hostname: Swift.String)
+  convenience public init?()
+  @objc deinit
+}
+extension IposgoSDK.Reachability {
+  public func startNotifier() throws
+  public func stopNotifier()
+  @available(*, deprecated, message: "Please use `connection != .none`")
+  public var isReachable: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Please use `connection == .cellular`")
+  public var isReachableViaWWAN: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Please use `connection == .wifi`")
+  public var isReachableViaWiFi: Swift.Bool {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc(CAPKDB) public class CAPKDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.CAPKDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.CAPKDB>
+  @objc @NSManaged dynamic public var expiredate: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var expoent: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var hashX: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var idx: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var key: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var rid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var taxmcr: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var taxppr: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.CAPKDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(DEVICEINFO) public class DEVICEINFO : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.DEVICEINFO {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.DEVICEINFO>
+  @objc @NSManaged dynamic public var appbuildno: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var appversion: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var bundleid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var hbtimestamp: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var jwtoken: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.DEVICEINFO : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(DPDB) public class DPDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.DPDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.DPDB>
+  @objc @NSManaged dynamic public var app_sign: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var build: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var model: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tpn: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.DPDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(EMVDB) public class EMVDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.EMVDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.EMVDB>
+  @objc @NSManaged dynamic public var aut_aid_optn: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var aut_aid_sel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var c_non_dce_lt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cdce_lt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cntry_cde: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var crncy_cde: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var crncy_exp: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ctx_lt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cvm_cap_no_req: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cvm_cap_req: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var fal_cnt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var fall_bck: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ker_con: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var pin_byps_cr: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tac_default: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tac_denial: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tac_onlne: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ter_cap: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.EMVDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(FEEDB) public class FEEDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.FEEDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.FEEDB>
+  @objc @NSManaged dynamic public var cf_afd: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cf_aft: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cf_amt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cf_dfc: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cf_dl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cf_mcr: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cf_per: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cf_ppr: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cf_tx_amt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var csh_msg_in_crd: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var csh_msg_in_csh: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dcaft: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dpadjustprice: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dpamt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dpftl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dppasswordap: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dppcd: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dpper: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dpprompt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dpsb: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dptaxonfee: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var f_typ: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var fee: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mpaft: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mpamt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mpdfc: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mpdl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mpmcr: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mpper: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mpppr: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mptaxonfee: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mptxamt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var save_msg_lbl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sramtc: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var srast: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var srdfcus: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var srdlc: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var srmatc: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var srmcr: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var srper: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var srperc: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var srppr: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var srtxzmt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tax_on_fee: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdadjustprice: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdaet: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdaft: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdamt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdcalculator: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdmsrp: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdmsrplabel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdpcd: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdpdctext: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdper: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdpil: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdpwdpradjustopt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdsavmsg: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdsavmsglable: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdsb: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdsd: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdskipitem: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdtaxonfee: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tcdtdebcash: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.FEEDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(FEEPRFDB) public class FEEPRFDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.FEEPRFDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.FEEPRFDB>
+  @objc @NSManaged dynamic public var w_fee: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var wo_fee: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.FEEPRFDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(HBDB) public class HBDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.HBDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.HBDB>
+  @objc @NSManaged dynamic public var hbTimeStamp: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.HBDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(HOSTCONFIGDB) public class HOSTCONFIGDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.HOSTCONFIGDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.HOSTCONFIGDB>
+  @objc @NSManaged dynamic public var payurl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var portalport: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var portalurl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sensepassurl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var socketsensepassurl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var steamport: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var steamurl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var txnport: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var txnurl: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.HOSTCONFIGDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(INTEGDB) public class INTEGDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.INTEGDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.INTEGDB>
+  @objc @NSManaged dynamic public var authtoken: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var brnchid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var clntid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var clntsertid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cryptopago: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var gifthost: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mrchntid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var qrcode: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sanpass: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sanpasstyp: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sensepasstimeout: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var typintg: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.INTEGDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(MISCDB) public class MISCDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.MISCDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.MISCDB>
+  @objc @NSManaged dynamic public var app_download_timer: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var com_timeout: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cust_logo: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dsl_timer: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var e_promo_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var e_rcpt_img_url: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var e_rcpt_msg: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var e_rcpt_titl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var e_rcpt_url: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var logourl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var m_pass_set: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var p_promo_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var pap_rcpt_msg: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var pap_rcpt_titl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var pap_rcpt_url: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var promo_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var qrtimer: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sc_idl_timer: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sostype: ObjectiveC.NSObject? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sttl_tme_ot: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var trw_time: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var warn_msg: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.MISCDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(RECEIPTDB) public class RECEIPTDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.RECEIPTDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.RECEIPTDB>
+  @objc @NSManaged dynamic public var cr_c: ObjectiveC.NSObject? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dis: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var email: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var f1: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var f2: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var h1: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var h2: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var h3: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var h4: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sms: Swift.Bool {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.RECEIPTDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(REVERSALSTATUSDB) public class REVERSALSTATUSDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.REVERSALSTATUSDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.REVERSALSTATUSDB>
+  @objc @NSManaged dynamic public var appFlowLog: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastTxnStatus: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var reversalAttemptCount: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timestamp: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tpn: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var traceNo: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var txRefNo: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.REVERSALSTATUSDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(SETLDB) public class SETLDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.SETLDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.SETLDB>
+  @objc @NSManaged dynamic public var settleop: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sm: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.SETLDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(SignatureUploadParam) public class SignatureUploadParam : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.SignatureUploadParam {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.SignatureUploadParam>
+  @objc @NSManaged dynamic public var additionalnntrymode: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var aid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var aifname: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var amount: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var appname: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var baseimage: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var batchnum: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var buildnumber: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cardNumber: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cardType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var commmedia: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var customfeelabel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var customField: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dateTime: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var description_: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var devicemodelId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var discfabel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var email: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var entrylegend: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var hTxId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var inventoryCardArrayString: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var inventoryItems: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var invoiceNo: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isibs: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var itemDetails: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var localtaxLabel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var merchantfeefabel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var paymenttype: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var phonenumber: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var pinstatus: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var postype: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var refundpolicy1: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var refundpolicy2: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var rrn: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var selectedPayment: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var statetaxLabel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var surveyans: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var surveyquest: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var taglabel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tagvalue: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tpn: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var traceNo: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var transactionType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var transType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var txduration: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var txid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var txRefNo: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var uploadStatus: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var verficationline1: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var verificationline2: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.SignatureUploadParam : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(TIPTAXDB) public class TIPTAXDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.TIPTAXDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.TIPTAXDB>
+  @objc @NSManaged dynamic public var ltax: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var max_ta: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var max_tp: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var s1: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var s2: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var s3: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var s4: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var stax: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tax: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tax1lable: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tax2lable: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var taxmcr: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var taxppr: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tip: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tip_typ: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ts_pap: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ts_pos: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.TIPTAXDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(TRANSACTIONDB) public class TRANSACTIONDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.TRANSACTIONDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.TRANSACTIONDB>
+  @objc @NSManaged dynamic public var avs: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var batchpassword: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var card_type: ObjectiveC.NSObject? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var preauthpassword: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var presalepassword: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var printsavemsg: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var refundpassword: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var reportpassword: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var reprintpassword: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var save_msg_lbl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ss: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ticketpassword: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tipadjustpassword: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tx_mode: ObjectiveC.NSObject? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tx_type: ObjectiveC.NSObject? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var upgradepassword: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var voidpassword: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.TRANSACTIONDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(VALADDDB) public class VALADDDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension IposgoSDK.VALADDDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<IposgoSDK.VALADDDB>
+  @objc @NSManaged dynamic public var cussurv: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var invdefault: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var invibs: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var savetageach: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sur_q: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var taginvoicekey: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var taginvoiceno: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var taginvoiceopt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var taglabl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var taglablkey: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var taglablopt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tagtableid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tagtablekey: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tagtableopt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tagtx: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension IposgoSDK.VALADDDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+extension IposgoSDK.Enviroment : Swift.Equatable {}
+extension IposgoSDK.Enviroment : Swift.Hashable {}
+extension IposgoSDK.Enviroment : Swift.RawRepresentable {}
+extension IposgoSDK.CurrencyCode : Swift.Equatable {}
+extension IposgoSDK.CurrencyCode : Swift.Hashable {}
+extension IposgoSDK.CurrencyCode : Swift.RawRepresentable {}
+extension IposgoSDK.TransType : Swift.Equatable {}
+extension IposgoSDK.TransType : Swift.Hashable {}
+extension IposgoSDK.TransType : Swift.RawRepresentable {}
+extension IposgoSDK.ConnectionType : Swift.Equatable {}
+extension IposgoSDK.ConnectionType : Swift.Hashable {}
+extension IposgoSDK.PaymentSessionError : Swift.Equatable {}
+extension IposgoSDK.PaymentSessionError : Swift.Hashable {}
+extension IposgoSDK.PaymentSessionError : Swift.RawRepresentable {}
+@available(*, unavailable, renamed: "Conection")
+extension IposgoSDK.Reachability.NetworkStatus : Swift.Equatable {}
+@available(*, unavailable, renamed: "Conection")
+extension IposgoSDK.Reachability.NetworkStatus : Swift.Hashable {}
+extension IposgoSDK.Reachability.Connection : Swift.Equatable {}
+extension IposgoSDK.Reachability.Connection : Swift.Hashable {}

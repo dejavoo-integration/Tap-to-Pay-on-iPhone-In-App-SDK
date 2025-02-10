@@ -1,0 +1,4 @@
+framework module IposgoSDK {
+  header "IposgoSDK-Swift.h"
+  requires objc
+}
