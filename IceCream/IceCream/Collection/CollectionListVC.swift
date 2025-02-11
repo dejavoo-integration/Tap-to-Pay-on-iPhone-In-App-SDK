@@ -17,7 +17,7 @@ class CollectionListVC: BaseViewController {
     var collectionListBase = [CollectionList]()
     @IBOutlet weak var chechoutHeightContrain: NSLayoutConstraint!
     @IBOutlet weak var checkoutView: UIView!
-    
+    @IBOutlet weak var clearButton:UIButton!
     
     let readerInstance = IposgoReader()
     var currentCode: String?
@@ -27,6 +27,7 @@ class CollectionListVC: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        clearButton.isHidden = true
         checkoutView.clipsToBounds = true
         checkoutView.layer.cornerRadius = 40
         checkoutView.backgroundColor = .systemPurple
@@ -39,10 +40,8 @@ class CollectionListVC: BaseViewController {
                           CollectionList(collectionName: "Mobile", collectionImage: "mobile", collectionCount: 0,price: 20),
         ]
         collectionListBase = collectionList
-       
         currentCode = "USD"
         tranType = .SALE
-        
         cellRegister()
         
     }
@@ -50,17 +49,26 @@ class CollectionListVC: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.tranType = tranTypee
         chechoutHeightContrain.constant = 0
-        collectionList = collectionListBase
-        listTable.reloadData()
-        settitlelb()
+        clerarData()
+        setTitlelb()
     }
     
-    func settitlelb(){
+    func setTitlelb(){
         if titlename == "" || titlename == nil{
             titlelb.text = "Sale"
         }else{
             titlelb.text = titlename
         }
+    }
+    
+    @IBAction func closeAc(_ sender: Any) {
+        clerarData()
+    }
+    
+    func clerarData() {
+        collectionList = collectionListBase
+        listTable.reloadData()
+        showBottomView()
     }
     
     @IBAction func checkOutAc(_ sender: Any) {
@@ -96,37 +104,6 @@ class CollectionListVC: BaseViewController {
     
 }
 
-
-struct TxnData : PayloadParameter {
-    var amount: String
-    var tipAmount: String?
-    var currentCode: CurrencyCode
-    var tranType: TransType
-}
-
-struct TicketTxnData : TicketPayloadParameter {
-    
-    var amount: String
-    var tipAmount: String?
-    var currentCode: CurrencyCode
-    var tranType: TransType
-    var rrn: String
-    
-}
-
-struct VoidTxnData : VoidPayloadParameter {
-    var rrn: String
-    var tranType: TransType
-}
-
-//MARK: - Register [Registeration]
-struct RegisterData : Register {
-  var tpn: String
-  var merchantCode: String
-}
-
-
-
 //MARK: ITap Delegates
 @available(iOS 15.4, *)
 extension CollectionListVC: IposgoDelegate {
@@ -134,7 +111,7 @@ extension CollectionListVC: IposgoDelegate {
     func didReceiveError(error: String?, code: Int?)  {
         
         print(">>>>Invoke App Error:",error as Any)
-        DispatchQueue.main.async { [self] in
+        DispatchQueue.main.async {
             LoaDer.hideOverlayView()
         }
         switch nullStringToEmpty(string: error) {
@@ -180,23 +157,5 @@ extension CollectionListVC: IposgoDelegate {
         }
     }
     
-    func clerarData() {
-        collectionList = collectionListBase
-        listTable.reloadData()
-        showBottomView()
-    }
 }
 
-
-//Alert function in shared class
-extension UIViewController {
-    func showAlert(title: String, msg: String) {
-        DispatchQueue.main.async {
-            let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }
-    }
-}
-
-//["HostResponseMessage": "APPROVAL VTLMC1 ", "iPOSToken": "D0F8202EB44C6C4C233898B880C1A29EA2D82CFBAAAB43DF", "Spin_Response": ["AuthCode": "VTLMC1", "RespMsg": "APPROVAL VTLMC1 ", "Message": "APPROVED", "ExtData": ["DateTime": "20250210162046", "TaxState": "$1.00", "Fee": "$0.40", "AcntLast4": "6000", "EntryType": "tap-on-phone", "Tax2Label": "Local Tax", "TraceNum": "3", "TxnType": 1, "txnLabel": "sale", "BatchNum": "264", "Amount": "$10.00", "AcntFirst4": "5241", "txnId": "60718279950293705420250210162046", "FeeLabel": "Custom Fee", "networkMode": "WIFI", "TaxAmount": "$3.00", "TaxCity": "$2.00", "RRN": "504110502647", "Tip": "", "TotalAmt": "$13.40", "RespCode": "00", "Tax1Label": "State Tax", "CardType": "MASTERCARD", "HostTxnId": "60718279950293705420250210162046", "BaseAmount": "$10.00"], "RefId": "607182799502", "PaymentType": "CREDIT", "TransNum": "3", "PNRef": "504110502647", "ResultCode": "00"], "HostResponseCode": "00"]

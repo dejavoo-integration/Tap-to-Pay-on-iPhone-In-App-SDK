@@ -28,30 +28,33 @@ extension CollectionListVC: UITableViewDataSource,UITableViewDelegate {
         cell.minusCollectionbut.addTarget(self, action: #selector(minuscollectionAC(sender:)), for: .touchUpInside)
         cell.collectioncounttext.text = "\(collectionList[indexPath.row].collectionCount ?? 0)"
         cell.collectionPrice.text = "$ \(collectionList[indexPath.row].price ?? 0)"
-        
+        if collectionList[indexPath.row].isSelected == true{
+            cell.backgroundview?.backgroundColor = UIColor(red: 203/255, green: 195/255, blue: 227/255, alpha: 1)
+        }else {
+            cell.backgroundview?.backgroundColor = .white
+        }
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(collectionList)
     }
     
     @objc func addcollectionAC(sender:UIButton){
         collectionList[sender.tag].collectionCount!  += 1
         collectionList[sender.tag].isSelected = true
-        listTable.reloadData()
+        let indexpath = IndexPath(row: sender.tag, section: 0)
+        listTable.reloadRows(at: [indexpath], with: .automatic)
         showCheckoutPrice()
     }
     
     @objc func minuscollectionAC(sender:UIButton){
+        let indexpath = IndexPath(row: sender.tag, section: 0)
         if collectionList[sender.tag].collectionCount ?? 0 > 0
         {
             collectionList[sender.tag].collectionCount! -= 1
-            listTable.reloadData()
-            
             if collectionList[sender.tag].collectionCount == 0{
                 collectionList[sender.tag].isSelected = false
             }
+            listTable.reloadRows(at: [indexpath], with: .fade)
+        }else{
+            collectionList[sender.tag].isSelected = false
         }
         showCheckoutPrice()
     }
@@ -65,12 +68,20 @@ extension CollectionListVC: UITableViewDataSource,UITableViewDelegate {
     
     func showBottomView(){
         if isSelectedCollection(){
-            chechoutHeightContrain.constant = 120
+            clearButton.isHidden = false
+            viewAnimation(constant: 120)
         }else{
-            chechoutHeightContrain.constant = 0
+            clearButton.isHidden = true
+            viewAnimation(constant: 0)
         }
     }
     
+    func viewAnimation(constant:CGFloat){
+        chechoutHeightContrain.constant = constant
+        UIView.animate(withDuration: 0.30, delay: 0, options: .curveEaseInOut, animations: {
+            self.view.layoutIfNeeded() // Animates constraint change
+        })
+    }
     
     func totalprice() -> Double {
         var total:Double = 0
@@ -97,52 +108,4 @@ extension CollectionListVC: UITableViewDataSource,UITableViewDelegate {
         }
     }
     
-}
-
-struct CollectionList {
-    let collectionName:String?
-    let collectionImage:String?
-    var collectionCount:Int?
-    var price:Double?
-    var isSelected:Bool?
-}
-
-
-public func calculateAmountto100_String(_ value:String) -> String?{
-    let amountdoble = Double(value) ?? 0.0
-    let roundvalue = String(format: "%.2f", amountdoble).doubleValue
-    let amount = roundvalue * 100
-    let damount = amount.rounded(digits: 2).nextUp
-    
-    return "\(damount.toInt() ?? 0)"
-}
-
-extension String {
-    var doubleValue: Double {
-        return (self as NSString).doubleValue
-    }
-}
-
-extension Double {
-    func rounded(digits: Int) -> Double {
-        let multiplier = pow(10.0, Double(digits))
-        return (self * multiplier).rounded() / multiplier
-    }
-}
-
-extension Double {
-    func toInt() -> Int? {
-        if self >= Double(Int.min) && self < Double(Int.max) {
-            return Int(self)
-        } else {
-            return nil
-        }
-    }
-    
-}
-
-extension Double {
-    var dollarString:String {
-        return String(format: "%.2f", self)
-    }
 }

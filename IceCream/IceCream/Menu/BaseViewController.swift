@@ -8,10 +8,6 @@
 import UIKit
 import IposgoSDK
 
-let screenWidth = UIScreen.main.bounds.width
-let screenHeight = UIScreen.main.bounds.height
-var titlename:String?
-var tranTypee: TransType = .SALE
 class BaseViewController: UIViewController, isClickMenuPassData {
     
     var topView: UIView?
@@ -22,13 +18,12 @@ class BaseViewController: UIViewController, isClickMenuPassData {
     @IBOutlet var shadowView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-       // titlename = "Sale"
         
     }
     
     func passData(data: MenuItem) {
         if  data.title == "Ticket" || data.title == "Void" {
-            routeToPreAuth(title: data.title)
+            routeToTicketandVoid(title: data.title)
         }else if data.title == "Registration"{
             routeToRegistration(title: data.title)
         }else if data.title == "Logout"{
@@ -75,15 +70,13 @@ extension BaseViewController{
         menuViewController.shadowView.addGestureRecognizer(tapGesture)
     }
     
-    func routeToPreAuth(title: String) {
+    func routeToTicketandVoid(title: String) {
         titlename = title
         if title == "Ticket" {
             tranTypee = .TICKET
         }else{
             tranTypee = .VOID
         }
-            
-        
         if let targetVC = navigationController?.viewControllers.first(where: { $0 is TicketViewController }) {
             navigationController?.popToViewController(targetVC, animated: true)
             targetVC.viewWillAppear(true)

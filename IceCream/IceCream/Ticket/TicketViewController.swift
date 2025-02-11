@@ -13,23 +13,6 @@ import IposgoSDK
 class TicketViewController: BaseViewController {
     
     @IBOutlet weak var voidTicketBut: UIButton!
-    @IBAction func startTxn(_ sender: UIButton) {
-        self.view.endEditing(true)
-        
-        readerInstance.delegate = self
-        switch tranType {
-            
-        case .TICKET:
-            let payload = TicketTxnData(amount: amtTxtFld.text ?? "", tipAmount: tip.text,currentCode: .usd, tranType: .TICKET, rrn: rrnTxtFld.text ?? "")
-            LoaDer.showOverlay(view: self.view)
-            print(">>>payload",payload)
-            readerInstance.startTicket(param: payload)
-        default:
-            let payload = VoidTxnData(rrn: rrnTxtFld.text ?? "",tranType: .VOID)
-            print(">>>payload",payload)
-            readerInstance.startVoid(param: payload)
-        }
-    }
     
     @IBOutlet weak var titlelb:UILabel!
     var tranType : TransType?
@@ -37,7 +20,6 @@ class TicketViewController: BaseViewController {
     @IBOutlet weak var tip: UITextField!
     @IBOutlet weak var amtTxtFld: UITextField!
     let readerInstance = IposgoReader()
-   
     
     
     override func viewDidLoad() {
@@ -71,6 +53,24 @@ class TicketViewController: BaseViewController {
             amtTxtFld.isHidden = true
             tip.isHidden = true
             rrnTxtFld.isHidden = false
+        }
+    }
+    
+    @IBAction func startTxn(_ sender: UIButton) {
+        self.view.endEditing(true)
+        
+        readerInstance.delegate = self
+        switch tranType {
+            
+        case .TICKET:
+            let payload = TicketTxnData(amount: amtTxtFld.text ?? "", tipAmount: tip.text,currentCode: .usd, tranType: .TICKET, rrn: rrnTxtFld.text ?? "")
+            LoaDer.showOverlay(view: self.view)
+            print(">>>payload",payload)
+            readerInstance.startTicket(param: payload)
+        default:
+            let payload = VoidTxnData(rrn: rrnTxtFld.text ?? "",tranType: .VOID)
+            print(">>>payload",payload)
+            readerInstance.startVoid(param: payload)
         }
     }
     
@@ -214,6 +214,7 @@ extension TicketViewController: IposgoDelegate {
         
         
     }
+    
     func clearTxtFld() {
         tip.text = ""
         rrnTxtFld.text = ""

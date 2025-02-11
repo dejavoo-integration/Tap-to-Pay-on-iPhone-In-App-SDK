@@ -22,8 +22,10 @@ var MenuItems : [MenuItem] = []
                      MenuItem(title: "Refund",image: "dollarsign.circle.fill"),
                      MenuItem(title: "PreAuth",image: "dollarsign.circle.fill"),
                      MenuItem(title: "Void",image: "ticket.fill"),
-                     MenuItem(title: "Ticket",image: "ticket.fill"),
-                     MenuItem(title: "Logout",image: "rectangle.portrait.and.arrow.right.fill")]
+                     MenuItem(title: "Ticket",image: "ticket.fill")]
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(_:)))
+        swipeLeft.direction = .left
+        view.addGestureRecognizer(swipeLeft)
     }
     
     @IBAction func closeAc(_ sender: Any){
@@ -60,15 +62,17 @@ extension MenuViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 55
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         removeview(selectedEntity: MenuItems[indexPath.row])
     }
     
+    @objc func handleSwipe(_ gesture: UISwipeGestureRecognizer) {
+        if gesture.direction == .left {
+            removeview()
+        }
+    }
+    
 }
 
-
-struct MenuItem {
-    var title: String
-    var image: String?
-}
