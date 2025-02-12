@@ -36,11 +36,7 @@ class RegistrationViewController: BaseViewController {
         NotificationCenter.default.removeObserver(self)
     }
       
-    
-    
-       NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
-        
-    }
+
     override func viewWillAppear(_ animated: Bool) {
         titlelb.text = titlename
     }
@@ -48,11 +44,7 @@ class RegistrationViewController: BaseViewController {
     override func viewWillDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self)
     }
-    @objc func appDidBecomeActive() {
-        print("App became active")
-        readerInstance.delegate = self
-        readerInstance.checkDeviceConfiguration()
-    }
+   
     deinit {
         // Remove observers when the view controller is deallocated
         NotificationCenter.default.removeObserver(self)
