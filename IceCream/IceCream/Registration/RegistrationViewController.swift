@@ -19,8 +19,21 @@ class RegistrationViewController: BaseViewController {
        
         tpnTxtFld.keyboardType = .numberPad
         tpnTxtFld.delegate = self
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
+    
+    @objc func appDidBecomeActive() {
+          print("App became active")
+        readerInstance.delegate = self
+        readerInstance.checkDeviceConfiguration()
+      }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self)
+    }
+      
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         titlelb.text = titlename
     }
@@ -36,9 +49,10 @@ class RegistrationViewController: BaseViewController {
             return
         }
         LoaDer.showOverlay(view: self.view)
-        let payload = RegisterData(tpn: "446424665928", merchantCode: "000306476828")
+        let payload = RegisterData(tpn: "544425158338", merchantCode: "393670256150")
         readerInstance.delegate = self
         Task {
+            
             readerInstance.downloadParameter(param: payload)
         }
         

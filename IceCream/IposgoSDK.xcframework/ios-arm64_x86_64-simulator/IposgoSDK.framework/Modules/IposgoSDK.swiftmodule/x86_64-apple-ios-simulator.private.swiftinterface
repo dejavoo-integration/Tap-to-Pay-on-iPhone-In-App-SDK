@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name IposgoSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CommonCrypto
 import CoreData
 import CryptoKit
@@ -35,13 +36,13 @@ public enum CurrencyCode : Swift.String, Swift.Codable {
 }
 extension IposgoSDK.CurrencyCode : Swift.CaseIterable {
   public typealias AllCases = [IposgoSDK.CurrencyCode]
-  public static var allCases: [IposgoSDK.CurrencyCode] {
+  nonisolated public static var allCases: [IposgoSDK.CurrencyCode] {
     get
   }
 }
 extension IposgoSDK.TransType : Swift.CaseIterable {
   public typealias AllCases = [IposgoSDK.TransType]
-  public static var allCases: [IposgoSDK.TransType] {
+  nonisolated public static var allCases: [IposgoSDK.TransType] {
     get
   }
 }
@@ -159,9 +160,7 @@ public class IposgoReader {
 }
 @available(iOS 15.4, *)
 extension IposgoSDK.IposgoReader {
-  #if compiler(>=5.3) && $AsyncAwait
   public func presentTermsAndConditions(jwToken: Swift.String) async throws
-  #endif
 }
 @available(iOS 15.4, *)
 extension IposgoSDK.IposgoReader {
@@ -188,7 +187,7 @@ extension IposgoSDK.IposgoReader {
   public func downloadParameter(param: any IposgoSDK.Register)
 }
 extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+  @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
 }
 public func getDeviceCharingDetail() -> Swift.Bool
 public func getBatteryPercentage() -> Swift.String?
