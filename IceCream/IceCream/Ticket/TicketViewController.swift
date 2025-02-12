@@ -47,7 +47,7 @@ class TicketViewController: BaseViewController {
             amtTxtFld.isHidden = false
             tip.isHidden = false
             rrnTxtFld.isHidden = false
-           
+            
         default:
             
             amtTxtFld.isHidden = true

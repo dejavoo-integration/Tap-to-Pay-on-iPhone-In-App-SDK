@@ -29,8 +29,10 @@ class CollectionListVC: BaseViewController {
         super.viewDidLoad()
         clearButton.isHidden = true
         checkoutView.clipsToBounds = true
-        checkoutView.layer.cornerRadius = 40
-        checkoutView.backgroundColor = .systemPurple
+        checkoutView.layer.cornerRadius = 15
+        checkoutView.layer.borderColor = UIColor(red: 203/255, green: 195/255, blue: 227/255, alpha: 1).cgColor
+        checkoutView.layer.borderWidth = 0.5
+        
         checkoutView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         collectionList = [CollectionList(collectionName: "Bat", collectionImage: "bat", collectionCount: 0,price: 10),
                           CollectionList(collectionName: "Bike", collectionImage: "bike", collectionCount: 0,price: 20),
@@ -49,7 +51,7 @@ class CollectionListVC: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.tranType = tranTypee
         chechoutHeightContrain.constant = 0
-        clerarData()
+        clearData()
         setTitlelb()
     }
     
@@ -62,10 +64,10 @@ class CollectionListVC: BaseViewController {
     }
     
     @IBAction func closeAc(_ sender: Any) {
-        clerarData()
+        clearData()
     }
     
-    func clerarData() {
+    func clearData() {
         collectionList = collectionListBase
         listTable.reloadData()
         showBottomView()
@@ -73,24 +75,21 @@ class CollectionListVC: BaseViewController {
     
     @IBAction func checkOutAc(_ sender: Any) {
         let totalAmount = collectionList.map({($0.price ?? 0) * Double($0.collectionCount ?? 0)}).reduce(0, +)
-        //let AMT = calculateAmountto100_String(totalAmount.dollarString)
+        let AMT = calculateAmountto100_String(totalAmount.dollarString) ?? ""
         let TAMT = String(format: "%.2f", totalAmount)
         if isSelectedCollection(){
-            checkSaleType(amount: TAMT)
+            prossedOrder(amount: TAMT, AMT: AMT)
         }else{
-            let alert = UIAlertController(title: "Alert", message: "Enter Amount", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            showAlert(title: "Alert", msg: "Enter Amount")
         }
     }
     
     func prossedOrder(amount: String, AMT: String){
         if getisRegistered(){
             print("Total Amount:\(amount),  Int Amout: \(AMT)")
-            
             checkSaleType(amount: amount)
         }else {
-            
+            showAlert(title: "Alert", msg: "Please register and process the transaction.")
         }
     }
     
@@ -110,7 +109,7 @@ extension CollectionListVC: IposgoDelegate {
     
     func didReceiveError(error: String?, code: Int?)  {
         
-        print(">>>>Invoke App Error:",error as Any)
+        print("&&&Invoke App Error Collectio vc:",error as Any)
         DispatchQueue.main.async {
             LoaDer.hideOverlayView()
         }
@@ -122,9 +121,7 @@ extension CollectionListVC: IposgoDelegate {
         default:
             DispatchQueue.main.async { [self] in
                
-                let alert = UIAlertController(title: "Alert", message: nullStringToEmpty(string: error), preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
+                showAlert(title: "Alert", msg: nullStringToEmpty(string: error))
                 self.readerInstance.cleanup(delegate: self)
             }
             return
@@ -133,26 +130,23 @@ extension CollectionListVC: IposgoDelegate {
     }
     
     func didReceiveSuccessData(message: String?, responseDict: [String : Any]?) {
-        
+        print("&&&didReceiveSuccessData Collectio vc")
         DispatchQueue.main.async { [self] in
             LoaDer.hideOverlayView()
             print("data....responseDict:\(String(describing: responseDict))")
-            if responseDict != nil || responseDict?.count ?? 0 > 0 {
+            if responseDict?.count ?? 0 > 0 {
                 let responseCode = responseDict?["HostResponseCode"] as? String
                 let Spin_Response = responseDict?["Spin_Response"] as? [String:Any] ?? [:]
                 let msg = Spin_Response["Message"] as? String ?? ""
-                let extadata = Spin_Response["ExtData"] as? [String:Any] ?? [:]
-                let AMT = extadata["TotalAmt"] as? String ?? ""
+               
                 if responseCode == "00"{ // 00 sucess, not equal to zero is failure response code
-                    showAlert(title: msg, msg: "The transaction was completed successfully \(AMT)")
-                    clerarData()
+                    showAlertAction(title: msg, message: String(describing: responseDict))
                 }else{
-                    showAlert(title: msg, msg: "")
+                    showAlert(title: msg, msg: String(describing: responseDict))
                 }
             } else {
                 print("message:\(nullStringToEmpty(string: message))")
-                let msg = nullStringToEmpty(string: message)
-               // showAlert(title: "", msg: msg)
+               
             }
         }
     }

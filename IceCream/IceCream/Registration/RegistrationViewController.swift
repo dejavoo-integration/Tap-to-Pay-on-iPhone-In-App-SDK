@@ -19,12 +19,25 @@ class RegistrationViewController: BaseViewController {
        
         tpnTxtFld.keyboardType = .numberPad
         tpnTxtFld.delegate = self
+       NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
         
     }
     override func viewWillAppear(_ animated: Bool) {
         titlelb.text = titlename
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self)
+    }
+    @objc func appDidBecomeActive() {
+        print("App became active")
+        readerInstance.delegate = self
+        readerInstance.checkDeviceConfiguration()
+    }
+    deinit {
+        // Remove observers when the view controller is deallocated
+        NotificationCenter.default.removeObserver(self)
+    }
     
     @IBAction func registerDeviceAC(_ sender: UIButton) {
         self.tpnTxtFld.endEditing(true)
@@ -35,8 +48,9 @@ class RegistrationViewController: BaseViewController {
             self.present(alert, animated: true, completion: nil)
             return
         }
+        
         LoaDer.showOverlay(view: self.view)
-        let payload = RegisterData(tpn: "446424665928", merchantCode: "000306476828")
+        let payload = RegisterData(tpn: tpnTxtFld.text ?? "", merchantCode: "000306476828")
         readerInstance.delegate = self
         Task {
             readerInstance.downloadParameter(param: payload)
@@ -51,7 +65,7 @@ class RegistrationViewController: BaseViewController {
 extension RegistrationViewController: IposgoDelegate {
 
     func didReceiveError(error: String?, code: Int?)  {
- 
+        print("&&&Error register vc")
         print(">>>>Invoke App Error:",error as Any)
         DispatchQueue.main.async { [self] in
             LoaDer.hideOverlayView()
@@ -76,7 +90,7 @@ extension RegistrationViewController: IposgoDelegate {
     
     func didReceiveSuccessData(message: String?, responseDict: [String : Any]?) {
        
-        
+        print("&&&didReceiveSuccessData register vc")
         print(">>> Invoke App Success:  \(String(describing: message))")
         print(">>>RESponse",responseDict)
         
@@ -90,12 +104,7 @@ extension RegistrationViewController: IposgoDelegate {
                 UserDefaults.standard.setValue(true, forKey: "termsConditionsAccepted")
                 UserDefaults.standard.setValue(true, forKey: "isRegistered")
                 //Navigation
-                let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                titlename = "Sale"
-                let readerVC = mainStoryboard.instantiateViewController(withIdentifier: "CollectionListVC") as! CollectionListVC
-                readerVC.tranType = .SALE
-                navigationController?.pushViewController(readerVC, animated: true)
-                
+                showAlertAction(title: "Success", message: "Device is ready for tap to pay now")
             } else {
                 self.txt.text = nullStringToEmpty(string: message)
             }
@@ -104,6 +113,30 @@ extension RegistrationViewController: IposgoDelegate {
         }
     }
     
+    func showAlertAction(title: String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action:UIAlertAction!) in
+                let VC = self.storyboard?.instantiateViewController(identifier: "CollectionListVC") as! CollectionListVC
+                titlename = "Sale"
+                VC.tranType = .SALE
+                self.navigationController?.pushViewController(VC, animated: true)
+            //self.routetoCollectionVC()
+        }))
+        
+        //alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    func routetoCollectionVC(){
+        if let targetVC = self.navigationController?.viewControllers.first(where: { $0 is CollectionListVC }) {
+            self.navigationController?.popToViewController(targetVC, animated: true)
+            titlename = "Sale"
+            tranTypee = .SALE
+            targetVC.viewWillAppear(true)
+        }else{
+            let VC = self.storyboard?.instantiateViewController(identifier: "CollectionListVC") as! CollectionListVC
+            self.navigationController?.pushViewController(VC, animated: true)
+        }
+    }
     
 }
 
@@ -141,4 +174,3 @@ extension RegistrationViewController: UITextViewDelegate {
         textView.resignFirstResponder()
     }
 }
-

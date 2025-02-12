@@ -36,6 +36,24 @@ extension CollectionListVC: UITableViewDataSource,UITableViewDelegate {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if isSelectedCollection(){
+            return 30  // Adjust height for better spacing
+        }else{
+            return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView()
+        footerView.backgroundColor = UIColor.clear  // Custom background color
+        if isSelectedCollection(){
+            return footerView
+        }else {
+            return nil
+        }
+    }
+    
     @objc func addcollectionAC(sender:UIButton){
         collectionList[sender.tag].collectionCount!  += 1
         collectionList[sender.tag].isSelected = true
@@ -108,4 +126,12 @@ extension CollectionListVC: UITableViewDataSource,UITableViewDelegate {
         }
     }
     
+    func showAlertAction(title: String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action:UIAlertAction!) in
+            self.clearData()
+        }))
+        //alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }

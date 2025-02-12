@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "IposgoSDK",
+    "printedName": "IposgoSDK",
     "children": [
       {
         "kind": "Import",
@@ -305,6 +305,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -481,6 +495,9 @@
             "moduleName": "IposgoSDK",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "isFromExtension": true,
             "accessors": [
               {
@@ -525,6 +542,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1006,6 +1037,9 @@
             "moduleName": "IposgoSDK",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "isFromExtension": true,
             "accessors": [
               {
@@ -1050,6 +1084,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1163,7 +1211,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -1530,6 +1594,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Command",
             "printedName": "Command",
             "usr": "s:9IposgoSDK7CommandP",
@@ -1691,6 +1769,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "RegisterProtocol",
             "printedName": "RegisterProtocol",
             "usr": "s:9IposgoSDK16RegisterProtocolP",
@@ -1850,6 +1942,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "StatusCheck",
@@ -2157,6 +2263,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Command",
             "printedName": "Command",
             "usr": "s:9IposgoSDK7CommandP",
@@ -2317,6 +2437,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "CommandVoid",
@@ -2623,6 +2757,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Encodable",
             "printedName": "Encodable",
             "usr": "s:SE",
@@ -2836,6 +2984,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Encodable",
             "printedName": "Encodable",
             "usr": "s:SE",
@@ -3047,6 +3209,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -3302,6 +3478,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -3831,6 +4021,22 @@
         "declAttributes": [
           "AccessControl",
           "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -4436,6 +4642,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4709,6 +4929,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -4832,7 +5068,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -7170,6 +7422,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7296,6 +7562,22 @@
         "moduleName": "IposgoSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -7967,6 +8249,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -8247,6 +8543,20 @@
               "AccessControl"
             ],
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -9178,6 +9488,22 @@
         "moduleName": "IposgoSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -10133,25 +10459,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -10223,6 +10541,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -10877,25 +11217,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -10967,6 +11299,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -11518,25 +11872,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -11608,6 +11954,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -13601,25 +13969,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -13691,6 +14051,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -20319,25 +20701,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -20409,6 +20783,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -20754,25 +21150,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -20844,6 +21232,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -21086,25 +21496,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -21176,6 +21578,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -22242,25 +22666,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -22332,6 +22748,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -23707,25 +24145,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -23797,6 +24227,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -26202,25 +26654,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -26292,6 +26736,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -27413,25 +27879,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -27503,6 +27961,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -28363,25 +28843,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -28453,6 +28925,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -28798,25 +29292,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -28888,6 +29374,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -34129,25 +34637,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -34219,6 +34719,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -36109,25 +36631,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -36199,6 +36713,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -38192,25 +38728,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -38282,6 +38810,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -39966,25 +40516,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObjectIdentifier",
-                    "printedName": "Swift.ObjectIdentifier",
-                    "usr": "s:SO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -40056,6 +40598,28 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -40119,6 +40683,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -40159,6 +40724,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIDevice",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -40172,6 +40738,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -40295,6 +40875,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ObjectiveCBridgeable",
             "printedName": "_ObjectiveCBridgeable",
             "children": [
@@ -40415,153 +41009,6 @@
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 178,
-      "length": 5,
-      "value": "\"GET\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 200,
-      "length": 6,
-      "value": "\"POST\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 224,
-      "length": 7,
-      "value": "\"PATCH\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 247,
-      "length": 5,
-      "value": "\"PUT\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 271,
-      "length": 8,
-      "value": "\"DELETE\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 358,
-      "length": 3,
-      "value": "403"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 386,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 407,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 439,
-      "length": 3,
-      "value": "300"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 467,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 491,
-      "length": 3,
-      "value": "404"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 518,
-      "length": 3,
-      "value": "500"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 549,
-      "length": 3,
-      "value": "420"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 358,
-      "length": 3,
-      "value": "403"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 386,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 407,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 439,
-      "length": 3,
-      "value": "300"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 467,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 491,
-      "length": 3,
-      "value": "404"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 518,
-      "length": 3,
-      "value": "500"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "IntegerLiteral",
-      "offset": 549,
-      "length": 3,
-      "value": "420"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "IntegerLiteral",
       "offset": 358,
       "length": 3,
@@ -40643,195 +41090,6 @@
       "offset": 795,
       "length": 15,
       "value": "\"Authorization\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 932,
-      "length": 28,
-      "value": "\"v1\/process-ios-transaction\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 986,
-      "length": 15,
-      "value": "\"v2\/value-json\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1038,
-      "length": 30,
-      "value": "\"\/v2\/register-create-validate\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1091,
-      "length": 33,
-      "value": "\"v1\/external-payment-transaction\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1153,
-      "length": 29,
-      "value": "\"v1\/queryPaymentStatus\/?tpn=\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1219,
-      "length": 17,
-      "value": "\"&invoiceNumber=\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1256,
-      "length": 18,
-      "value": "\"v2\/updatePresale\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1293,
-      "length": 12,
-      "value": "\"v2\/tx-extn\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1328,
-      "length": 17,
-      "value": "\"v2\/txn-details\/\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1370,
-      "length": 18,
-      "value": "\"v1\/create-ticket\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1410,
-      "length": 21,
-      "value": "\"v2\/open-batch-test\/\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1455,
-      "length": 22,
-      "value": "\"v2\/send-device-alert\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1497,
-      "length": 29,
-      "value": "\"v2\/alternative-payments-pos\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1554,
-      "length": 20,
-      "value": "\"v2\/jwtRefreshToken\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1601,
-      "length": 20,
-      "value": "\"v2\/download-update\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1642,
-      "length": 20,
-      "value": "\"v1\/sendPaymentLink\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1686,
-      "length": 23,
-      "value": "\"v2\/getAllInvoice-pos?\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1733,
-      "length": 23,
-      "value": "\"v2\/updateInvoice-java\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1780,
-      "length": 23,
-      "value": "\"v1\/iposTransactStatus\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1848,
-      "length": 23,
-      "value": "\"v2\/open-batch-filter\/\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1896,
-      "length": 25,
-      "value": "\"v3\/batch-tipped-report\/\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1943,
-      "length": 26,
-      "value": "\"v2\/batch-details-filter\/\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 1996,
-      "length": 25,
-      "value": "\"v1\/latest-closed-batch\/\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 2075,
-      "length": 20,
-      "value": "\"v2\/inventory\/items\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 2128,
-      "length": 30,
-      "value": "\"v2\/inventory\/items\/addOrEdit\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 2186,
-      "length": 28,
-      "value": "\"v2\/inventory\/items\/delete\/\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 2247,
-      "length": 18,
-      "value": "\"registerMerchant\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
@@ -41228,97 +41486,6 @@
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 159,
-      "length": 5,
-      "value": "\"DEV\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 180,
-      "length": 5,
-      "value": "\"UAT\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 205,
-      "length": 10,
-      "value": "\"PRE-PROD\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 232,
-      "length": 6,
-      "value": "\"PROD\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 340,
-      "length": 15,
-      "value": "\"readCompleted\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 379,
-      "length": 13,
-      "value": "\"readyForTap\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 418,
-      "length": 15,
-      "value": "\"readCancelled\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 458,
-      "length": 14,
-      "value": "\"cardDetected\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 501,
-      "length": 20,
-      "value": "\"Permission Denied!\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 545,
-      "length": 29,
-      "value": "\"Amount field can't be empty\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 595,
-      "length": 56,
-      "value": "\"Invalid amount. Amount must be in the format $00000.00\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 675,
-      "length": 60,
-      "value": "\"Invalid tip amount. Tip amount must be in the format $0.00\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 760,
-      "length": 75,
-      "value": "\"Tip amount is disabled; please enable it and proceed with the tip amount.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
       "offset": 340,
       "length": 15,
       "value": "\"readCompleted\""
@@ -41613,244 +41780,6 @@
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 923,
-      "length": 7,
-      "value": "\"Label\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 949,
-      "length": 8,
-      "value": "\"Amount\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 973,
-      "length": 5,
-      "value": "\"Amt\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 997,
-      "length": 8,
-      "value": "\"ProfId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1021,
-      "length": 5,
-      "value": "\"Tpn\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1046,
-      "length": 9,
-      "value": "\"TraceNo\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1076,
-      "length": 10,
-      "value": "\"CardType\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1105,
-      "length": 8,
-      "value": "\"TxType\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1135,
-      "length": 11,
-      "value": "\"EntryMode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1168,
-      "length": 11,
-      "value": "\"DateNTime\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1196,
-      "length": 6,
-      "value": "\"SlNo\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1219,
-      "length": 6,
-      "value": "\"Type\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1245,
-      "length": 9,
-      "value": "\"BaseAmt\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1281,
-      "length": 16,
-      "value": "\"cardReaderBlob\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1318,
-      "length": 10,
-      "value": "\"Currency\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1364,
-      "length": 25,
-      "value": "\"cardReaderTransactionId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1417,
-      "length": 17,
-      "value": "\"generalCardData\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1459,
-      "length": 14,
-      "value": "\"cardReaderId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1499,
-      "length": 15,
-      "value": "\"SocketTimeout\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1535,
-      "length": 10,
-      "value": "\"TxDetail\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1568,
-      "length": 12,
-      "value": "\"DeviceInfo\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1614,
-      "length": 23,
-      "value": "\"PaymentCardReadResult\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1664,
-      "length": 4,
-      "value": "\"01\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1698,
-      "length": 4,
-      "value": "\"02\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1749,
-      "length": 5,
-      "value": "\"Rrn\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1775,
-      "length": 10,
-      "value": "\"Response\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1813,
-      "length": 17,
-      "value": "\"ContactlessMode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1850,
-      "length": 9,
-      "value": "\"TxRefNo\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1877,
-      "length": 7,
-      "value": "\"Items\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1908,
-      "length": 12,
-      "value": "\"merchantId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1955,
-      "length": 24,
-      "value": "\"transactionReferenceId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 2014,
-      "length": 24,
-      "value": "\"merchantAuthentication\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 2069,
-      "length": 20,
-      "value": "\"transactionRequest\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 2185,
-      "length": 5,
-      "value": "\"840\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
       "offset": 2185,
       "length": 5,
       "value": "\"840\""
@@ -41864,125 +41793,6 @@
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 2440,
-      "length": 5,
-      "value": "\"USD\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2679,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2697,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2717,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2739,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2759,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2783,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2807,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2829,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2679,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2697,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2717,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2739,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2759,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2783,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2807,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2829,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 2679,
       "length": 1,
@@ -42068,62 +41878,6 @@
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2993,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3011,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3036,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3057,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2993,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3011,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3036,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3057,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
       "offset": 3130,
       "length": 1,
       "value": "1"
@@ -42141,118 +41895,6 @@
       "offset": 3196,
       "length": 1,
       "value": "3"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3130,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3161,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3196,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3130,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3161,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3196,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3281,
-      "length": 6,
-      "value": "\"sale\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3306,
-      "length": 8,
-      "value": "\"refund\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3331,
-      "length": 6,
-      "value": "\"void\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3357,
-      "length": 10,
-      "value": "\"pre auth\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3386,
-      "length": 8,
-      "value": "\"ticket\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3418,
-      "length": 13,
-      "value": "\"settlements\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3452,
-      "length": 11,
-      "value": "\"void sale\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3486,
-      "length": 13,
-      "value": "\"void refund\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3523,
-      "length": 15,
-      "value": "\"void pre auth\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3561,
-      "length": 13,
-      "value": "\"void ticket\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
@@ -42351,489 +41993,6 @@
       "offset": 3997,
       "length": 106,
       "value": "\"<b><span style=\"color: #46A748;\"><br>\"Reader Identifier: \"<\/span><\/b><br><span style=\"color: #BB55E6\">\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3634,
-      "length": 104,
-      "value": "\"<b><span style=\"color: #46A748;\"><br>\"PaymentCardData: \"<\/span><\/b><br><span style=\"color: #BB55E6\">\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3752,
-      "length": 102,
-      "value": "\"<b><span style=\"color: #46A748;\"><br>\"TranscationId: \"<\/span><\/b><br><span style=\"color: #BB55E6\">\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3874,
-      "length": 106,
-      "value": "\"<b><span style=\"color: #46A748;\"><br>\"General Card Data: \"<\/span><\/b><br><span style=\"color: #BB55E6\">\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3997,
-      "length": 106,
-      "value": "\"<b><span style=\"color: #46A748;\"><br>\"Reader Identifier: \"<\/span><\/b><br><span style=\"color: #BB55E6\">\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 563,
-      "length": 7,
-      "value": "\"sltpn\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 586,
-      "length": 7,
-      "value": "\"sljwt\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 615,
-      "length": 13,
-      "value": "\"slauthtoken\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 648,
-      "length": 11,
-      "value": "\"slbuildno\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 682,
-      "length": 14,
-      "value": "\"slappversion\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 718,
-      "length": 11,
-      "value": "\"emvcTX_LT\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 750,
-      "length": 10,
-      "value": "\"slpayurl\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 784,
-      "length": 13,
-      "value": "\"slstreamurl\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 821,
-      "length": 13,
-      "value": "\"slportalurl\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 856,
-      "length": 11,
-      "value": "\"slfeetype\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 887,
-      "length": 9,
-      "value": "\"sldpper\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 915,
-      "length": 8,
-      "value": "\"tcdpil\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 945,
-      "length": 11,
-      "value": "\"removetcd\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 978,
-      "length": 11,
-      "value": "\"slfeecfdl\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1012,
-      "length": 12,
-      "value": "\"slfeesrdlc\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1046,
-      "length": 11,
-      "value": "\"slfeempdl\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1075,
-      "length": 7,
-      "value": "\"slfee\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1103,
-      "length": 10,
-      "value": "\"sltcdamt\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1133,
-      "length": 9,
-      "value": "\"sldpamt\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1162,
-      "length": 9,
-      "value": "\"sldpftl\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1197,
-      "length": 15,
-      "value": "\"sltcdtdebcash\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1237,
-      "length": 14,
-      "value": "\"save_msg_lbl\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1273,
-      "length": 11,
-      "value": "\"tcdsavmsg\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1309,
-      "length": 14,
-      "value": "\"printsavemsg\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1350,
-      "length": 16,
-      "value": "\"tcdsavmsglable\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1390,
-      "length": 13,
-      "value": "\"tcdtdebcash\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1428,
-      "length": 14,
-      "value": "\"tcdmsrplabel\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1462,
-      "length": 9,
-      "value": "\"tcdmsrp\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1495,
-      "length": 10,
-      "value": "\"slcf_amt\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1524,
-      "length": 10,
-      "value": "\"slsramtc\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1552,
-      "length": 9,
-      "value": "\"slmpamt\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1583,
-      "length": 13,
-      "value": "\"slHeartBeat\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1623,
-      "length": 13,
-      "value": "\"slcf_tx_amt\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1656,
-      "length": 11,
-      "value": "\"slsrtxzmt\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1687,
-      "length": 11,
-      "value": "\"slmptxamt\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1721,
-      "length": 9,
-      "value": "\"slcf_dl\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1748,
-      "length": 9,
-      "value": "\"slsrdlc\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1774,
-      "length": 8,
-      "value": "\"slmpdl\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1806,
-      "length": 10,
-      "value": "\"slcf_aft\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1834,
-      "length": 9,
-      "value": "\"slsrast\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1861,
-      "length": 9,
-      "value": "\"slmpaft\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1898,
-      "length": 14,
-      "value": "\"sltax_on_fee\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1935,
-      "length": 14,
-      "value": "\"slmptaxonfee\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1973,
-      "length": 10,
-      "value": "\"slcf_per\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2002,
-      "length": 10,
-      "value": "\"slsrperc\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2030,
-      "length": 9,
-      "value": "\"slmpper\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2064,
-      "length": 10,
-      "value": "\"slcf_dfc\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2094,
-      "length": 11,
-      "value": "\"slsrdfcus\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2123,
-      "length": 9,
-      "value": "\"slmpdfc\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2154,
-      "length": 12,
-      "value": "\"sltiptaxdb\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2184,
-      "length": 9,
-      "value": "\"sltspos\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2220,
-      "length": 13,
-      "value": "\"sltax1lable\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2255,
-      "length": 11,
-      "value": "\"tax2lable\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2292,
-      "length": 12,
-      "value": "\"sltax1ocal\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2325,
-      "length": 12,
-      "value": "\"sltaxstate\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2358,
-      "length": 7,
-      "value": "\"sltax\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2381,
-      "length": 7,
-      "value": "\"sltip\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2408,
-      "length": 6,
-      "value": "\"slqr\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2433,
-      "length": 10,
-      "value": "\"slmax_ta\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2467,
-      "length": 11,
-      "value": "\"sltx_type\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2500,
-      "length": 14,
-      "value": "\"sllcard_type\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2535,
-      "length": 12,
-      "value": "\"slsettleop\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2567,
-      "length": 11,
-      "value": "\"slsostype\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2607,
-      "length": 15,
-      "value": "\"slnetworkmode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2654,
-      "length": 23,
-      "value": "\"slassignedBuildNumber\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
@@ -45302,209 +44461,6 @@
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3240,
-      "length": 14,
-      "value": "\"serialNumber\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3279,
-      "length": 16,
-      "value": "\"manufacturerId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3319,
-      "length": 15,
-      "value": "\"deviceModelId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3367,
-      "length": 24,
-      "value": "\"applicationSignatureId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3413,
-      "length": 13,
-      "value": "\"buildNumber\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3440,
-      "length": 5,
-      "value": "\"tpn\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3470,
-      "length": 16,
-      "value": "\"deviceUniqueId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3508,
-      "length": 13,
-      "value": "\"merchantKey\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3609,
-      "length": 14,
-      "value": "\"serialNumber\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3650,
-      "length": 16,
-      "value": "\"manufacturerId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3692,
-      "length": 15,
-      "value": "\"deviceModelId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3742,
-      "length": 24,
-      "value": "\"applicationSignatureId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3790,
-      "length": 13,
-      "value": "\"buildNumber\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3819,
-      "length": 5,
-      "value": "\"tpn\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3853,
-      "length": 18,
-      "value": "\"isDeviceSupports\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3895,
-      "length": 13,
-      "value": "\"deviceModel\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3934,
-      "length": 15,
-      "value": "\"deviceVersion\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3972,
-      "length": 12,
-      "value": "\"identifier\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4013,
-      "length": 12,
-      "value": "\"statusCode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4049,
-      "length": 5,
-      "value": "\"200\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4082,
-      "length": 17,
-      "value": "\"downloadReqTime\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4124,
-      "length": 14,
-      "value": "\"downloadType\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4156,
-      "length": 7,
-      "value": "\"PARAM\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4192,
-      "length": 18,
-      "value": "\"downloadDuration\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4234,
-      "length": 13,
-      "value": "\"downloadLog\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4267,
-      "length": 9,
-      "value": "\"message\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4302,
-      "length": 31,
-      "value": "\"Param downloaded successfully\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4385,
-      "length": 16,
-      "value": "\"deviceUniqueId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4425,
-      "length": 13,
-      "value": "\"merchantKey\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
       "offset": 3609,
       "length": 14,
       "value": "\"serialNumber\""
@@ -45907,503 +44863,6 @@
       "offset": 5779,
       "length": 11,
       "value": "\"CardItems\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4540,
-      "length": 13,
-      "value": "\"base64Image\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4568,
-      "length": 6,
-      "value": "\"txId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4593,
-      "length": 10,
-      "value": "\"txBaseId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4623,
-      "length": 11,
-      "value": "\"commMedia\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4656,
-      "length": 13,
-      "value": "\"phoneNumber\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4685,
-      "length": 7,
-      "value": "\"email\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4714,
-      "length": 13,
-      "value": "\"buildNumber\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4752,
-      "length": 16,
-      "value": "\"customFeeLabel\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4795,
-      "length": 18,
-      "value": "\"merchantFeeLabel\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4833,
-      "length": 11,
-      "value": "\"discLabel\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4868,
-      "length": 15,
-      "value": "\"localTaxLabel\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4907,
-      "length": 15,
-      "value": "\"stateTaxLabel\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4943,
-      "length": 12,
-      "value": "\"txDuration\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 4974,
-      "length": 10,
-      "value": "\"tagLabel\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5003,
-      "length": 10,
-      "value": "\"tagValue\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5035,
-      "length": 13,
-      "value": "\"customField\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5072,
-      "length": 15,
-      "value": "\"deviceModelId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5107,
-      "length": 11,
-      "value": "\"surveyAns\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5140,
-      "length": 13,
-      "value": "\"surveyQuest\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5167,
-      "length": 5,
-      "value": "\"aid\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5190,
-      "length": 9,
-      "value": "\"appName\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5229,
-      "length": 21,
-      "value": "\"additionalEntryMode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5270,
-      "length": 11,
-      "value": "\"pinStatus\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5300,
-      "length": 10,
-      "value": "\"batchNum\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5328,
-      "length": 9,
-      "value": "\"posType\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5359,
-      "length": 13,
-      "value": "\"paymentType\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5394,
-      "length": 13,
-      "value": "\"entryLegend\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5425,
-      "length": 9,
-      "value": "\"AIDName\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5457,
-      "length": 13,
-      "value": "\"description\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5497,
-      "length": 18,
-      "value": "\"verficationLine1\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5543,
-      "length": 19,
-      "value": "\"verificationLine2\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5586,
-      "length": 15,
-      "value": "\"refundPolicy1\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5625,
-      "length": 15,
-      "value": "\"refundPolicy2\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5666,
-      "length": 17,
-      "value": "\"savingsMsgLabel\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5705,
-      "length": 13,
-      "value": "\"itemDetails\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5743,
-      "length": 16,
-      "value": "\"inventoryItems\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5779,
-      "length": 11,
-      "value": "\"CardItems\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5897,
-      "length": 13,
-      "value": "\"information\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5931,
-      "length": 10,
-      "value": "\"Response\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5962,
-      "length": 10,
-      "value": "\"RespCode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 5992,
-      "length": 9,
-      "value": "\"TxRefNo\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6021,
-      "length": 9,
-      "value": "\"RespMsg\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6050,
-      "length": 9,
-      "value": "\"BatchNo\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6077,
-      "length": 7,
-      "value": "\"HTxId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6100,
-      "length": 5,
-      "value": "\"Rrn\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6123,
-      "length": 7,
-      "value": "\"DTxId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6152,
-      "length": 11,
-      "value": "\"MaskedPan\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6181,
-      "length": 7,
-      "value": "\"Label\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6204,
-      "length": 5,
-      "value": "\"AID\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6226,
-      "length": 6,
-      "value": "\"Card\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6254,
-      "length": 11,
-      "value": "\"InvoiceNo\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6287,
-      "length": 11,
-      "value": "\"DateNTime\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6315,
-      "length": 5,
-      "value": "\"Tpn\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6340,
-      "length": 9,
-      "value": "\"TraceNo\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6372,
-      "length": 12,
-      "value": "\"Sub_Charge\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6403,
-      "length": 8,
-      "value": "\"DueAmt\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6428,
-      "length": 6,
-      "value": "\"TCDF\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6450,
-      "length": 10,
-      "value": "\"SignFlag\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6481,
-      "length": 10,
-      "value": "\"TxDetail\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6512,
-      "length": 10,
-      "value": "\"ChdToken\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6542,
-      "length": 9,
-      "value": "\"AppCode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6607,
-      "length": 3,
-      "value": "\"8\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6637,
-      "length": 23,
-      "value": "\"NO SIGNATURE REQUIRED\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6682,
-      "length": 12,
-      "value": "\"No Refunds\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6722,
-      "length": 19,
-      "value": "\"Store Credit Only\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6764,
-      "length": 12,
-      "value": "\"TapOnPhone\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6797,
-      "length": 13,
-      "value": "\"CREDIT CARD\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6831,
-      "length": 11,
-      "value": "\"CHIP READ\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6866,
-      "length": 13,
-      "value": "\"MERCHANDISE\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6898,
-      "length": 8,
-      "value": "\"CREDIT\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 6927,
-      "length": 10,
-      "value": "\"CardType\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
@@ -46910,321 +45369,6 @@
       "value": "\"CardType\""
     },
     {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7028,
-      "length": 15,
-      "value": "\"Spin_Response\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7061,
-      "length": 7,
-      "value": "\"RefId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7089,
-      "length": 10,
-      "value": "\"AuthCode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7117,
-      "length": 7,
-      "value": "\"PNRef\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7145,
-      "length": 10,
-      "value": "\"TransNum\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7178,
-      "length": 12,
-      "value": "\"ResultCode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7210,
-      "length": 9,
-      "value": "\"Message\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7239,
-      "length": 9,
-      "value": "\"RespMsg\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7272,
-      "length": 13,
-      "value": "\"PaymentType\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7305,
-      "length": 9,
-      "value": "\"ExtData\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7333,
-      "length": 8,
-      "value": "\"Amount\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7357,
-      "length": 5,
-      "value": "\"Tip\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7378,
-      "length": 5,
-      "value": "\"Fee\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7404,
-      "length": 10,
-      "value": "\"BatchNum\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7436,
-      "length": 11,
-      "value": "\"AcntLast4\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7470,
-      "length": 12,
-      "value": "\"AcntFirst4\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7503,
-      "length": 10,
-      "value": "\"FeeLabel\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7536,
-      "length": 12,
-      "value": "\"BaseAmount\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7568,
-      "length": 9,
-      "value": "\"TaxCity\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7599,
-      "length": 11,
-      "value": "\"Tax1Label\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7631,
-      "length": 10,
-      "value": "\"TaxState\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7663,
-      "length": 11,
-      "value": "\"Tax2Label\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7695,
-      "length": 10,
-      "value": "\"RespCode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7721,
-      "length": 5,
-      "value": "\"RRN\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7747,
-      "length": 10,
-      "value": "\"TraceNum\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7779,
-      "length": 11,
-      "value": "\"HostTxnId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7808,
-      "length": 7,
-      "value": "\"txnId\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7835,
-      "length": 9,
-      "value": "\"TxnType\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7866,
-      "length": 11,
-      "value": "\"EntryType\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7898,
-      "length": 10,
-      "value": "\"TotalAmt\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7930,
-      "length": 11,
-      "value": "\"TaxAmount\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7962,
-      "length": 10,
-      "value": "\"txnLabel\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 7996,
-      "length": 13,
-      "value": "\"networkMode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 8030,
-      "length": 10,
-      "value": "\"DateTime\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 8062,
-      "length": 11,
-      "value": "\"iPOSToken\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 8102,
-      "length": 18,
-      "value": "\"HostResponseCode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 8152,
-      "length": 21,
-      "value": "\"HostResponseMessage\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 8194,
-      "length": 10,
-      "value": "\"CardType\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 171,
-      "length": 113,
-      "value": "\"<b><span style=\"color: #46A748;\">[Download Parameter API Failure]<\/span><\/b><br><span style=\"color: #BB55E6\">\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 312,
-      "length": 113,
-      "value": "\"<b><span style=\"color: #46A748;\">[Download Parameter API Success]<\/span><\/b><br><span style=\"color: #BB55E6\">\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 448,
-      "length": 98,
-      "value": "\"<b><span style=\"color: #46A748;\">[TXN Failure API]<\/span><\/b><br><span style=\"color: #BB55E6\">\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 569,
-      "length": 98,
-      "value": "\"<b><span style=\"color: #46A748;\">[TXN Success API]<\/span><\/b><br><span style=\"color: #BB55E6\">\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 695,
-      "length": 16,
-      "value": "\"<\/span><\/br>\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 743,
-      "length": 98,
-      "value": "\"<b><span style=\"color: #46A748;\">[ProximityReader]<\/span><\/b><br><span style=\"color: #BB55E6\">\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 872,
-      "length": 110,
-      "value": "\"<b><span style=\"color: #46A748;\">[JWT Refresh token API Issue]<\/span><\/b><br><span style=\"color: #BB55E6\">\""
-    },
-    {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
       "kind": "StringLiteral",
       "offset": 171,
@@ -47718,503 +45862,6 @@
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
       "kind": "StringLiteral",
       "offset": 3278,
-      "length": 16,
-      "value": "\"Status check I\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1056,
-      "length": 16,
-      "value": "\"Param Download\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1086,
-      "length": 5,
-      "value": "\"tpn\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1113,
-      "length": 13,
-      "value": "\"buildNumber\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1149,
-      "length": 14,
-      "value": "\"serialNumber\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1188,
-      "length": 16,
-      "value": "\"majorEventType\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1217,
-      "length": 4,
-      "value": "\"HB\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1246,
-      "length": 16,
-      "value": "\"minorEventType\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1280,
-      "length": 9,
-      "value": "\"reqDate\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1309,
-      "length": 11,
-      "value": "\"eventData\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1336,
-      "length": 7,
-      "value": "\"model\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1359,
-      "length": 7,
-      "value": "\"brand\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1384,
-      "length": 9,
-      "value": "\"BuildNo\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1415,
-      "length": 13,
-      "value": "\"posDateTime\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1447,
-      "length": 10,
-      "value": "\"TimeZone\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1488,
-      "length": 22,
-      "value": "\"buildVersionCodeName\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1540,
-      "length": 21,
-      "value": "\"releaseBuildVersion\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1579,
-      "length": 9,
-      "value": "\"product\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1604,
-      "length": 7,
-      "value": "\"TIMER\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1634,
-      "length": 14,
-      "value": "\"radioVersion\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1664,
-      "length": 7,
-      "value": "\"board\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1691,
-      "length": 11,
-      "value": "\"buildHost\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1722,
-      "length": 11,
-      "value": "\"buildTime\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1753,
-      "length": 11,
-      "value": "\"buildUser\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1784,
-      "length": 11,
-      "value": "\"osVersion\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1814,
-      "length": 10,
-      "value": "\"language\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1838,
-      "length": 5,
-      "value": "\"sdk\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1868,
-      "length": 16,
-      "value": "\"batteryPercent\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1903,
-      "length": 10,
-      "value": "\"charging\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1937,
-      "length": 15,
-      "value": "\"batteryHealth\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1980,
-      "length": 19,
-      "value": "\"batteryTechnology\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2024,
-      "length": 16,
-      "value": "\"batteryVoltage\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2063,
-      "length": 14,
-      "value": "\"chargingMode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2102,
-      "length": 16,
-      "value": "\"batteryPresent\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2138,
-      "length": 11,
-      "value": "\"availMemo\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2169,
-      "length": 11,
-      "value": "\"totalMemo\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2208,
-      "length": 19,
-      "value": "\"availExternalMemo\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2255,
-      "length": 19,
-      "value": "\"totalExternalMemo\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2293,
-      "length": 10,
-      "value": "\"totalRam\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2322,
-      "length": 10,
-      "value": "\"availRam\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2352,
-      "length": 11,
-      "value": "\"lowMemory\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2382,
-      "length": 10,
-      "value": "\"wifiSSID\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2412,
-      "length": 11,
-      "value": "\"wifiIpAdd\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2447,
-      "length": 15,
-      "value": "\"wifiGatewayIP\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2485,
-      "length": 14,
-      "value": "\"wifiNetSpeed\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2528,
-      "length": 20,
-      "value": "\"wifiSignalStrength\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2579,
-      "length": 22,
-      "value": "\"connectedNetworkMode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2622,
-      "length": 12,
-      "value": "\"SETTLEMENT\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2660,
-      "length": 4,
-      "value": "\"SF\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2684,
-      "length": 11,
-      "value": "\"systemLog\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2724,
-      "length": 20,
-      "value": "\"additionalDebugLog\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2764,
-      "length": 11,
-      "value": "\"eventType\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2804,
-      "length": 20,
-      "value": "\"createdDateAndTime\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2853,
-      "length": 20,
-      "value": "\"updatedDateAndTime\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2894,
-      "length": 12,
-      "value": "\"appFlowLog\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2930,
-      "length": 15,
-      "value": "\"TxnAttemptLog\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2974,
-      "length": 17,
-      "value": "\"ProximityReader\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3011,
-      "length": 12,
-      "value": "\"Txn Failed\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3044,
-      "length": 13,
-      "value": "\"Txn Success\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3076,
-      "length": 10,
-      "value": "\"Reversal\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3116,
-      "length": 22,
-      "value": "\"Invaild Reader Token\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3151,
-      "length": 22,
-      "value": "\"\n Txn Response QR: \""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3187,
-      "length": 30,
-      "value": "\"\n Txn Response Tap on Pay: \""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3242,
-      "length": 13,
-      "value": "\"\n Key-In: \""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3278,
-      "length": 16,
-      "value": "\"Status check I\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3372,
-      "length": 16,
-      "value": "\"Param Download\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3414,
-      "length": 18,
-      "value": "\"Sign Upload Fail\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3463,
-      "length": 17,
-      "value": "\"ProximityReader\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3503,
-      "length": 12,
-      "value": "\"Txn Failed\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3538,
-      "length": 13,
-      "value": "\"Txn Success\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3572,
-      "length": 10,
-      "value": "\"Reversal\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 3607,
       "length": 16,
       "value": "\"Status check I\""
     },
@@ -49185,412 +46832,6 @@
       "value": "\"Enter the valid TPN\""
     },
     {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 836,
-      "length": 22,
-      "value": "\"Account not allowed.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 898,
-      "length": 33,
-      "value": "\"Background request not allowed.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 955,
-      "length": 51,
-      "value": "\"Unsupported hardware or a problem with the device\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1040,
-      "length": 51,
-      "value": "\"Please update your app to the latest iOS version.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1121,
-      "length": 37,
-      "value": "\"Current device doesn't support NFC.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1183,
-      "length": 51,
-      "value": "\"Please check your network settings and try again.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1273,
-      "length": 64,
-      "value": "\"An authentication error occurred during the server connection.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1372,
-      "length": 34,
-      "value": "\"Internal service is unavailable.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1427,
-      "length": 52,
-      "value": "\"Please try the session again to resolve the issue.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1508,
-      "length": 40,
-      "value": "\"The token is empty, making it invalid.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1575,
-      "length": 44,
-      "value": "\"Please reinitiate the session to try again\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1644,
-      "length": 16,
-      "value": "\"Token Expired.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1689,
-      "length": 26,
-      "value": "\"The card reader is busy.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1744,
-      "length": 57,
-      "value": "\"Accept the Terms and Conditions using a valid Apple ID.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1834,
-      "length": 50,
-      "value": "\"Terms and Conditions have already been accepted.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1917,
-      "length": 78,
-      "value": "\"The system couldn't link or relink the merchant using the provided Apple ID.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 2042,
-      "length": 80,
-      "value": "\"Please accept the Terms and Conditions on your device while signed into iCloud\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 2158,
-      "length": 55,
-      "value": "\"The linking or relinking operation has been canceled.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 2241,
-      "length": 25,
-      "value": "\"The merchant is blocked\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 2294,
-      "length": 36,
-      "value": "\"The merchant is invalid or unknown\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 2361,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 2397,
-      "length": 32,
-      "value": "\"New Token Generated, Try again\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 2462,
-      "length": 57,
-      "value": "\"No reader session available or the session isn't ready.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 2549,
-      "length": 63,
-      "value": "\"tokenExpired Error that indicates the reader's token expired.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 2685,
-      "length": 38,
-      "value": "\"The reader was unable to read a card\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 2749,
-      "length": 58,
-      "value": "\"Amount must be positive and contain less than 10 digits.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 2839,
-      "length": 65,
-      "value": "\"Currency code in the request must follow the ISO 4217 standard.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 2928,
-      "length": 36,
-      "value": "\"The user needs to enable their NFC\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 2992,
-      "length": 60,
-      "value": "\"No reader session is available or the session isn't ready.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 3081,
-      "length": 67,
-      "value": "\"Passcode disabled. Please set a security passcode on your device.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 3180,
-      "length": 44,
-      "value": "\"The payment card declined the transaction.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 3254,
-      "length": 51,
-      "value": "\"An internal failure prevented the read operation.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 3331,
-      "length": 85,
-      "value": "\"The current PIN capture was canceled, thereby canceling any ongoing read operation.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 3442,
-      "length": 68,
-      "value": "\"The time window for capturing a PIN after a card read has expired.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 3537,
-      "length": 43,
-      "value": "\"An error occurred when capturing the PIN.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 3608,
-      "length": 66,
-      "value": "\"The ongoing PIN capture was not completed within the given time.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 3702,
-      "length": 47,
-      "value": "\"An error that indicates an invalid PIN token.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 3785,
-      "length": 74,
-      "value": "\"Read operations aren't allowed when an app is running in the background.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 3886,
-      "length": 62,
-      "value": "\"This error usually occurs when there's an entitlement issue.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 3985,
-      "length": 53,
-      "value": "\"Read operations aren't allowed during a phone call.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4079,
-      "length": 68,
-      "value": "\"The session wasn't able to connect the system UI or other services\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4178,
-      "length": 47,
-      "value": "\"Reader service internal state issue occurred.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4270,
-      "length": 66,
-      "value": "\"An authentication error occurred while refreshing reader session\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4366,
-      "length": 42,
-      "value": "\"The reader is busy with another session.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4441,
-      "length": 77,
-      "value": "\"The reader session expired and couldn't refresh due to other state changes.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4556,
-      "length": 65,
-      "value": "\"Network error occurred that prevented a reader session refresh.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4652,
-      "length": 57,
-      "value": "\"The configuration token for the reader session expired.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4733,
-      "length": 45,
-      "value": "\"Error occurred when reading a loyalty pass.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4814,
-      "length": 22,
-      "value": "\"Invalid reader token\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4862,
-      "length": 24,
-      "value": "\"Prepare session failed\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4952,
-      "length": 58,
-      "value": "\"Please check the tap on phone entitlement configuration.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 5039,
-      "length": 46,
-      "value": "\"The token key environment is not acceptable.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 5119,
-      "length": 28,
-      "value": "\"Device Supports Tap to Pay\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 5183,
-      "length": 43,
-      "value": "\"Your current device does not support NFC.\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 5259,
-      "length": 27,
-      "value": "\"Reader session cleaned up\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/Common\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 5309,
-      "length": 21,
-      "value": "\"Enter the valid TPN\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
-      "kind": "StringLiteral",
-      "offset": 347,
-      "length": 84,
-      "value": "\"No Transaction Registered with This TransactionRefId,Please try with Valid Details\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
-      "kind": "StringLiteral",
-      "offset": 453,
-      "length": 18,
-      "value": "\"NO ORIGINAL TRNX\""
-    },
-    {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
       "offset": 347,
@@ -49745,188 +46986,6 @@
       "value": "\"SFee\""
     },
     {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
-      "kind": "StringLiteral",
-      "offset": 87214,
-      "length": 9,
-      "value": "\"BaseAmt\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
-      "kind": "StringLiteral",
-      "offset": 87241,
-      "length": 7,
-      "value": "\"Label\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
-      "kind": "StringLiteral",
-      "offset": 87264,
-      "length": 5,
-      "value": "\"Amt\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
-      "kind": "StringLiteral",
-      "offset": 87290,
-      "length": 10,
-      "value": "\"Currency\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
-      "kind": "StringLiteral",
-      "offset": 87316,
-      "length": 5,
-      "value": "\"Fee\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
-      "kind": "StringLiteral",
-      "offset": 87337,
-      "length": 5,
-      "value": "\"Tip\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
-      "kind": "StringLiteral",
-      "offset": 87361,
-      "length": 8,
-      "value": "\"TipFee\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
-      "kind": "StringLiteral",
-      "offset": 87386,
-      "length": 6,
-      "value": "\"Tax1\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
-      "kind": "StringLiteral",
-      "offset": 87409,
-      "length": 6,
-      "value": "\"Tax2\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
-      "kind": "StringLiteral",
-      "offset": 87437,
-      "length": 11,
-      "value": "\"FeeInTax1\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
-      "kind": "StringLiteral",
-      "offset": 87470,
-      "length": 11,
-      "value": "\"FeeInTax2\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
-      "kind": "StringLiteral",
-      "offset": 87501,
-      "length": 9,
-      "value": "\"BaseFee\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
-      "kind": "StringLiteral",
-      "offset": 87527,
-      "length": 6,
-      "value": "\"SFee\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 160,
-      "length": 12,
-      "value": "\"TLV Format\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 200,
-      "length": 10,
-      "value": "\"CardData\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 238,
-      "length": 18,
-      "value": "\"General CardData\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 280,
-      "length": 36,
-      "value": "\"Device is ready for tap to pay now\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 342,
-      "length": 16,
-      "value": "\"Account Linked\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 387,
-      "length": 19,
-      "value": "\"Sending card data\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 441,
-      "length": 27,
-      "value": "\"Receiving server response\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 499,
-      "length": 26,
-      "value": "\"Card Readed Successfully\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 551,
-      "length": 50,
-      "value": "\"Transaction canceled by the merchant\/card holder\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 626,
-      "length": 15,
-      "value": "\"Card Detected\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 675,
-      "length": 23,
-      "value": "\"serverRequestInitated\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 728,
-      "length": 22,
-      "value": "\"Sending card data...\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 778,
-      "length": 19,
-      "value": "\"transactionData: \""
-    },
-    {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
       "kind": "StringLiteral",
       "offset": 160,
@@ -50058,160 +47117,6 @@
       "offset": 1019,
       "length": 13,
       "value": "\"settlements\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 882,
-      "length": 6,
-      "value": "\"sale\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 907,
-      "length": 8,
-      "value": "\"refund\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 932,
-      "length": 6,
-      "value": "\"void\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 958,
-      "length": 10,
-      "value": "\"pre auth\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 987,
-      "length": 8,
-      "value": "\"ticket\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "StringLiteral",
-      "offset": 1019,
-      "length": 13,
-      "value": "\"settlements\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1115,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1131,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1149,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1169,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1187,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1209,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1231,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1251,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1115,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1131,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1149,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1169,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1187,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1209,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1231,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1251,
-      "length": 1,
-      "value": "8"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/PaymentCardData.swift",
@@ -50317,181 +47222,6 @@
       "offset": 3939,
       "length": 32,
       "value": "\"uk.co.ashleymills.reachability\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 156,
-      "length": 8,
-      "value": "\"status\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 187,
-      "length": 12,
-      "value": "\"statusCode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 225,
-      "length": 15,
-      "value": "\"last_4_digits\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 270,
-      "length": 19,
-      "value": "\"transaction_title\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 318,
-      "length": 18,
-      "value": "\"transaction_type\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 365,
-      "length": 18,
-      "value": "\"transaction_mode\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 410,
-      "length": 16,
-      "value": "\"transaction_id\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 442,
-      "length": 5,
-      "value": "\"rrn\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 470,
-      "length": 12,
-      "value": "\"invoice_no\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 506,
-      "length": 13,
-      "value": "\"amount_paid\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 541,
-      "length": 11,
-      "value": "\"card_type\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 573,
-      "length": 10,
-      "value": "\"mask_pan\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 605,
-      "length": 11,
-      "value": "\"timeStamp\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 640,
-      "length": 13,
-      "value": "\"txn_message\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 677,
-      "length": 13,
-      "value": "\"sdk_version\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 711,
-      "length": 10,
-      "value": "\"Approved\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 742,
-      "length": 10,
-      "value": "\"Declined\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 772,
-      "length": 10,
-      "value": "\"batch_no\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 802,
-      "length": 9,
-      "value": "\"TxRefNo\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 827,
-      "length": 5,
-      "value": "\"AID\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 848,
-      "length": 5,
-      "value": "\"Tpn\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 876,
-      "length": 12,
-      "value": "\"txn_amount\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 918,
-      "length": 21,
-      "value": "\"is_partial_approval\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 979,
-      "length": 30,
-      "value": "\"partialapproval_enableportal\""
-    },
-    {
-      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 1044,
-      "length": 26,
-      "value": "\"partical_approval_amount\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/JSONStructure\/ResponseEntity.swift",
