@@ -28,6 +28,7 @@
 /* Begin PBXFileReference section */
 		18E4E0DD2D5CAE26002E9BAE /* IposgoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IposgoSDK.xcframework; sourceTree = "<group>"; };
 		7E671C1E2D50D2A400505427 /* IceCream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E8A571E2D5C8BE1005F89F2 /* IposgoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IposgoSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -168,7 +169,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "/Users/apple/Documents/DemoAppIcrecream/tap-on-phone-ios/IceCream/IceCream/ipogo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10049;
+				CURRENT_PROJECT_VERSION = 10102;
 				DEVELOPMENT_TEAM = 8869D8BJD2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -185,7 +186,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.49;
+				MARKETING_VERSION = 1.0.102;
 				PRODUCT_BUNDLE_IDENTIFIER = com.denovo.itop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -201,7 +202,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "/Users/apple/Documents/DemoAppIcrecream/tap-on-phone-ios/IceCream/IceCream/ipogo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10049;
+				CURRENT_PROJECT_VERSION = 10102;
 				DEVELOPMENT_TEAM = 8869D8BJD2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -218,7 +219,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.49;
+				MARKETING_VERSION = 1.0.102;
 				PRODUCT_BUNDLE_IDENTIFIER = com.denovo.itop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
