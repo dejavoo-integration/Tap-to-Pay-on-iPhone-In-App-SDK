@@ -13,15 +13,30 @@ class RegistrationViewController: BaseViewController {
     @IBOutlet weak var txt: UITextView!
     @IBOutlet weak var tpnTxtFld: UITextField!
     let readerInstance = IposgoReader()
+    @IBOutlet weak var merchantCode: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        merchantCode.keyboardType = .numberPad
         tpnTxtFld.keyboardType = .numberPad
         tpnTxtFld.delegate = self
-       NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
-        
+        merchantCode.delegate = self
+        NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
+    
+    @objc func appDidBecomeActive() {
+          print("App became active")
+        readerInstance.delegate = self
+        readerInstance.checkDeviceConfiguration()
+      }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self)
+    }
+      
+
     override func viewWillAppear(_ animated: Bool) {
         titlelb.text = titlename
     }
@@ -29,11 +44,7 @@ class RegistrationViewController: BaseViewController {
     override func viewWillDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self)
     }
-    @objc func appDidBecomeActive() {
-        print("App became active")
-        readerInstance.delegate = self
-        readerInstance.checkDeviceConfiguration()
-    }
+   
     deinit {
         // Remove observers when the view controller is deallocated
         NotificationCenter.default.removeObserver(self)
@@ -49,10 +60,18 @@ class RegistrationViewController: BaseViewController {
             return
         }
         
+        guard nullStringToEmpty(string: merchantCode.text) != "" else {
+            let alert = UIAlertController(title: "Alert", message: "Enter Merchant Code", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
         LoaDer.showOverlay(view: self.view)
-        let payload = RegisterData(tpn: tpnTxtFld.text ?? "", merchantCode: "000306476828")
+        let payload = RegisterData(tpn: nullStringToEmpty(string: tpnTxtFld.text), merchantCode: nullStringToEmpty(string: merchantCode.text))
         readerInstance.delegate = self
         Task {
+            
             readerInstance.downloadParameter(param: payload)
         }
         
