@@ -13,12 +13,16 @@ class RegistrationViewController: BaseViewController {
     @IBOutlet weak var txt: UITextView!
     @IBOutlet weak var tpnTxtFld: UITextField!
     let readerInstance = IposgoReader()
+    @IBOutlet weak var merchantCode: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        merchantCode.keyboardType = .numberPad
         tpnTxtFld.keyboardType = .numberPad
         tpnTxtFld.delegate = self
+        merchantCode.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
     
@@ -48,8 +52,16 @@ class RegistrationViewController: BaseViewController {
             self.present(alert, animated: true, completion: nil)
             return
         }
+        
+        guard nullStringToEmpty(string: merchantCode.text) != "" else {
+            let alert = UIAlertController(title: "Alert", message: "Enter Merchant Code", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
         LoaDer.showOverlay(view: self.view)
-        let payload = RegisterData(tpn: "544425158338", merchantCode: "393670256150")
+        let payload = RegisterData(tpn: nullStringToEmpty(string: tpnTxtFld.text), merchantCode: nullStringToEmpty(string: merchantCode.text))
         readerInstance.delegate = self
         Task {
             
