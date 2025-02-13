@@ -20,13 +20,13 @@ class CollectionListVC: BaseViewController {
     @IBOutlet weak var clearButton:UIButton!
     
     let readerInstance = IposgoReader()
-    var currentCode: String?
     var tranType: TransType = .SALE
     var tpn: String?
     var activityView: UIActivityIndicatorView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         clearButton.isHidden = true
         checkoutView.clipsToBounds = true
         checkoutView.layer.cornerRadius = 15
@@ -34,22 +34,21 @@ class CollectionListVC: BaseViewController {
         checkoutView.layer.borderWidth = 0.5
         
         checkoutView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-        collectionList = [CollectionList(collectionName: "Bat", collectionImage: "bat", collectionCount: 0,price: 10),
-                          CollectionList(collectionName: "Bike", collectionImage: "bike", collectionCount: 0,price: 20),
-                          CollectionList(collectionName: "Car", collectionImage: "car", collectionCount: 0,price: 30),
-                          CollectionList(collectionName: "Laptop", collectionImage: "loptop", collectionCount: 0,price: 50),
-                          CollectionList(collectionName: "Ring", collectionImage: "ring", collectionCount: 0,price: 10),
-                          CollectionList(collectionName: "Mobile", collectionImage: "mobile", collectionCount: 0,price: 20),
+        collectionList = [CollectionList(collectionName: "Mint Chocolate Chip", collectionImage: "Item1", collectionCount: 0,price: 10),
+                          CollectionList(collectionName: "Cookies and Cream", collectionImage: "Item2", collectionCount: 0,price: 20),
+                          CollectionList(collectionName: "Strawberry Swirl", collectionImage: "Item3", collectionCount: 0,price: 30),
+                          CollectionList(collectionName: "Rocky Road", collectionImage: "Item4", collectionCount: 0,price: 50),
+                          CollectionList(collectionName: "Salted Caramel", collectionImage: "Item5", collectionCount: 0,price: 10),
+                          CollectionList(collectionName: "Butter Pecan", collectionImage: "Item6", collectionCount: 0,price: 20),
         ]
         collectionListBase = collectionList
-        currentCode = "USD"
         tranType = .SALE
         cellRegister()
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.tranType = tranTypee
+        self.tranType = txnType
         chechoutHeightContrain.constant = 0
         clearData()
         setTitlelb()
@@ -78,13 +77,13 @@ class CollectionListVC: BaseViewController {
         let AMT = calculateAmountto100_String(totalAmount.dollarString) ?? ""
         let TAMT = String(format: "%.2f", totalAmount)
         if isSelectedCollection(){
-            prossedOrder(amount: TAMT, AMT: AMT)
+            proceedOrder(amount: TAMT, AMT: AMT)
         }else{
             showAlert(title: "Alert", msg: "Enter Amount")
         }
     }
     
-    func prossedOrder(amount: String, AMT: String){
+    func proceedOrder(amount: String, AMT: String){
         if getisRegistered(){
             print("Total Amount:\(amount),  Int Amout: \(AMT)")
             checkSaleType(amount: amount)
@@ -108,8 +107,7 @@ class CollectionListVC: BaseViewController {
 extension CollectionListVC: IposgoDelegate {
     
     func didReceiveError(error: String?, code: Int?)  {
-        
-        print("&&&Invoke App Error Collectio vc:",error as Any)
+    
         DispatchQueue.main.async {
             LoaDer.hideOverlayView()
         }
@@ -130,7 +128,7 @@ extension CollectionListVC: IposgoDelegate {
     }
     
     func didReceiveSuccessData(message: String?, responseDict: [String : Any]?) {
-        print("&&&didReceiveSuccessData Collectio vc")
+       
         DispatchQueue.main.async { [self] in
             LoaDer.hideOverlayView()
             print("data....responseDict:\(String(describing: responseDict))")

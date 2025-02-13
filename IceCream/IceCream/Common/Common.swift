@@ -12,7 +12,7 @@ import IposgoSDK
 let screenWidth = UIScreen.main.bounds.width
 let screenHeight = UIScreen.main.bounds.height
 var titlename:String?
-var tranTypee: TransType = .SALE
+var txnType: TransType = .SALE
 
 
 struct CollectionList {
@@ -28,13 +28,24 @@ struct MenuItem {
     var image: String?
 }
 
+//MARK: - Register Param
+struct RegisterData : Register {
+  var tpn: String
+  var merchantCode: String
+}
+
+//MARK: -Sale param
 struct TxnData : PayloadParameter {
+  
     var amount: String
     var tipAmount: String?
     var currentCode: CurrencyCode
     var tranType: TransType
+    var email: String?
+    var phoneNo: String?
 }
 
+//MARK: -Ticket param
 struct TicketTxnData : TicketPayloadParameter {
     
     var amount: String
@@ -42,18 +53,16 @@ struct TicketTxnData : TicketPayloadParameter {
     var currentCode: CurrencyCode
     var tranType: TransType
     var rrn: String
+    var email: String?
+    var phoneNo: String?
     
 }
-
+//MARK: - VOID Param
 struct VoidTxnData : VoidPayloadParameter {
     var rrn: String
     var tranType: TransType
-}
-
-//MARK: - Register [Registeration]
-struct RegisterData : Register {
-  var tpn: String
-  var merchantCode: String
+    var email: String?
+    var phoneNo: String?
 }
 
 //Alert function in shared class

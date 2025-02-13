@@ -1459,6 +1459,122 @@
           },
           {
             "kind": "Var",
+            "name": "phoneNo",
+            "printedName": "phoneNo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK16PayloadParameterP7phoneNoSSSgvp",
+            "mangledName": "$s9IposgoSDK16PayloadParameterP7phoneNoSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK16PayloadParameterP7phoneNoSSSgvg",
+                "mangledName": "$s9IposgoSDK16PayloadParameterP7phoneNoSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.PayloadParameter>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.PayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "email",
+            "printedName": "email",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK16PayloadParameterP5emailSSSgvp",
+            "mangledName": "$s9IposgoSDK16PayloadParameterP5emailSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK16PayloadParameterP5emailSSSgvg",
+                "mangledName": "$s9IposgoSDK16PayloadParameterP5emailSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.PayloadParameter>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.PayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "currentCode",
             "printedName": "currentCode",
             "children": [
@@ -1894,6 +2010,122 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "phoneNo",
+            "printedName": "phoneNo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK18StatusCheckPayloadP7phoneNoSSSgvp",
+            "mangledName": "$s9IposgoSDK18StatusCheckPayloadP7phoneNoSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK18StatusCheckPayloadP7phoneNoSSSgvg",
+                "mangledName": "$s9IposgoSDK18StatusCheckPayloadP7phoneNoSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.StatusCheckPayload>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.StatusCheckPayload>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "email",
+            "printedName": "email",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK18StatusCheckPayloadP5emailSSSgvp",
+            "mangledName": "$s9IposgoSDK18StatusCheckPayloadP5emailSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK18StatusCheckPayloadP5emailSSSgvg",
+                "mangledName": "$s9IposgoSDK18StatusCheckPayloadP5emailSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.StatusCheckPayload>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.StatusCheckPayload>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "prepareDict",
             "printedName": "prepareDict()",
@@ -2213,6 +2445,122 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "phoneNo",
+            "printedName": "phoneNo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK22TicketPayloadParameterP7phoneNoSSSgvp",
+            "mangledName": "$s9IposgoSDK22TicketPayloadParameterP7phoneNoSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK22TicketPayloadParameterP7phoneNoSSSgvg",
+                "mangledName": "$s9IposgoSDK22TicketPayloadParameterP7phoneNoSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.TicketPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.TicketPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "email",
+            "printedName": "email",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK22TicketPayloadParameterP5emailSSSgvp",
+            "mangledName": "$s9IposgoSDK22TicketPayloadParameterP5emailSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK22TicketPayloadParameterP5emailSSSgvg",
+                "mangledName": "$s9IposgoSDK22TicketPayloadParameterP5emailSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.TicketPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.TicketPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "prepareDict",
             "printedName": "prepareDict()",
@@ -2379,6 +2727,122 @@
                 "declKind": "Accessor",
                 "usr": "s:9IposgoSDK20VoidPayloadParameterP3rrnSSvg",
                 "mangledName": "$s9IposgoSDK20VoidPayloadParameterP3rrnSSvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.VoidPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.VoidPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "phoneNo",
+            "printedName": "phoneNo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK20VoidPayloadParameterP7phoneNoSSSgvp",
+            "mangledName": "$s9IposgoSDK20VoidPayloadParameterP7phoneNoSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK20VoidPayloadParameterP7phoneNoSSSgvg",
+                "mangledName": "$s9IposgoSDK20VoidPayloadParameterP7phoneNoSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.VoidPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.VoidPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "email",
+            "printedName": "email",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK20VoidPayloadParameterP5emailSSSgvp",
+            "mangledName": "$s9IposgoSDK20VoidPayloadParameterP5emailSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK20VoidPayloadParameterP5emailSSSgvg",
+                "mangledName": "$s9IposgoSDK20VoidPayloadParameterP5emailSSSgvg",
                 "moduleName": "IposgoSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.VoidPayloadParameter>",
                 "sugared_genericSig": "<Self where Self : IposgoSDK.VoidPayloadParameter>",

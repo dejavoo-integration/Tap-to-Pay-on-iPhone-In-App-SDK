@@ -68,6 +68,8 @@ public func nullStringToEmpty(string: Swift.String?) -> Swift.String
 public protocol PayloadParameter : IposgoSDK.Command {
   var amount: Swift.String { get }
   var tipAmount: Swift.String? { get }
+  var phoneNo: Swift.String? { get }
+  var email: Swift.String? { get }
   var currentCode: IposgoSDK.CurrencyCode { get }
   var tranType: IposgoSDK.TransType { get }
 }
@@ -78,6 +80,8 @@ public protocol Register : IposgoSDK.RegisterProtocol {
 public protocol StatusCheckPayload : IposgoSDK.StatusCheck {
   var txRefNo: Swift.String { get }
   var txnTimeStamp: Swift.String { get }
+  var phoneNo: Swift.String? { get }
+  var email: Swift.String? { get }
 }
 public protocol TicketPayloadParameter : IposgoSDK.Command {
   var amount: Swift.String { get }
@@ -85,10 +89,14 @@ public protocol TicketPayloadParameter : IposgoSDK.Command {
   var currentCode: IposgoSDK.CurrencyCode { get }
   var tranType: IposgoSDK.TransType { get }
   var rrn: Swift.String { get }
+  var phoneNo: Swift.String? { get }
+  var email: Swift.String? { get }
 }
 public protocol VoidPayloadParameter : IposgoSDK.CommandVoid {
   var tranType: IposgoSDK.TransType { get }
   var rrn: Swift.String { get }
+  var phoneNo: Swift.String? { get }
+  var email: Swift.String? { get }
 }
 extension IposgoSDK.PayloadParameter {
   public func prepareDict() -> [Swift.String : Swift.String]

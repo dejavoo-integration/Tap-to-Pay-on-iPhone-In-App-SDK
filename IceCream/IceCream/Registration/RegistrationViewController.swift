@@ -9,6 +9,7 @@ import UIKit
 import IposgoSDK
 
 class RegistrationViewController: BaseViewController {
+    
     @IBOutlet weak var titlelb:UILabel!
     @IBOutlet weak var txt: UITextView!
     @IBOutlet weak var tpnTxtFld: UITextField!
@@ -27,7 +28,7 @@ class RegistrationViewController: BaseViewController {
     }
     
     @objc func appDidBecomeActive() {
-          print("App became active")
+         
         readerInstance.delegate = self
         readerInstance.checkDeviceConfiguration()
       }
@@ -84,9 +85,10 @@ class RegistrationViewController: BaseViewController {
 extension RegistrationViewController: IposgoDelegate {
 
     func didReceiveError(error: String?, code: Int?)  {
-        print("&&&Error register vc")
+       
         print(">>>>Invoke App Error:",error as Any)
-        DispatchQueue.main.async { [self] in
+        
+        DispatchQueue.main.async {
             LoaDer.hideOverlayView()
         }
         switch nullStringToEmpty(string: error) {
@@ -109,9 +111,10 @@ extension RegistrationViewController: IposgoDelegate {
     
     func didReceiveSuccessData(message: String?, responseDict: [String : Any]?) {
        
-        print("&&&didReceiveSuccessData register vc")
+       
+        
         print(">>> Invoke App Success:  \(String(describing: message))")
-        print(">>>RESponse",responseDict)
+        print(">>>RESponse",responseDict as Any)
         
         
         DispatchQueue.main.async { [self] in
@@ -133,23 +136,23 @@ extension RegistrationViewController: IposgoDelegate {
     }
     
     func showAlertAction(title: String, message: String){
+        
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action:UIAlertAction!) in
                 let VC = self.storyboard?.instantiateViewController(identifier: "CollectionListVC") as! CollectionListVC
                 titlename = "Sale"
                 VC.tranType = .SALE
                 self.navigationController?.pushViewController(VC, animated: true)
-            //self.routetoCollectionVC()
+           
         }))
         
-        //alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     func routetoCollectionVC(){
         if let targetVC = self.navigationController?.viewControllers.first(where: { $0 is CollectionListVC }) {
             self.navigationController?.popToViewController(targetVC, animated: true)
             titlename = "Sale"
-            tranTypee = .SALE
+            txnType = .SALE
             targetVC.viewWillAppear(true)
         }else{
             let VC = self.storyboard?.instantiateViewController(identifier: "CollectionListVC") as! CollectionListVC
@@ -163,6 +166,7 @@ extension RegistrationViewController: IposgoDelegate {
 //MARK: - UITextFieldDelegate
 @available(iOS 15.4, *)
 extension RegistrationViewController : UITextFieldDelegate {
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
          textField.resignFirstResponder()
          return true

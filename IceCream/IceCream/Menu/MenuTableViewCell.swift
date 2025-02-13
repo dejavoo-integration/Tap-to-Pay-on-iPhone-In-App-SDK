@@ -8,8 +8,10 @@
 import UIKit
 
 class MenuTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var titlelb:UILabel!
     @IBOutlet weak var imagetitle:UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

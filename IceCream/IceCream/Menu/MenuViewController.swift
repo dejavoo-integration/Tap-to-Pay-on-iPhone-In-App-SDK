@@ -11,10 +11,12 @@ protocol isClickMenuPassData{
     func passData(data:MenuItem)
 }
 class MenuViewController: UIViewController {
-var MenuItems : [MenuItem] = []
+    
+    var MenuItems : [MenuItem] = []
     @IBOutlet weak var tableview:UITableView!
     @IBOutlet var shadowView: UIView!
     var menuDelegate : isClickMenuPassData?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         MenuItems = [MenuItem(title: "Registration",image: "list.clipboard.fill"),

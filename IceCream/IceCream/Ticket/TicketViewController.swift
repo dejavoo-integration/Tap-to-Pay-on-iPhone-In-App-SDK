@@ -37,7 +37,7 @@ class TicketViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         titlelb.text = titlename
-        tranType = tranTypee
+        tranType = txnType
         
         voidTicketBut.setTitle(titlename, for: .normal)
         
@@ -163,7 +163,7 @@ extension TicketViewController: IposgoDelegate {
     func didReceiveError(error: String?, code: Int?)  {
         
         print(">>>>Invoke App Error:",error as Any)
-        DispatchQueue.main.async { [self] in
+        DispatchQueue.main.async {
             LoaDer.hideOverlayView()
         }
         switch nullStringToEmpty(string: error) {
@@ -207,12 +207,9 @@ extension TicketViewController: IposgoDelegate {
                 }
             } else {
                 print("message:\(nullStringToEmpty(string: message))")
-                let msg = nullStringToEmpty(string: message)
-               // showAlert(title: "", msg: msg)
+               
             }
         }
-        
-        
     }
     
     func clearTxtFld() {

@@ -79,7 +79,6 @@ extension CollectionListVC: UITableViewDataSource,UITableViewDelegate {
     
     func showCheckoutPrice(){
         let totalPrice:Double = self.totalprice()
-        print("總共花費:\(totalPrice)")
         checkoutPrice.text = "Total Price: $ \(totalPrice)"
         showBottomView()
     }

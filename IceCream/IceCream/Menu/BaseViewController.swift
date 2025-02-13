@@ -13,9 +13,10 @@ class BaseViewController: UIViewController, isClickMenuPassData {
     var topView: UIView?
     var menuViewController: MenuViewController!
     var menuView: UIView!
-    
     var passdata1:isClickMenuPassData?
     @IBOutlet var shadowView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -73,16 +74,16 @@ extension BaseViewController{
     func routeToTicketandVoid(title: String) {
         titlename = title
         if title == "Ticket" {
-            tranTypee = .TICKET
+            txnType = .TICKET
         }else{
-            tranTypee = .VOID
+            txnType = .VOID
         }
         if let targetVC = navigationController?.viewControllers.first(where: { $0 is TicketViewController }) {
             navigationController?.popToViewController(targetVC, animated: true)
             targetVC.viewWillAppear(true)
         }else{
             let VC = storyboard?.instantiateViewController(identifier: "TicketViewController") as! TicketViewController
-            VC.tranType = tranTypee
+            VC.tranType = txnType
             navigationController?.pushViewController(VC, animated: true)
         }
     }
@@ -90,13 +91,13 @@ extension BaseViewController{
     func routeToSale_Refund(title: String) {
         titlename = title
         if title == "Sale" {
-            tranTypee = .SALE
+            txnType = .SALE
         }else if title == "Refund" {
-            tranTypee = .REFUND
+            txnType = .REFUND
         }else if title == "PreAuth" {
-            tranTypee = .PRE_AUTH
+            txnType = .PRE_AUTH
         }else{
-            tranTypee = .SALE
+            txnType = .SALE
         }
         if let targetVC = navigationController?.viewControllers.first(where: { $0 is CollectionListVC }) {
             navigationController?.popToViewController(targetVC, animated: true)
