@@ -94,7 +94,7 @@ class CollectionListVC: BaseViewController {
     
     func checkSaleType(amount: String){
         readerInstance.delegate = self
-        let payload = TxnData(amount: amount, tipAmount: "", currentCode: .usd, tranType: tranType)
+        let payload = TxnData(amount: amount, tipAmount: "", currencyCode: .usd, tranType: tranType)
         print(">>>payload",payload)
         LoaDer.showOverlay(view: self.view)
         readerInstance.startTransaction(param: payload)

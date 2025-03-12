@@ -70,7 +70,7 @@ public protocol PayloadParameter : IposgoSDK.Command {
   var tipAmount: Swift.String? { get }
   var phoneNo: Swift.String? { get }
   var email: Swift.String? { get }
-  var currentCode: IposgoSDK.CurrencyCode { get }
+  var currencyCode: IposgoSDK.CurrencyCode { get }
   var tranType: IposgoSDK.TransType { get }
 }
 public protocol Register : IposgoSDK.RegisterProtocol {
@@ -86,7 +86,7 @@ public protocol StatusCheckPayload : IposgoSDK.StatusCheck {
 public protocol TicketPayloadParameter : IposgoSDK.Command {
   var amount: Swift.String { get }
   var tipAmount: Swift.String? { get }
-  var currentCode: IposgoSDK.CurrencyCode { get }
+  var currencyCode: IposgoSDK.CurrencyCode { get }
   var tranType: IposgoSDK.TransType { get }
   var rrn: Swift.String { get }
   var phoneNo: Swift.String? { get }
@@ -114,7 +114,7 @@ extension IposgoSDK.TicketPayloadParameter {
   public func prepareDict() -> [Swift.String : Swift.String]
 }
 public protocol Command : Swift.Decodable, Swift.Encodable {
-  var currentCode: IposgoSDK.CurrencyCode { get }
+  var currencyCode: IposgoSDK.CurrencyCode { get }
   var tranType: IposgoSDK.TransType { get }
   func prepareDict() -> [Swift.String : Swift.String]
   func prepareString() throws -> Swift.String?

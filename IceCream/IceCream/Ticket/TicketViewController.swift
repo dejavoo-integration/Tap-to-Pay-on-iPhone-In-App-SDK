@@ -63,7 +63,7 @@ class TicketViewController: BaseViewController {
         switch tranType {
             
         case .TICKET:
-            let payload = TicketTxnData(amount: amtTxtFld.text ?? "", tipAmount: tip.text,currentCode: .usd, tranType: .TICKET, rrn: rrnTxtFld.text ?? "")
+            let payload = TicketTxnData(amount: amtTxtFld.text ?? "", tipAmount: tip.text,currencyCode: .usd, tranType: .TICKET, rrn: rrnTxtFld.text ?? "")
             LoaDer.showOverlay(view: self.view)
             print(">>>payload",payload)
             readerInstance.startTicket(param: payload)

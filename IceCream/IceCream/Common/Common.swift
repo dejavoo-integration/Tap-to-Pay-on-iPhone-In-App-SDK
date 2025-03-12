@@ -39,7 +39,7 @@ struct TxnData : PayloadParameter {
   
     var amount: String
     var tipAmount: String?
-    var currentCode: CurrencyCode
+    var currencyCode: CurrencyCode
     var tranType: TransType
     var email: String?
     var phoneNo: String?
@@ -50,7 +50,7 @@ struct TicketTxnData : TicketPayloadParameter {
     
     var amount: String
     var tipAmount: String?
-    var currentCode: CurrencyCode
+    var currencyCode: CurrencyCode
     var tranType: TransType
     var rrn: String
     var email: String?
