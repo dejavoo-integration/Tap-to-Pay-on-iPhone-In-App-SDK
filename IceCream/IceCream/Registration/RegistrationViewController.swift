@@ -52,6 +52,7 @@ class RegistrationViewController: BaseViewController {
     }
     
     @IBAction func registerDeviceAC(_ sender: UIButton) {
+        
         self.tpnTxtFld.endEditing(true)
         
         guard nullStringToEmpty(string: tpnTxtFld.text) != "" else {
