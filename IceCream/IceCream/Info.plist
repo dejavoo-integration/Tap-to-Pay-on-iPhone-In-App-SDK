@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Enviroment</key>
-	<string>DEV</string>
+	<string>UAT</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
