@@ -25,6 +25,10 @@ class RegistrationViewController: BaseViewController {
         tpnTxtFld.delegate = self
         merchantCode.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
+        
+        tpnTxtFld.text = "794525188615"
+        merchantCode.text = "560445852606"
+        
     }
     
     @objc func appDidBecomeActive() {
@@ -98,6 +102,7 @@ extension RegistrationViewController: IposgoDelegate {
             return
             
         default:
+            
             DispatchQueue.main.async { [self] in
               
                 let alert = UIAlertController(title: "Alert", message: nullStringToEmpty(string: error), preferredStyle: UIAlertController.Style.alert)
@@ -143,6 +148,7 @@ extension RegistrationViewController: IposgoDelegate {
                 let VC = self.storyboard?.instantiateViewController(identifier: "CollectionListVC") as! CollectionListVC
                 titlename = "Sale"
                 VC.tranType = .SALE
+            txnType = .SALE
                 self.navigationController?.pushViewController(VC, animated: true)
            
         }))
@@ -154,6 +160,7 @@ extension RegistrationViewController: IposgoDelegate {
             self.navigationController?.popToViewController(targetVC, animated: true)
             titlename = "Sale"
             txnType = .SALE
+          
             targetVC.viewWillAppear(true)
         }else{
             let VC = self.storyboard?.instantiateViewController(identifier: "CollectionListVC") as! CollectionListVC
