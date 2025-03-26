@@ -26,8 +26,8 @@ class RegistrationViewController: BaseViewController {
         merchantCode.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
         
-        tpnTxtFld.text = "794525188615"
-        merchantCode.text = "560445852606"
+        tpnTxtFld.text = "794525727905"
+        merchantCode.text = "834717865301"
         
     }
     
@@ -35,7 +35,7 @@ class RegistrationViewController: BaseViewController {
          
         readerInstance.delegate = self
         readerInstance.checkDeviceConfiguration()
-      }
+    }
     
     override func viewDidDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self)
@@ -148,7 +148,7 @@ extension RegistrationViewController: IposgoDelegate {
                 let VC = self.storyboard?.instantiateViewController(identifier: "CollectionListVC") as! CollectionListVC
                 titlename = "Sale"
                 VC.tranType = .SALE
-            txnType = .SALE
+                txnType = .SALE
                 self.navigationController?.pushViewController(VC, animated: true)
            
         }))
