@@ -132,6 +132,9 @@ class CustomerCopyViewController: UIViewController {
         if let viewControllers = navigationController?.viewControllers {
             for vc in viewControllers {
                 if let targetVC = vc as? CollectionListVC {
+                    titlename = "Sale"
+                    targetVC.tranType = .SALE
+                    txnType = .SALE
                     navigationController?.popToViewController(targetVC, animated: true)
                     break
                 }

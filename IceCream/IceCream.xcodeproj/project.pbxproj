@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		186FF99D2D929F1400C58619 /* IposgoSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186FF99B2D929F1200C58619 /* IposgoSDK.xcframework */; };
-		186FF99E2D929F1400C58619 /* IposgoSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 186FF99B2D929F1200C58619 /* IposgoSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		187D05162D9543BB005D4128 /* IposgoSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187D05142D9543B3005D4128 /* IposgoSDK.xcframework */; };
+		187D05172D9543BB005D4128 /* IposgoSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 187D05142D9543B3005D4128 /* IposgoSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +18,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				186FF99E2D929F1400C58619 /* IposgoSDK.xcframework in Embed Frameworks */,
+				187D05172D9543BB005D4128 /* IposgoSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -26,7 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		186FF99B2D929F1200C58619 /* IposgoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IposgoSDK.xcframework; sourceTree = "<group>"; };
+		187D05142D9543B3005D4128 /* IposgoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IposgoSDK.xcframework; sourceTree = "<group>"; };
 		7E671C1E2D50D2A400505427 /* IceCream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				186FF99D2D929F1400C58619 /* IposgoSDK.xcframework in Frameworks */,
+				187D05162D9543BB005D4128 /* IposgoSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +66,7 @@
 		7E671C152D50D2A400505427 = {
 			isa = PBXGroup;
 			children = (
-				186FF99B2D929F1200C58619 /* IposgoSDK.xcframework */,
+				187D05142D9543B3005D4128 /* IposgoSDK.xcframework */,
 				7E671C202D50D2A400505427 /* IceCream */,
 				7E671C1F2D50D2A400505427 /* Products */,
 			);
