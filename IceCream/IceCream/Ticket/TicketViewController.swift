@@ -20,7 +20,7 @@ class TicketViewController: BaseViewController {
     @IBOutlet weak var tip: UITextField!
     @IBOutlet weak var amtTxtFld: UITextField!
     let readerInstance = IposgoReader()
-    
+    let activityIndicator = UIActivityIndicatorView(style: .large)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +39,14 @@ class TicketViewController: BaseViewController {
         titlelb.text = titlename
         tranType = txnType
         
+        // Set up the activity indicator
+                activityIndicator.center = self.view.center
+                activityIndicator.color = UIColor.black
+                activityIndicator.hidesWhenStopped = true
+                
+                // Add the activity indicator to the view
+                self.view.addSubview(activityIndicator)
+        
         voidTicketBut.setTitle(titlename, for: .normal)
         
         switch tranType {
@@ -56,6 +64,18 @@ class TicketViewController: BaseViewController {
         }
     }
     
+    // Call this function to start the loader
+        func startLoading() {
+            activityIndicator.startAnimating()
+            self.view.isUserInteractionEnabled = false // Optionally disable user interaction while loading
+        }
+        
+        // Call this function to stop the loader
+        func stopLoading() {
+            activityIndicator.stopAnimating()
+            self.view.isUserInteractionEnabled = true // Re-enable user interaction after loading
+        }
+    
     @IBAction func startTxn(_ sender: UIButton) {
         self.view.endEditing(true)
         
@@ -66,10 +86,12 @@ class TicketViewController: BaseViewController {
             let payload = TicketTxnData(amount: amtTxtFld.text ?? "", tipAmount: tip.text,currencyCode: .usd, tranType: .TICKET, rrn: rrnTxtFld.text ?? "")
             LoaDer.showOverlay(view: self.view)
             print(">>>payload",payload)
+            startLoading()
             readerInstance.startTicket(param: payload)
         default:
             let payload = VoidTxnData(rrn: rrnTxtFld.text ?? "",tranType: .VOID)
             print(">>>payload",payload)
+            startLoading()
             readerInstance.startVoid(param: payload)
         }
     }
@@ -163,8 +185,8 @@ extension TicketViewController: IposgoDelegate {
     func didReceiveError(error: String?, code: Int?)  {
         
         print(">>>>Invoke App Error:",error as Any)
-        DispatchQueue.main.async {
-            LoaDer.hideOverlayView()
+        DispatchQueue.main.async { [self] in
+            stopLoading()
         }
         switch nullStringToEmpty(string: error) {
             
@@ -190,21 +212,26 @@ extension TicketViewController: IposgoDelegate {
         print(">>> Invoke App Success:  \(String(describing: message))")
         print(">>>RESponse",responseDict as Any)
         DispatchQueue.main.async { [self] in
-            LoaDer.hideOverlayView()
+            stopLoading()
             print("data....responseDict:\(String(describing: responseDict))")
             if responseDict != nil || responseDict?.count ?? 0 > 0 {
-                let responseCode = responseDict?["HostResponseCode"] as? String
-                let HostResponseMessage = responseDict?["HostResponseMessage"] as? String
-                let Spin_Response = responseDict?["Spin_Response"] as? [String:Any] ?? [:]
-                let msg = Spin_Response["Message"] as? String ?? ""
-                let extadata = Spin_Response["ExtData"] as? [String:Any] ?? [:]
-                let AMT = extadata["TotalAmt"] as? String ?? ""
-                if responseCode == "00"{ // 00 sucess, not equal to zero is failure response code
-                    showAlert(title: msg, msg: "The transaction was completed successfully \(AMT)")
-                    clearTxtFld()
-                }else{
-                    showAlert(title: msg, msg: nullStringToEmpty(string: HostResponseMessage))
-                }
+//                let responseCode = responseDict?["HostResponseCode"] as? String
+//                let HostResponseMessage = responseDict?["HostResponseMessage"] as? String
+//                let Spin_Response = responseDict?["Spin_Response"] as? [String:Any] ?? [:]
+//                let msg = Spin_Response["Message"] as? String ?? ""
+//                let extadata = Spin_Response["ExtData"] as? [String:Any] ?? [:]
+//                let AMT = extadata["TotalAmt"] as? String ?? ""
+//                if responseCode == "00"{ // 00 sucess, not equal to zero is failure response code
+//                    showAlert(title: msg, msg: "The transaction was completed successfully \(AMT)")
+//                    clearTxtFld()
+//                }else{
+//                    showAlert(title: msg, msg: nullStringToEmpty(string: HostResponseMessage))
+//                }
+                
+                let VC = storyboard?.instantiateViewController(identifier: "CustomerCopyViewController") as! CustomerCopyViewController
+                VC.responseDict = responseDict
+                navigationController?.pushViewController(VC, animated: true)
+                
             } else {
                 print("message:\(nullStringToEmpty(string: message))")
                

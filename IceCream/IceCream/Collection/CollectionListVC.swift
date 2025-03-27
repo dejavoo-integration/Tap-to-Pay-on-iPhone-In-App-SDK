@@ -22,7 +22,8 @@ class CollectionListVC: BaseViewController {
     let readerInstance = IposgoReader()
     var tranType: TransType = .SALE
     var tpn: String?
-    var activityView: UIActivityIndicatorView?
+    let activityIndicator = UIActivityIndicatorView(style: .large)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,7 @@ class CollectionListVC: BaseViewController {
         checkoutView.layer.borderWidth = 0.5
         
         checkoutView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-        collectionList = [CollectionList(collectionName: "Mint Chocolate Chip", collectionImage: "Item1", collectionCount: 0,price: 10),
+        collectionList = [CollectionList(collectionName: "Mint Chocolate Chip", collectionImage: "Item1", collectionCount: 0,price: 17.25),
                           CollectionList(collectionName: "Cookies and Cream", collectionImage: "Item2", collectionCount: 0,price: 20),
                           CollectionList(collectionName: "Strawberry Swirl", collectionImage: "Item3", collectionCount: 0,price: 30),
                           CollectionList(collectionName: "Rocky Road", collectionImage: "Item4", collectionCount: 0,price: 50),
@@ -52,9 +53,29 @@ class CollectionListVC: BaseViewController {
         chechoutHeightContrain.constant = 0
         clearData()
         setTitlelb()
+        
+        // Set up the activity indicator
+                activityIndicator.center = self.view.center
+                activityIndicator.color = UIColor.black
+                activityIndicator.hidesWhenStopped = true
+                
+                // Add the activity indicator to the view
+                self.view.addSubview(activityIndicator)
     }
+    // Call this function to start the loader
+        func startLoading() {
+            activityIndicator.startAnimating()
+            self.view.isUserInteractionEnabled = false // Optionally disable user interaction while loading
+        }
+        
+        // Call this function to stop the loader
+        func stopLoading() {
+            activityIndicator.stopAnimating()
+            self.view.isUserInteractionEnabled = true // Re-enable user interaction after loading
+        }
     
     func setTitlelb(){
+        
         if titlename == "" || titlename == nil{
             titlelb.text = "Sale"
         }else{
@@ -92,11 +113,12 @@ class CollectionListVC: BaseViewController {
         }
     }
     
-    func checkSaleType(amount: String){
+    func checkSaleType(amount: String) {
         readerInstance.delegate = self
         let payload = TxnData(amount: amount, tipAmount: "", currencyCode: .usd, tranType: tranType)
         print(">>>payload",payload)
-        LoaDer.showOverlay(view: self.view)
+      
+        startLoading()
         readerInstance.startTransaction(param: payload)
     }
     
@@ -108,8 +130,8 @@ extension CollectionListVC: IposgoDelegate {
     
     func didReceiveError(error: String?, code: Int?)  {
     
-        DispatchQueue.main.async {
-            LoaDer.hideOverlayView()
+        DispatchQueue.main.async { [self] in
+            stopLoading()
         }
         switch nullStringToEmpty(string: error) {
             
@@ -129,22 +151,30 @@ extension CollectionListVC: IposgoDelegate {
     
     func didReceiveSuccessData(message: String?, responseDict: [String : Any]?) {
        
+       
+        
         DispatchQueue.main.async { [self] in
-            LoaDer.hideOverlayView()
+            
             print("data....responseDict:\(String(describing: responseDict))")
             if responseDict?.count ?? 0 > 0 {
+                stopLoading()
                 let responseCode = responseDict?["HostResponseCode"] as? String
                 let Spin_Response = responseDict?["Spin_Response"] as? [String:Any] ?? [:]
                 let msg = Spin_Response["Message"] as? String ?? ""
                
-                if responseCode == "00"{ // 00 sucess, not equal to zero is failure response code
-                    showAlertAction(title: msg, message: String(describing: responseDict))
-                }else{
-                    showAlert(title: msg, msg: String(describing: responseDict))
-                }
+//                if responseCode == "00"{ // 00 sucess, not equal to zero is failure response code
+//                    showAlertAction(title: msg, message: String(describing: responseDict))
+//                }else{
+//                    showAlert(title: msg, msg: String(describing: responseDict))
+//                }
+                
+                let VC = storyboard?.instantiateViewController(identifier: "CustomerCopyViewController") as! CustomerCopyViewController
+                VC.responseDict = responseDict
+                navigationController?.pushViewController(VC, animated: true)
+                
+                
             } else {
                 print("message:\(nullStringToEmpty(string: message))")
-               
             }
         }
     }

@@ -114,3 +114,4 @@ extension Double {
         return String(format: "%.2f", self)
     }
 }
+

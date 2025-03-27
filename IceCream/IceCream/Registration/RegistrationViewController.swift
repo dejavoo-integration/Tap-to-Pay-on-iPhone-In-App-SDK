@@ -26,8 +26,8 @@ class RegistrationViewController: BaseViewController {
         merchantCode.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
         
-        tpnTxtFld.text = "794525727905"
-        merchantCode.text = "834717865301"
+        tpnTxtFld.text = "794525543578"
+        merchantCode.text = "469849821415"
         
     }
     
@@ -116,16 +116,12 @@ extension RegistrationViewController: IposgoDelegate {
     }
     
     func didReceiveSuccessData(message: String?, responseDict: [String : Any]?) {
-       
-       
-        
+      
         print(">>> Invoke App Success:  \(String(describing: message))")
         print(">>>RESponse",responseDict as Any)
         
-        
         DispatchQueue.main.async { [self] in
-            
-            
+       
             LoaDer.hideOverlayView()
             
             if nullStringToEmpty(string: message) == "Device is ready for tap to pay now" {
@@ -136,8 +132,7 @@ extension RegistrationViewController: IposgoDelegate {
             } else {
                 self.txt.text = nullStringToEmpty(string: message)
             }
-            
-            
+   
         }
     }
     
@@ -155,6 +150,7 @@ extension RegistrationViewController: IposgoDelegate {
         
         self.present(alert, animated: true, completion: nil)
     }
+    
     func routetoCollectionVC(){
         if let targetVC = self.navigationController?.viewControllers.first(where: { $0 is CollectionListVC }) {
             self.navigationController?.popToViewController(targetVC, animated: true)
