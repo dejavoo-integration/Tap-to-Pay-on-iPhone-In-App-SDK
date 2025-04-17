@@ -215,19 +215,7 @@ extension TicketViewController: IposgoDelegate {
             stopLoading()
             print("data....responseDict:\(String(describing: responseDict))")
             if responseDict != nil || responseDict?.count ?? 0 > 0 {
-                //                let responseCode = responseDict?["HostResponseCode"] as? String
-                //                let HostResponseMessage = responseDict?["HostResponseMessage"] as? String
-                //                let Spin_Response = responseDict?["Spin_Response"] as? [String:Any] ?? [:]
-                //                let msg = Spin_Response["Message"] as? String ?? ""
-                //                let extadata = Spin_Response["ExtData"] as? [String:Any] ?? [:]
-                //                let AMT = extadata["TotalAmt"] as? String ?? ""
-                //                if responseCode == "00"{ // 00 sucess, not equal to zero is failure response code
-                //                    showAlert(title: msg, msg: "The transaction was completed successfully \(AMT)")
-                //                    clearTxtFld()
-                //                }else{
-                //                    showAlert(title: msg, msg: nullStringToEmpty(string: HostResponseMessage))
-                //                }
-                
+          
                 let VC = storyboard?.instantiateViewController(identifier: "CustomerCopyViewController") as! CustomerCopyViewController
                 VC.responseDict = responseDict
                 navigationController?.pushViewController(VC, animated: true)

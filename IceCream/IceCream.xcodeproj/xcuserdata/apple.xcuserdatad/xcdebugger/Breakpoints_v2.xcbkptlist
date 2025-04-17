@@ -3,4 +3,68 @@
    uuid = "56E2E3FB-E8E8-4A40-925B-0FA393B40BEC"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03D8959E-95DE-4993-80AA-C78E10AFFD7E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IceCream/Registration/RegistrationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "didReceiveError(error:code:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "03D8959E-95DE-4993-80AA-C78E10AFFD7E - dc94e69648be7ed5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IceCream.RegistrationViewController.didReceiveError(error: Swift.Optional&lt;Swift.String&gt;, code: Swift.Optional&lt;Swift.Int&gt;) -&gt; ()"
+                  moduleName = "IceCream.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/IceCream/tap-on-phone-ios/IceCream/IceCream/Registration/RegistrationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96">
+               </Location>
+               <Location
+                  uuid = "03D8959E-95DE-4993-80AA-C78E10AFFD7E - 67bf6f31a2e8da0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in IceCream.RegistrationViewController.didReceiveError(error: Swift.Optional&lt;Swift.String&gt;, code: Swift.Optional&lt;Swift.Int&gt;) -&gt; ()"
+                  moduleName = "IceCream.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/IceCream/tap-on-phone-ios/IceCream/IceCream/Registration/RegistrationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C181EE8C-7D02-49EE-B14B-DA95196DBFC4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IceCream/Registration/RegistrationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "didReceiveError(error:code:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

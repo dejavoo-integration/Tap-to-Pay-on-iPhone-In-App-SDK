@@ -44505,7 +44505,7 @@
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/DataManager\/ServerInterface\/PaymentSessionDelegate.swift",
       "kind": "Array",
-      "offset": 337,
+      "offset": 343,
       "length": 166,
       "value": "[0x30, 0x82, 0x01, 0x22, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x82, 0x01, 0x0f, 0x00]"
     },
@@ -46444,7 +46444,7 @@
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/DataManager\/ServerInterface\/PortalSessionDelegate.swift",
       "kind": "Array",
-      "offset": 335,
+      "offset": 341,
       "length": 166,
       "value": "[0x30, 0x82, 0x01, 0x22, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x82, 0x01, 0x0f, 0x00]"
     },
@@ -47389,91 +47389,91 @@
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87207,
+      "offset": 87198,
       "length": 9,
       "value": "\"BaseAmt\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87234,
+      "offset": 87225,
       "length": 7,
       "value": "\"Label\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87257,
+      "offset": 87248,
       "length": 5,
       "value": "\"Amt\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87283,
+      "offset": 87274,
       "length": 10,
       "value": "\"Currency\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87309,
+      "offset": 87300,
       "length": 5,
       "value": "\"Fee\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87330,
+      "offset": 87321,
       "length": 5,
       "value": "\"Tip\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87354,
+      "offset": 87345,
       "length": 8,
       "value": "\"TipFee\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87379,
+      "offset": 87370,
       "length": 6,
       "value": "\"Tax1\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87402,
+      "offset": 87393,
       "length": 6,
       "value": "\"Tax2\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87430,
+      "offset": 87421,
       "length": 11,
       "value": "\"FeeInTax1\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87463,
+      "offset": 87454,
       "length": 11,
       "value": "\"FeeInTax2\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87494,
+      "offset": 87485,
       "length": 9,
       "value": "\"BaseFee\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87520,
+      "offset": 87511,
       "length": 6,
       "value": "\"SFee\""
     },
@@ -47669,7 +47669,7 @@
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/DataManager\/ServerInterface\/StreamSessionDelegate.swift",
       "kind": "Array",
-      "offset": 340,
+      "offset": 347,
       "length": 166,
       "value": "[0x30, 0x82, 0x01, 0x22, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x82, 0x01, 0x0f, 0x00]"
     },

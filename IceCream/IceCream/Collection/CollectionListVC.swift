@@ -130,6 +130,9 @@ extension CollectionListVC: IposgoDelegate {
     
     func didReceiveError(error: String?, code: Int?)  {
     
+        print(">>>>Eroro",error)
+        
+        
         DispatchQueue.main.async { [self] in
             stopLoading()
         }
@@ -158,16 +161,7 @@ extension CollectionListVC: IposgoDelegate {
             print("data....responseDict:\(String(describing: responseDict))")
             if responseDict?.count ?? 0 > 0 {
                 stopLoading()
-                let responseCode = responseDict?["HostResponseCode"] as? String
-                let Spin_Response = responseDict?["Spin_Response"] as? [String:Any] ?? [:]
-                let msg = Spin_Response["Message"] as? String ?? ""
-               
-//                if responseCode == "00"{ // 00 sucess, not equal to zero is failure response code
-//                    showAlertAction(title: msg, message: String(describing: responseDict))
-//                }else{
-//                    showAlert(title: msg, msg: String(describing: responseDict))
-//                }
-                
+
                 let VC = storyboard?.instantiateViewController(identifier: "CustomerCopyViewController") as! CustomerCopyViewController
                 VC.responseDict = responseDict
                 navigationController?.pushViewController(VC, animated: true)
