@@ -26,8 +26,7 @@ class RegistrationViewController: BaseViewController {
         merchantCode.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
         
-        tpnTxtFld.text = "794525727905"
-        merchantCode.text = "834717865301"
+        
         
     }
     
