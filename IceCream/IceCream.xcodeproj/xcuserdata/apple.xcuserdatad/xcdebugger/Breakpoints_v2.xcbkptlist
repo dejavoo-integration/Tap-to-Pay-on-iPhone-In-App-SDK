@@ -23,52 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6E00C4F8-32B1-4818-8B9A-84351C784293"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "IceCream/Collection/CollectionListVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
-            landmarkName = "didReceiveSuccessData(message:responseDict:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6E00C4F8-32B1-4818-8B9A-84351C784293 - d43af5fd38cf8e94"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "IceCream.CollectionListVC.didReceiveSuccessData(message: Swift.Optional&lt;Swift.String&gt;, responseDict: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) -&gt; ()"
-                  moduleName = "IceCream.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/IceCream/tap-on-phone-ios/IceCream/IceCream/Collection/CollectionListVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "159"
-                  endingLineNumber = "159">
-               </Location>
-               <Location
-                  uuid = "6E00C4F8-32B1-4818-8B9A-84351C784293 - 815d2d4a95e4ef83"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in IceCream.CollectionListVC.didReceiveSuccessData(message: Swift.Optional&lt;Swift.String&gt;, responseDict: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) -&gt; ()"
-                  moduleName = "IceCream.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/IceCream/tap-on-phone-ios/IceCream/IceCream/Collection/CollectionListVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "161"
-                  endingLineNumber = "161">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "2DEA9CD6-9D0D-4DB8-B2AA-96353FAC4E0A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"

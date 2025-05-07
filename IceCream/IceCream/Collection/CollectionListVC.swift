@@ -159,15 +159,16 @@ extension CollectionListVC: IposgoDelegate {
         DispatchQueue.main.async { [self] in
             
             print("data....responseDict:\(String(describing: responseDict))")
-            stopLoading()
+           
             if responseDict?.count ?? 0 > 0 {
-            
+                stopLoading()
                 let VC = storyboard?.instantiateViewController(identifier: "CustomerCopyViewController") as! CustomerCopyViewController
                 VC.responseDict = responseDict
                 navigationController?.pushViewController(VC, animated: true)
                 
                 
             } else {
+                
                 print("message:\(nullStringToEmpty(string: message))")
             }
         }

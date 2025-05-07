@@ -212,10 +212,10 @@ extension TicketViewController: IposgoDelegate {
         print(">>> Invoke App Success:  \(String(describing: message))")
         print(">>>RESponse",responseDict as Any)
         DispatchQueue.main.async { [self] in
-            stopLoading()
+           
             print("data....responseDict:\(String(describing: responseDict))")
             if responseDict != nil || responseDict?.count ?? 0 > 0 {
-          
+                stopLoading()
                 let VC = storyboard?.instantiateViewController(identifier: "CustomerCopyViewController") as! CustomerCopyViewController
                 VC.responseDict = responseDict
                 navigationController?.pushViewController(VC, animated: true)
