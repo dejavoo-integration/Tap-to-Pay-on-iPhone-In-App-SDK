@@ -25,8 +25,7 @@ class RegistrationViewController: BaseViewController {
         tpnTxtFld.delegate = self
         merchantCode.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
-        
-        
+      
         
     }
     

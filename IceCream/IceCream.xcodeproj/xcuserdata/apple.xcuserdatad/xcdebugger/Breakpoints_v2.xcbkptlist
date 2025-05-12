@@ -34,36 +34,6 @@
             endingLineNumber = "136"
             landmarkName = "didReceiveError(error:code:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2DEA9CD6-9D0D-4DB8-B2AA-96353FAC4E0A - 96a167694730e8ac"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "IceCream.CollectionListVC.didReceiveError(error: Swift.Optional&lt;Swift.String&gt;, code: Swift.Optional&lt;Swift.Int&gt;) -&gt; ()"
-                  moduleName = "IceCream.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/IceCream/tap-on-phone-ios/IceCream/IceCream/Collection/CollectionListVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "136"
-                  endingLineNumber = "136">
-               </Location>
-               <Location
-                  uuid = "2DEA9CD6-9D0D-4DB8-B2AA-96353FAC4E0A - 6af75a60269b762a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in IceCream.CollectionListVC.didReceiveError(error: Swift.Optional&lt;Swift.String&gt;, code: Swift.Optional&lt;Swift.Int&gt;) -&gt; ()"
-                  moduleName = "IceCream.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/IceCream/tap-on-phone-ios/IceCream/IceCream/Collection/CollectionListVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "137"
-                  endingLineNumber = "137">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -80,36 +50,6 @@
             endingLineNumber = "135"
             landmarkName = "didReceiveError(error:code:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "467A1E93-61CE-4953-AD22-F2BD74423129 - 96a167694730e8ac"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "IceCream.CollectionListVC.didReceiveError(error: Swift.Optional&lt;Swift.String&gt;, code: Swift.Optional&lt;Swift.Int&gt;) -&gt; ()"
-                  moduleName = "IceCream.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/IceCream/tap-on-phone-ios/IceCream/IceCream/Collection/CollectionListVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "136"
-                  endingLineNumber = "136">
-               </Location>
-               <Location
-                  uuid = "467A1E93-61CE-4953-AD22-F2BD74423129 - 6af75a60269b762a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in IceCream.CollectionListVC.didReceiveError(error: Swift.Optional&lt;Swift.String&gt;, code: Swift.Optional&lt;Swift.Int&gt;) -&gt; ()"
-                  moduleName = "IceCream.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/IceCream/tap-on-phone-ios/IceCream/IceCream/Collection/CollectionListVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "137"
-                  endingLineNumber = "137">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
