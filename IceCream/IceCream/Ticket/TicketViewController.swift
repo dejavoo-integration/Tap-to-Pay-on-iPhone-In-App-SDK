@@ -87,6 +87,7 @@ class TicketViewController: BaseViewController {
             print(">>>payload",payload)
             startLoading()
             readerInstance.startTicket(param: payload)
+            
         default:
             let payload = VoidTxnData(rrn: rrnTxtFld.text ?? "",tranType: .VOID)
             print(">>>payload",payload)

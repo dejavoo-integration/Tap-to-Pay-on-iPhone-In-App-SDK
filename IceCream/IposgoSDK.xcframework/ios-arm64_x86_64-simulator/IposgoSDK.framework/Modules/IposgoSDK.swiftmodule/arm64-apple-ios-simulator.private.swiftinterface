@@ -220,7 +220,7 @@ extension IposgoSDK.IposgoReader {
   public func getListVoid_PreAuth(transactionType: IposgoSDK.TransType?)
 }
 extension IposgoSDK.IposgoReader {
-  public func rePrintOption(param: any IposgoSDK.Receipt)
+  public func sendReceipt(param: any IposgoSDK.Receipt)
 }
 extension IposgoSDK.IposgoReader {
   public func TipConfiguration() -> Swift.Bool

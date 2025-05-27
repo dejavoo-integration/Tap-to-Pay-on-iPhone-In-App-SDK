@@ -5150,8 +5150,8 @@
           },
           {
             "kind": "Function",
-            "name": "rePrintOption",
-            "printedName": "rePrintOption(param:)",
+            "name": "sendReceipt",
+            "printedName": "sendReceipt(param:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5166,8 +5166,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9IposgoSDK0A6ReaderC13rePrintOption5paramyAA7Receipt_p_tF",
-            "mangledName": "$s9IposgoSDK0A6ReaderC13rePrintOption5paramyAA7Receipt_p_tF",
+            "usr": "s:9IposgoSDK0A6ReaderC11sendReceipt5paramyAA0E0_p_tF",
+            "mangledName": "$s9IposgoSDK0A6ReaderC11sendReceipt5paramyAA0E0_p_tF",
             "moduleName": "IposgoSDK",
             "declAttributes": [
               "AccessControl"
