@@ -13,7 +13,6 @@ import IposgoSDK
 class TicketViewController: BaseViewController {
     
     @IBOutlet weak var voidTicketBut: UIButton!
-    
     @IBOutlet weak var titlelb:UILabel!
     var tranType : TransType?
     @IBOutlet weak var rrnTxtFld: UITextField!

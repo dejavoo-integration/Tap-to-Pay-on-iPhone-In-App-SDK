@@ -1922,6 +1922,258 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "Receipt",
+        "printedName": "Receipt",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "txId",
+            "printedName": "txId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK7ReceiptP4txIdSSvp",
+            "mangledName": "$s9IposgoSDK7ReceiptP4txIdSSvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "overriding": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK7ReceiptP4txIdSSvg",
+                "mangledName": "$s9IposgoSDK7ReceiptP4txIdSSvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.Receipt>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.Receipt>",
+                "protocolReq": true,
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "phoneNo",
+            "printedName": "phoneNo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK7ReceiptP7phoneNoSSSgvp",
+            "mangledName": "$s9IposgoSDK7ReceiptP7phoneNoSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "overriding": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK7ReceiptP7phoneNoSSSgvg",
+                "mangledName": "$s9IposgoSDK7ReceiptP7phoneNoSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.Receipt>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.Receipt>",
+                "protocolReq": true,
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "email",
+            "printedName": "email",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK7ReceiptP5emailSSSgvp",
+            "mangledName": "$s9IposgoSDK7ReceiptP5emailSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "overriding": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK7ReceiptP5emailSSSgvg",
+                "mangledName": "$s9IposgoSDK7ReceiptP5emailSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.Receipt>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.Receipt>",
+                "protocolReq": true,
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "prepareDict",
+            "printedName": "prepareDict()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9IposgoSDK7ReceiptPAAE11prepareDictSDyS2SGyF",
+            "mangledName": "$s9IposgoSDK7ReceiptPAAE11prepareDictSDyS2SGyF",
+            "moduleName": "IposgoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.Receipt>",
+            "sugared_genericSig": "<Self where Self : IposgoSDK.Receipt>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9IposgoSDK7ReceiptP",
+        "mangledName": "$s9IposgoSDK7ReceiptP",
+        "moduleName": "IposgoSDK",
+        "genericSig": "<τ_0_0 : IposgoSDK.ReprintProtocol>",
+        "sugared_genericSig": "<Self : IposgoSDK.ReprintProtocol>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReprintProtocol",
+            "printedName": "ReprintProtocol",
+            "usr": "s:9IposgoSDK15ReprintProtocolP",
+            "mangledName": "$s9IposgoSDK15ReprintProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "StatusCheckPayload",
         "printedName": "StatusCheckPayload",
         "children": [
@@ -3973,6 +4225,391 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "ReprintProtocol",
+        "printedName": "ReprintProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "txId",
+            "printedName": "txId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK15ReprintProtocolP4txIdSSvp",
+            "mangledName": "$s9IposgoSDK15ReprintProtocolP4txIdSSvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK15ReprintProtocolP4txIdSSvg",
+                "mangledName": "$s9IposgoSDK15ReprintProtocolP4txIdSSvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.ReprintProtocol>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.ReprintProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "phoneNo",
+            "printedName": "phoneNo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK15ReprintProtocolP7phoneNoSSSgvp",
+            "mangledName": "$s9IposgoSDK15ReprintProtocolP7phoneNoSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK15ReprintProtocolP7phoneNoSSSgvg",
+                "mangledName": "$s9IposgoSDK15ReprintProtocolP7phoneNoSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.ReprintProtocol>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.ReprintProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "email",
+            "printedName": "email",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK15ReprintProtocolP5emailSSSgvp",
+            "mangledName": "$s9IposgoSDK15ReprintProtocolP5emailSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK15ReprintProtocolP5emailSSSgvg",
+                "mangledName": "$s9IposgoSDK15ReprintProtocolP5emailSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.ReprintProtocol>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.ReprintProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "prepareDict",
+            "printedName": "prepareDict()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9IposgoSDK15ReprintProtocolP11prepareDictSDyS2SGyF",
+            "mangledName": "$s9IposgoSDK15ReprintProtocolP11prepareDictSDyS2SGyF",
+            "moduleName": "IposgoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.ReprintProtocol>",
+            "sugared_genericSig": "<Self where Self : IposgoSDK.ReprintProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "prepareString",
+            "printedName": "prepareString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9IposgoSDK15ReprintProtocolP13prepareStringSSSgyKF",
+            "mangledName": "$s9IposgoSDK15ReprintProtocolP13prepareStringSSSgyKF",
+            "moduleName": "IposgoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.ReprintProtocol>",
+            "sugared_genericSig": "<Self where Self : IposgoSDK.ReprintProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkIsValid",
+            "printedName": "checkIsValid()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9IposgoSDK15ReprintProtocolP12checkIsValidSbyF",
+            "mangledName": "$s9IposgoSDK15ReprintProtocolP12checkIsValidSbyF",
+            "moduleName": "IposgoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.ReprintProtocol>",
+            "sugared_genericSig": "<Self where Self : IposgoSDK.ReprintProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "print",
+            "printedName": "print()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9IposgoSDK15ReprintProtocolP5printyyF",
+            "mangledName": "$s9IposgoSDK15ReprintProtocolP5printyyF",
+            "moduleName": "IposgoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.ReprintProtocol>",
+            "sugared_genericSig": "<Self where Self : IposgoSDK.ReprintProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkIsValid",
+            "printedName": "checkIsValid()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9IposgoSDK15ReprintProtocolPAAE12checkIsValidSbyF",
+            "mangledName": "$s9IposgoSDK15ReprintProtocolPAAE12checkIsValidSbyF",
+            "moduleName": "IposgoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.ReprintProtocol>",
+            "sugared_genericSig": "<Self where Self : IposgoSDK.ReprintProtocol>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "prepareString",
+            "printedName": "prepareString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9IposgoSDK15ReprintProtocolPAAE13prepareStringSSSgyKF",
+            "mangledName": "$s9IposgoSDK15ReprintProtocolPAAE13prepareStringSSSgyKF",
+            "moduleName": "IposgoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.ReprintProtocol>",
+            "sugared_genericSig": "<Self where Self : IposgoSDK.ReprintProtocol>",
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "print",
+            "printedName": "print()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9IposgoSDK15ReprintProtocolPAAE5printyyF",
+            "mangledName": "$s9IposgoSDK15ReprintProtocolPAAE5printyyF",
+            "moduleName": "IposgoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.ReprintProtocol>",
+            "sugared_genericSig": "<Self where Self : IposgoSDK.ReprintProtocol>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9IposgoSDK15ReprintProtocolP",
+        "mangledName": "$s9IposgoSDK15ReprintProtocolP",
+        "moduleName": "IposgoSDK",
+        "genericSig": "<τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+        "sugared_genericSig": "<Self : Swift.Decodable, Self : Swift.Encodable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -4469,6 +5106,112 @@
             "declKind": "Func",
             "usr": "s:9IposgoSDK0A6ReaderC17downloadParameter5paramyAA8Register_p_tF",
             "mangledName": "$s9IposgoSDK0A6ReaderC17downloadParameter5paramyAA8Register_p_tF",
+            "moduleName": "IposgoSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getListVoid_PreAuth",
+            "printedName": "getListVoid_PreAuth(transactionType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "IposgoSDK.TransType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "IposgoSDK.TransType",
+                    "usr": "s:9IposgoSDK9TransTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9IposgoSDK0A6ReaderC19getListVoid_PreAuth15transactionTypeyAA05TransJ0OSg_tF",
+            "mangledName": "$s9IposgoSDK0A6ReaderC19getListVoid_PreAuth15transactionTypeyAA05TransJ0OSg_tF",
+            "moduleName": "IposgoSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "rePrintOption",
+            "printedName": "rePrintOption(param:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Receipt",
+                "printedName": "any IposgoSDK.Receipt",
+                "usr": "s:9IposgoSDK7ReceiptP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9IposgoSDK0A6ReaderC13rePrintOption5paramyAA7Receipt_p_tF",
+            "mangledName": "$s9IposgoSDK0A6ReaderC13rePrintOption5paramyAA7Receipt_p_tF",
+            "moduleName": "IposgoSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "TipConfiguration",
+            "printedName": "TipConfiguration()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9IposgoSDK0A6ReaderC16TipConfigurationSbyF",
+            "mangledName": "$s9IposgoSDK0A6ReaderC16TipConfigurationSbyF",
+            "moduleName": "IposgoSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "FeeConfiguration",
+            "printedName": "FeeConfiguration()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9IposgoSDK0A6ReaderC16FeeConfigurationSbyF",
+            "mangledName": "$s9IposgoSDK0A6ReaderC16FeeConfigurationSbyF",
             "moduleName": "IposgoSDK",
             "declAttributes": [
               "AccessControl"
@@ -41691,231 +42434,238 @@
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1848,
+      "offset": 1824,
+      "length": 21,
+      "value": "\"v2\/resend-ereceipt\/\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 1890,
       "length": 23,
       "value": "\"v2\/open-batch-filter\/\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1896,
+      "offset": 1938,
       "length": 25,
       "value": "\"v3\/batch-tipped-report\/\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1943,
+      "offset": 1985,
       "length": 26,
       "value": "\"v2\/batch-details-filter\/\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1996,
+      "offset": 2038,
       "length": 25,
       "value": "\"v1\/latest-closed-batch\/\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2075,
+      "offset": 2117,
       "length": 20,
       "value": "\"v2\/inventory\/items\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2128,
+      "offset": 2170,
       "length": 30,
       "value": "\"v2\/inventory\/items\/addOrEdit\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2186,
+      "offset": 2228,
       "length": 28,
       "value": "\"v2\/inventory\/items\/delete\/\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2247,
+      "offset": 2289,
       "length": 18,
       "value": "\"registerMerchant\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2797,
+      "offset": 2839,
       "length": 7,
       "value": "\"token\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2823,
+      "offset": 2865,
       "length": 9,
       "value": "\"ExpDate\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2851,
+      "offset": 2893,
       "length": 9,
       "value": "\"secCode\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2877,
+      "offset": 2919,
       "length": 7,
       "value": "\"PanNo\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2901,
+      "offset": 2943,
       "length": 7,
       "value": "\"Phone\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2925,
+      "offset": 2967,
       "length": 7,
       "value": "\"Label\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2947,
+      "offset": 2989,
       "length": 5,
       "value": "\"Amt\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2970,
+      "offset": 3012,
       "length": 8,
       "value": "\"ProfId\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2993,
+      "offset": 3035,
       "length": 5,
       "value": "\"Tpn\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3017,
+      "offset": 3059,
       "length": 9,
       "value": "\"TraceNo\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3046,
+      "offset": 3088,
       "length": 10,
       "value": "\"CardType\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3074,
+      "offset": 3116,
       "length": 8,
       "value": "\"TxType\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3103,
+      "offset": 3145,
       "length": 11,
       "value": "\"EntryMode\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3135,
+      "offset": 3177,
       "length": 11,
       "value": "\"DateNTime\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3167,
+      "offset": 3209,
       "length": 11,
       "value": "\"InvoiceTx\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3194,
+      "offset": 3236,
       "length": 6,
       "value": "\"SlNo\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3216,
+      "offset": 3258,
       "length": 6,
       "value": "\"Type\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3241,
+      "offset": 3283,
       "length": 9,
       "value": "\"BaseAmt\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3270,
+      "offset": 3312,
       "length": 10,
       "value": "\"Currency\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3299,
+      "offset": 3341,
       "length": 9,
       "value": "\"AmtData\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3324,
+      "offset": 3366,
       "length": 6,
       "value": "\"Card\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3352,
+      "offset": 3394,
       "length": 12,
       "value": "\"CardHolder\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3382,
+      "offset": 3424,
       "length": 8,
       "value": "\"Amount\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3410,
+      "offset": 3452,
       "length": 10,
       "value": "\"TxDetail\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3442,
+      "offset": 3484,
       "length": 12,
       "value": "\"DeviceInfo\""
     },
@@ -45861,6 +46611,69 @@
       "value": "\"Voided\""
     },
     {
+      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 8423,
+      "length": 16,
+      "value": "\"tpnBatchNumber\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 8455,
+      "length": 9,
+      "value": "\"txnType\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 8487,
+      "length": 15,
+      "value": "\"invoiceNumber\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 8520,
+      "length": 11,
+      "value": "\"maskedPan\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 8552,
+      "length": 14,
+      "value": "\"approvalCode\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 8628,
+      "length": 9,
+      "value": "\"isPrint\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 8655,
+      "length": 7,
+      "value": "\"email\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 8680,
+      "length": 7,
+      "value": "\"phone\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 8704,
+      "length": 6,
+      "value": "\"txId\""
+    },
+    {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/DeviceAlert\/SoftwareFaliure\/SFConstant.swift",
       "kind": "StringLiteral",
       "offset": 171,
@@ -47389,91 +48202,91 @@
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87198,
+      "offset": 86740,
       "length": 9,
       "value": "\"BaseAmt\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87225,
+      "offset": 86767,
       "length": 7,
       "value": "\"Label\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87248,
+      "offset": 86790,
       "length": 5,
       "value": "\"Amt\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87274,
+      "offset": 86816,
       "length": 10,
       "value": "\"Currency\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87300,
+      "offset": 86842,
       "length": 5,
       "value": "\"Fee\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87321,
+      "offset": 86863,
       "length": 5,
       "value": "\"Tip\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87345,
+      "offset": 86887,
       "length": 8,
       "value": "\"TipFee\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87370,
+      "offset": 86912,
       "length": 6,
       "value": "\"Tax1\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87393,
+      "offset": 86935,
       "length": 6,
       "value": "\"Tax2\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87421,
+      "offset": 86963,
       "length": 11,
       "value": "\"FeeInTax1\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87454,
+      "offset": 86996,
       "length": 11,
       "value": "\"FeeInTax2\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87485,
+      "offset": 87027,
       "length": 9,
       "value": "\"BaseFee\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/StandaloneSDK\/tap-on-phone-ios\/FeeModule\/FeeModule.swift",
       "kind": "StringLiteral",
-      "offset": 87511,
+      "offset": 87053,
       "length": 6,
       "value": "\"SFee\""
     },

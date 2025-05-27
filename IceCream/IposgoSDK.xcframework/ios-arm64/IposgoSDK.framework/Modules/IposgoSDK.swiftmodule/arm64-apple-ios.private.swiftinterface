@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios16.9 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name IposgoSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios16.9 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name IposgoSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import CommonCrypto
 import CoreData
 import CryptoKit
@@ -77,6 +77,11 @@ public protocol Register : IposgoSDK.RegisterProtocol {
   var tpn: Swift.String { get }
   var merchantCode: Swift.String { get }
 }
+public protocol Receipt : IposgoSDK.ReprintProtocol {
+  var txId: Swift.String { get }
+  var phoneNo: Swift.String? { get }
+  var email: Swift.String? { get }
+}
 public protocol StatusCheckPayload : IposgoSDK.StatusCheck {
   var txRefNo: Swift.String { get }
   var txnTimeStamp: Swift.String { get }
@@ -99,6 +104,9 @@ public protocol VoidPayloadParameter : IposgoSDK.CommandVoid {
   var email: Swift.String? { get }
 }
 extension IposgoSDK.PayloadParameter {
+  public func prepareDict() -> [Swift.String : Swift.String]
+}
+extension IposgoSDK.Receipt {
   public func prepareDict() -> [Swift.String : Swift.String]
 }
 extension IposgoSDK.StatusCheckPayload {
@@ -155,7 +163,21 @@ public protocol CommandVoid : Swift.Decodable, Swift.Encodable {
   func checkIsValid() -> Swift.Bool
   func print()
 }
+public protocol ReprintProtocol : Swift.Decodable, Swift.Encodable {
+  var txId: Swift.String { get }
+  var phoneNo: Swift.String? { get }
+  var email: Swift.String? { get }
+  func prepareDict() -> [Swift.String : Swift.String]
+  func prepareString() throws -> Swift.String?
+  func checkIsValid() -> Swift.Bool
+  func print()
+}
 extension IposgoSDK.CommandVoid {
+  public func checkIsValid() -> Swift.Bool
+  public func prepareString() throws -> Swift.String?
+  public func print()
+}
+extension IposgoSDK.ReprintProtocol {
   public func checkIsValid() -> Swift.Bool
   public func prepareString() throws -> Swift.String?
   public func print()
@@ -193,6 +215,16 @@ public func isValidCurrencyFormat(_ input: Swift.String) -> Swift.Bool
 public func isValidTipFormat(_ input: Swift.String) -> Swift.Bool
 extension IposgoSDK.IposgoReader {
   public func downloadParameter(param: any IposgoSDK.Register)
+}
+extension IposgoSDK.IposgoReader {
+  public func getListVoid_PreAuth(transactionType: IposgoSDK.TransType?)
+}
+extension IposgoSDK.IposgoReader {
+  public func rePrintOption(param: any IposgoSDK.Receipt)
+}
+extension IposgoSDK.IposgoReader {
+  public func TipConfiguration() -> Swift.Bool
+  public func FeeConfiguration() -> Swift.Bool
 }
 extension UIKit.UIDevice {
   @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String

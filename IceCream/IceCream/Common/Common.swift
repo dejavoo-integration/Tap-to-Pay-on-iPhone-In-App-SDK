@@ -65,6 +65,16 @@ struct VoidTxnData : VoidPayloadParameter {
     var phoneNo: String?
 }
 
+//MARK: - StatusCheckPayload [Status check of TXN]
+struct ReceiptParam: Receipt {
+    
+    var txId: String
+    var phoneNo: String?
+    var email: String?
+    
+}
+
+
 //Alert function in shared class
 extension UIViewController {
     func showAlert(title: String, msg: String) {
