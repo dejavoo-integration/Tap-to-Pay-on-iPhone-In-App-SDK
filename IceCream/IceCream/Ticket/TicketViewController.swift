@@ -7,36 +7,37 @@
 
 import UIKit
 import IposgoSDK
-
+import DeepLinking
 
 
 class TicketViewController: BaseViewController {
     
+    @IBOutlet weak var feeTxtFld: UITextField!
     @IBOutlet weak var voidTicketBut: UIButton!
+    var entity: TxDetailEntity?
     @IBOutlet weak var titlelb:UILabel!
-    var tranType : TransType?
+    var tranType : IposgoSDK.TransType?
     @IBOutlet weak var rrnTxtFld: UITextField!
     @IBOutlet weak var tip: UITextField!
     @IBOutlet weak var amtTxtFld: UITextField!
     let readerInstance = IposgoReader()
     let activityIndicator = UIActivityIndicatorView(style: .large)
+    var saleAmt:String?
+    @IBOutlet weak var key_inPaybut: UIButton!
+    @IBOutlet weak var qrPaybut: UIButton!
+    var dlReaderInstance = Wrapper()
+    var payType:PaymentMethod?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         amtTxtFld.delegate = self
         tip.delegate = self
-        rrnTxtFld.delegate = self
+        feeTxtFld.delegate = self
         
         amtTxtFld.keyboardType = .numberPad
         tip.keyboardType = .numberPad
-        rrnTxtFld.keyboardType = .numberPad
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        titlelb.text = titlename
-        tranType = txnType
+        feeTxtFld.keyboardType = .numberPad
         
         // Set up the activity indicator
         activityIndicator.center = self.view.center
@@ -46,21 +47,97 @@ class TicketViewController: BaseViewController {
         // Add the activity indicator to the view
         self.view.addSubview(activityIndicator)
         
-        voidTicketBut.setTitle(titlename, for: .normal)
-        
+    }
+    
+    @IBAction func goBackVC(_ sender: UIButton) {
+        if let viewControllers = navigationController?.viewControllers {
+            for vc in viewControllers {
+                if let targetVC = vc as? CollectionListVC {
+                    titlename = Constant.Sale.rawValue
+                    targetVC.tranType = .SALE
+                    txnType = .SALE
+                    dlTxnType = .SALE
+                    navigationController?.popToViewController(targetVC, animated: true)
+                    break
+                }
+            }
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        titlelb.text = titlename
+        tranType = txnType
+         
         switch tranType {
             
         case .TICKET:
-            amtTxtFld.isHidden = false
-            tip.isHidden = false
-            rrnTxtFld.isHidden = false
+
+            amtTxtFld.text = "$" + (entity?.amount ?? "")
+            
             
         default:
             
-            amtTxtFld.isHidden = true
-            tip.isHidden = true
-            rrnTxtFld.isHidden = false
+            amtTxtFld.text = "$" + (saleAmt ?? "")
+          
         }
+       
+        
+        
+        
+        let deepLinkKey = UserDefaults.Keys.deepLinkingVersion.rawValue
+
+        let currentValue = UserDefaults.standard.string(forKey: deepLinkKey)
+
+        switch currentValue { //Deep Linking SDK
+            
+        case "1":
+            
+            key_inPaybut.isHidden = true
+            qrPaybut.isHidden = true
+            
+            tip.isHidden = readerInstance.TipConfiguration() == true ? false : true
+            feeTxtFld.isHidden = true
+            switch tranType {
+                
+            case .REFUND,.PRE_AUTH:
+                
+                tip.isHidden = true
+                feeTxtFld.isHidden = true
+                
+            default:
+                tip.isHidden = false
+                feeTxtFld.isHidden = false
+            }
+            
+            
+        
+        default:
+            //To check the Tip is Enable or not in Portal Configurations
+            tip.isHidden = readerInstance.TipConfiguration() == true ? false : true
+            feeTxtFld.isHidden = true
+            
+            switch tranType {
+                
+            case .PRE_AUTH,.REFUND:
+                
+                qrPaybut.isHidden = true
+                key_inPaybut.isHidden = false
+                
+            case .SALE:
+                qrPaybut.isHidden = false
+                key_inPaybut.isHidden = false
+                
+            default:
+                
+                qrPaybut.isHidden = true
+                key_inPaybut.isHidden = true
+               
+            }
+            
+            
+        }
+       
+            
     }
     
     // Call this function to start the loader
@@ -78,22 +155,66 @@ class TicketViewController: BaseViewController {
     @IBAction func startTxn(_ sender: UIButton) {
         self.view.endEditing(true)
         
-        readerInstance.delegate = self
-        switch tranType {
+        
+        let deepLinkKey = UserDefaults.Keys.deepLinkingVersion.rawValue
+
+        let currentValue = UserDefaults.standard.string(forKey: deepLinkKey)
+
+        switch currentValue { //Deep Linking SDK
             
-        case .TICKET:
-            let payload = TicketTxnData(amount: amtTxtFld.text ?? "", tipAmount: tip.text,currencyCode: .usd, tranType: .TICKET, rrn: rrnTxtFld.text ?? "")
+        case "1":
             
-            print(">>>payload",payload)
-            startLoading()
-            readerInstance.startTicket(param: payload)
+            let tipScreen = UserDefaults.standard.string(forKey: UserDefaults.Keys.isEnableShowTipScreen.rawValue) == "1" ? true : false
+            let breakupScreen = UserDefaults.standard.string(forKey: UserDefaults.Keys.isEnableShowBreakupScreen.rawValue) == "1" ? true : false
+            let approvalScreen = UserDefaults.standard.string(forKey: UserDefaults.Keys.isEnableShowApprovalScreen.rawValue) == "1" ? true : false
             
+            switch dlTxnType {
+                
+            case .REFUND,.PREAUTH:
+                
+                let payload = DLTxnData(amount: nullStringToEmpty(string: amtTxtFld.text), feeAmount: nullStringToEmpty(string: feeTxtFld.text), tipAmount: nullStringToEmpty(string: tip.text), currencyCode: .usd, tranType: dlTxnType,showApprovalScreen: approvalScreen)
+                print(">>>payload",payload)
+              
+                dlReaderInstance.startTransaction(params: payload,delegate: self)
+                
+            case .TICKET:
+                
+                let payload = DLTicketTxnData(amount: nullStringToEmpty(string:  amtTxtFld.text), feeAmount: nullStringToEmpty(string: feeTxtFld.text), tipAmount: nullStringToEmpty(string: tip.text), currencyCode: .usd, tranType: .TICKET, rrn: entity?.rrnCode ?? "", showTipScreen: tipScreen, showBreakUpScreen: breakupScreen, showApprovalScreen: approvalScreen)
+                print(">>>payload",payload)
+              
+                dlReaderInstance.startTicket(params: payload,delegate: self)
+                
+            default:
+            
+                let payload = DLTxnData(amount: nullStringToEmpty(string: amtTxtFld.text), feeAmount: nullStringToEmpty(string: feeTxtFld.text), tipAmount: nullStringToEmpty(string: tip.text), currencyCode: .usd, tranType: .SALE, showTipScreen: tipScreen, showBreakUpScreen: breakupScreen, showApprovalScreen: approvalScreen)
+                print(">>>payload",payload)
+              
+                dlReaderInstance.startTransaction(params: payload,delegate: self)
+            }
+        
         default:
-            let payload = VoidTxnData(rrn: rrnTxtFld.text ?? "",tranType: .VOID)
-            print(">>>payload",payload)
-            startLoading()
-            readerInstance.startVoid(param: payload)
+            
+            switch tranType {
+                
+            case .TICKET:
+                let payload = TicketTxnData(amount: amtTxtFld.text ?? "", tipAmount: tip.text,currencyCode: .usd, tranType: .TICKET, rrn: entity?.rrnCode ?? "")
+                print(">>>payload",payload)
+                readerInstance.delegate = self
+                startLoading()
+                readerInstance.startTicket(param: payload)
+                
+            default:
+               
+                
+                let payload = TxnData(amount: amtTxtFld.text ?? "", tipAmount: tip.text ?? "", currencyCode: .usd, tranType: tranType ?? .SALE)
+                print(">>>payload",payload)
+                startLoading()
+                readerInstance.delegate = self
+                readerInstance.startTransaction(param: payload)
+            }
+            
         }
+       
     }
     
 }
@@ -190,14 +311,14 @@ extension TicketViewController: IposgoDelegate {
         }
         switch nullStringToEmpty(string: error) {
             
-        case nullStringToEmpty(string: "Transaction canceled by the merchant/card holder"):
+        case nullStringToEmpty(string: Constant.cardCancelled.rawValue):
             return
             
         default:
             DispatchQueue.main.async { [self] in
                 
-                let alert = UIAlertController(title: "Alert", message: nullStringToEmpty(string: error), preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+                let alert = UIAlertController(title: Constant.Alert.rawValue, message: nullStringToEmpty(string: error), preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: Constant.ok.rawValue, style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
                 self.readerInstance.cleanup(delegate: self)
             }
@@ -218,6 +339,7 @@ extension TicketViewController: IposgoDelegate {
                 stopLoading()
                 let VC = storyboard?.instantiateViewController(identifier: "CustomerCopyViewController") as! CustomerCopyViewController
                 VC.responseDict = responseDict
+                VC.payType = payType
                 navigationController?.pushViewController(VC, animated: true)
                 
             } else {
@@ -233,3 +355,7 @@ extension TicketViewController: IposgoDelegate {
         amtTxtFld.text = ""
     }
 }
+
+
+
+

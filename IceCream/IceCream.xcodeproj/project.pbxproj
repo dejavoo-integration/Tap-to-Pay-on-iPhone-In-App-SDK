@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1889B8F52DE5EA1800A5E798 /* IposgoSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1889B8F32DE5EA1200A5E798 /* IposgoSDK.xcframework */; };
-		1889B8F62DE5EA1800A5E798 /* IposgoSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1889B8F32DE5EA1200A5E798 /* IposgoSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18631C812DF0199300ED3C49 /* DeepLinking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18631C7E2DF0198E00ED3C49 /* DeepLinking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18FA4E662DE8A51C00F95B94 /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = 18FA4E652DE8A51C00F95B94 /* SwiftyGif */; };
+		7E2BF8792E13BAB50035477E /* IposgoSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2BF8782E13BAB50035477E /* IposgoSDK.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +19,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1889B8F62DE5EA1800A5E798 /* IposgoSDK.xcframework in Embed Frameworks */,
+				18631C812DF0199300ED3C49 /* DeepLinking.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -26,7 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1889B8F32DE5EA1200A5E798 /* IposgoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IposgoSDK.xcframework; sourceTree = "<group>"; };
+		18631C7E2DF0198E00ED3C49 /* DeepLinking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DeepLinking.xcframework; sourceTree = "<group>"; };
+		7E2BF8782E13BAB50035477E /* IposgoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IposgoSDK.xcframework; sourceTree = "<group>"; };
 		7E671C1E2D50D2A400505427 /* IceCream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,7 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1889B8F52DE5EA1800A5E798 /* IposgoSDK.xcframework in Frameworks */,
+				18FA4E662DE8A51C00F95B94 /* SwiftyGif in Frameworks */,
+				7E2BF8792E13BAB50035477E /* IposgoSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +69,8 @@
 		7E671C152D50D2A400505427 = {
 			isa = PBXGroup;
 			children = (
-				1889B8F32DE5EA1200A5E798 /* IposgoSDK.xcframework */,
+				18631C7E2DF0198E00ED3C49 /* DeepLinking.xcframework */,
+				7E2BF8782E13BAB50035477E /* IposgoSDK.xcframework */,
 				7E671C202D50D2A400505427 /* IceCream */,
 				7E671C1F2D50D2A400505427 /* Products */,
 			);
@@ -101,6 +105,7 @@
 			);
 			name = IceCream;
 			packageProductDependencies = (
+				18FA4E652DE8A51C00F95B94 /* SwiftyGif */,
 			);
 			productName = IceCream;
 			productReference = 7E671C1E2D50D2A400505427 /* IceCream.app */;
@@ -130,6 +135,9 @@
 			);
 			mainGroup = 7E671C152D50D2A400505427;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				18FA4E642DE8A51C00F95B94 /* XCRemoteSwiftPackageReference "SwiftyGif" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7E671C1F2D50D2A400505427 /* Products */;
 			projectDirPath = "";
@@ -166,7 +174,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "/Users/apple/Documents/IceCream/tap-on-phone-ios/IceCream/IceCream/ipogo.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "/Users/apple/Documents/DV-Demo/iposgo-dl-sdk-ios/IceCream/ipogo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8869D8BJD2;
@@ -176,7 +184,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IceCream/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "In-App SDK Demo";
+				INFOPLIST_KEY_CFBundleDisplayName = DvDemo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -188,7 +196,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.denovo.itop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denovo.demoapptest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -201,7 +209,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "/Users/apple/Documents/IceCream/tap-on-phone-ios/IceCream/IceCream/ipogo.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "/Users/apple/Documents/DV-Demo/iposgo-dl-sdk-ios/IceCream/ipogo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8869D8BJD2;
@@ -211,7 +219,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IceCream/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "In-App SDK Demo";
+				INFOPLIST_KEY_CFBundleDisplayName = DvDemo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -223,7 +231,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.denovo.itop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denovo.demoapptest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -264,6 +272,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -327,6 +336,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -372,6 +382,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18FA4E642DE8A51C00F95B94 /* XCRemoteSwiftPackageReference "SwiftyGif" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kirualex/SwiftyGif.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18FA4E652DE8A51C00F95B94 /* SwiftyGif */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18FA4E642DE8A51C00F95B94 /* XCRemoteSwiftPackageReference "SwiftyGif" */;
+			productName = SwiftyGif;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E671C162D50D2A400505427 /* Project object */;
 }

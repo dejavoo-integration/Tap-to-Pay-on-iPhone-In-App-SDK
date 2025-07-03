@@ -79,7 +79,8 @@ extension CollectionListVC: UITableViewDataSource,UITableViewDelegate {
     
     func showCheckoutPrice(){
         let totalPrice:Double = self.totalprice()
-        checkoutPrice.text = "Total Price: $ \(totalPrice)"
+        let TAMT = String(format: "%.2f", totalPrice)
+        checkoutPrice.text = "Total Price: $ \(TAMT)"
         showBottomView()
     }
     
@@ -109,7 +110,7 @@ extension CollectionListVC: UITableViewDataSource,UITableViewDelegate {
     }
     
     func getisRegistered() -> Bool{
-        if UserDefaults.standard.bool(forKey: "isRegistered"){
+        if UserDefaults.standard.bool(forKey: UserDefaults.Keys.isRegistered.rawValue){
             return true
         }else{
             return false
@@ -127,10 +128,10 @@ extension CollectionListVC: UITableViewDataSource,UITableViewDelegate {
     
     func showAlertAction(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action:UIAlertAction!) in
+        alert.addAction(UIAlertAction(title: Constant.ok.rawValue, style: UIAlertAction.Style.default, handler: {(action:UIAlertAction!) in
             self.clearData()
         }))
-        //alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
+        
         self.present(alert, animated: true, completion: nil)
     }
 }

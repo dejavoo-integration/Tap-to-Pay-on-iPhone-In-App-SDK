@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
-// swift-module-flags: -target arm64-apple-ios16.9-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name IposgoSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios16.9-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name IposgoSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CommonCrypto
 import CoreData
 import CryptoKit
@@ -33,6 +33,16 @@ public enum CurrencyCode : Swift.String, Swift.Codable {
   public var rawValue: Swift.String {
     get
   }
+}
+public enum PaymentMethod : Swift.Codable {
+  case Tap, KeyIn, QR
+  public static func == (a: IposgoSDK.PaymentMethod, b: IposgoSDK.PaymentMethod) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension IposgoSDK.CurrencyCode : Swift.CaseIterable {
   public typealias AllCases = [IposgoSDK.CurrencyCode]
@@ -72,15 +82,11 @@ public protocol PayloadParameter : IposgoSDK.Command {
   var email: Swift.String? { get }
   var currencyCode: IposgoSDK.CurrencyCode { get }
   var tranType: IposgoSDK.TransType { get }
+  var payType: IposgoSDK.PaymentMethod? { get }
 }
 public protocol Register : IposgoSDK.RegisterProtocol {
   var tpn: Swift.String { get }
   var merchantCode: Swift.String { get }
-}
-public protocol Receipt : IposgoSDK.ReprintProtocol {
-  var txId: Swift.String { get }
-  var phoneNo: Swift.String? { get }
-  var email: Swift.String? { get }
 }
 public protocol StatusCheckPayload : IposgoSDK.StatusCheck {
   var txRefNo: Swift.String { get }
@@ -106,9 +112,6 @@ public protocol VoidPayloadParameter : IposgoSDK.CommandVoid {
 extension IposgoSDK.PayloadParameter {
   public func prepareDict() -> [Swift.String : Swift.String]
 }
-extension IposgoSDK.Receipt {
-  public func prepareDict() -> [Swift.String : Swift.String]
-}
 extension IposgoSDK.StatusCheckPayload {
   public func prepareDict() -> [Swift.String : Swift.String]
 }
@@ -124,6 +127,7 @@ extension IposgoSDK.TicketPayloadParameter {
 public protocol Command : Swift.Decodable, Swift.Encodable {
   var currencyCode: IposgoSDK.CurrencyCode { get }
   var tranType: IposgoSDK.TransType { get }
+  var payType: IposgoSDK.PaymentMethod? { get }
   func prepareDict() -> [Swift.String : Swift.String]
   func prepareString() throws -> Swift.String?
   func checkIsValid() -> Swift.Bool
@@ -140,6 +144,28 @@ public protocol StatusCheck : Swift.Decodable, Swift.Encodable {
   func prepareString() throws -> Swift.String?
   func checkIsValid() -> Swift.Bool
   func print()
+}
+public protocol Receipt : IposgoSDK.ReprintProtocol {
+  var txId: Swift.String { get }
+  var phoneNo: Swift.String? { get }
+  var email: Swift.String? { get }
+}
+public protocol ReprintProtocol : Swift.Decodable, Swift.Encodable {
+  var txId: Swift.String { get }
+  var phoneNo: Swift.String? { get }
+  var email: Swift.String? { get }
+  func prepareDict() -> [Swift.String : Swift.String]
+  func prepareString() throws -> Swift.String?
+  func checkIsValid() -> Swift.Bool
+  func print()
+}
+extension IposgoSDK.Receipt {
+  public func prepareDict() -> [Swift.String : Swift.String]
+}
+extension IposgoSDK.ReprintProtocol {
+  public func checkIsValid() -> Swift.Bool
+  public func prepareString() throws -> Swift.String?
+  public func print()
 }
 extension IposgoSDK.Command {
   public func checkIsValid() -> Swift.Bool
@@ -163,21 +189,7 @@ public protocol CommandVoid : Swift.Decodable, Swift.Encodable {
   func checkIsValid() -> Swift.Bool
   func print()
 }
-public protocol ReprintProtocol : Swift.Decodable, Swift.Encodable {
-  var txId: Swift.String { get }
-  var phoneNo: Swift.String? { get }
-  var email: Swift.String? { get }
-  func prepareDict() -> [Swift.String : Swift.String]
-  func prepareString() throws -> Swift.String?
-  func checkIsValid() -> Swift.Bool
-  func print()
-}
 extension IposgoSDK.CommandVoid {
-  public func checkIsValid() -> Swift.Bool
-  public func prepareString() throws -> Swift.String?
-  public func print()
-}
-extension IposgoSDK.ReprintProtocol {
   public func checkIsValid() -> Swift.Bool
   public func prepareString() throws -> Swift.String?
   public func print()
@@ -198,6 +210,7 @@ extension IposgoSDK.IposgoReader {
 }
 extension IposgoSDK.IposgoReader {
   public func startTransaction(param: any IposgoSDK.PayloadParameter)
+  public func startTransactionExternalPayment(param: any IposgoSDK.PayloadParameter, hostVC: UIKit.UIViewController)
   public func startCardBasedTXN(amount: Swift.String?, tipAmount: Swift.String?, currenyCode: IposgoSDK.CurrencyCode, tranType: IposgoSDK.TransType)
 }
 extension IposgoSDK.IposgoReader {
@@ -225,6 +238,9 @@ extension IposgoSDK.IposgoReader {
 extension IposgoSDK.IposgoReader {
   public func TipConfiguration() -> Swift.Bool
   public func FeeConfiguration() -> Swift.Bool
+}
+extension IposgoSDK.IposgoReader {
+  public func deiniteSessionOFReaderAndConfigurations()
 }
 extension UIKit.UIDevice {
   @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
@@ -1632,6 +1648,8 @@ extension IposgoSDK.Enviroment : Swift.RawRepresentable {}
 extension IposgoSDK.CurrencyCode : Swift.Equatable {}
 extension IposgoSDK.CurrencyCode : Swift.Hashable {}
 extension IposgoSDK.CurrencyCode : Swift.RawRepresentable {}
+extension IposgoSDK.PaymentMethod : Swift.Equatable {}
+extension IposgoSDK.PaymentMethod : Swift.Hashable {}
 extension IposgoSDK.TransType : Swift.Equatable {}
 extension IposgoSDK.TransType : Swift.Hashable {}
 extension IposgoSDK.TransType : Swift.RawRepresentable {}

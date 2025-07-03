@@ -7,6 +7,7 @@
 
 import UIKit
 import IposgoSDK
+import DeepLinking
 
 class CollectionListVC: BaseViewController {
     
@@ -20,9 +21,12 @@ class CollectionListVC: BaseViewController {
     @IBOutlet weak var clearButton:UIButton!
     
     let readerInstance = IposgoReader()
-    var tranType: TransType = .SALE
+    var tranType: IposgoSDK.TransType = .SALE
     var tpn: String?
     let activityIndicator = UIActivityIndicatorView(style: .large)
+    
+    let dLReaderInstance = Wrapper()
+    var dLTranType: DeepLinkTransType = .SALE
     
     
     override func viewDidLoad() {
@@ -35,49 +39,53 @@ class CollectionListVC: BaseViewController {
         checkoutView.layer.borderWidth = 0.5
         
         checkoutView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-        collectionList = [CollectionList(collectionName: "Mint Chocolate Chip", collectionImage: "Item1", collectionCount: 0,price: 17.25),
-                          CollectionList(collectionName: "Cookies and Cream", collectionImage: "Item2", collectionCount: 0,price: 20),
-                          CollectionList(collectionName: "Strawberry Swirl", collectionImage: "Item3", collectionCount: 0,price: 30),
-                          CollectionList(collectionName: "Rocky Road", collectionImage: "Item4", collectionCount: 0,price: 50),
-                          CollectionList(collectionName: "Salted Caramel", collectionImage: "Item5", collectionCount: 0,price: 10),
-                          CollectionList(collectionName: "Butter Pecan", collectionImage: "Item6", collectionCount: 0,price: 20),
+        collectionList = [CollectionList(collectionName: "Mint Chocolate Chip", collectionImage: "Item1", collectionCount: 0,price: 0.25),
+                          CollectionList(collectionName: "Cookies and Cream", collectionImage: "Item2", collectionCount: 0,price: 10.00),
+                          CollectionList(collectionName: "Strawberry Swirl", collectionImage: "Item3", collectionCount: 0,price: 0.02),
+                          CollectionList(collectionName: "Rocky Road", collectionImage: "Item4", collectionCount: 0,price: 0.03),
+                          CollectionList(collectionName: "Salted Caramel", collectionImage: "Item5", collectionCount: 0,price: 0.04),
+                          CollectionList(collectionName: "Butter Pecan", collectionImage: "Item6", collectionCount: 0,price : 15.00),
         ]
         collectionListBase = collectionList
         tranType = .SALE
+        dLTranType = .SALE
         cellRegister()
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.tranType = txnType
+        self.dLTranType = dlTxnType
         chechoutHeightContrain.constant = 0
         clearData()
         setTitlelb()
         
         // Set up the activity indicator
-                activityIndicator.center = self.view.center
-                activityIndicator.color = UIColor.black
-                activityIndicator.hidesWhenStopped = true
-                
-                // Add the activity indicator to the view
-                self.view.addSubview(activityIndicator)
-    }
-    // Call this function to start the loader
-        func startLoading() {
-            activityIndicator.startAnimating()
-            self.view.isUserInteractionEnabled = false // Optionally disable user interaction while loading
-        }
+        activityIndicator.center = self.view.center
+        activityIndicator.color = UIColor.black
+        activityIndicator.hidesWhenStopped = true
         
-        // Call this function to stop the loader
-        func stopLoading() {
-            activityIndicator.stopAnimating()
-            self.view.isUserInteractionEnabled = true // Re-enable user interaction after loading
-        }
+        // Add the activity indicator to the view
+        self.view.addSubview(activityIndicator)
+        
+    }
+    
+    // Call this function to start the loader
+    func startLoading() {
+        activityIndicator.startAnimating()
+        self.view.isUserInteractionEnabled = false // Optionally disable user interaction while loading
+    }
+    
+    // Call this function to stop the loader
+    func stopLoading() {
+        activityIndicator.stopAnimating()
+        self.view.isUserInteractionEnabled = true // Re-enable user interaction after loading
+    }
     
     func setTitlelb(){
         
         if titlename == "" || titlename == nil{
-            titlelb.text = "Sale"
+            titlelb.text = Constant.Sale.rawValue
         }else{
             titlelb.text = titlename
         }
@@ -100,29 +108,93 @@ class CollectionListVC: BaseViewController {
         if isSelectedCollection(){
             proceedOrder(amount: TAMT, AMT: AMT)
         }else{
-            showAlert(title: "Alert", msg: "Enter Amount")
+            showAlert(title: Constant.Alert.rawValue, msg: Constant.enterAmount.rawValue)
         }
     }
     
-    func proceedOrder(amount: String, AMT: String){
-        if getisRegistered(){
-            print("Total Amount:\(amount),  Int Amout: \(AMT)")
-            checkSaleType(amount: amount)
-        }else {
-            showAlert(title: "Alert", msg: "Please register and process the transaction.")
+    func proceedOrder(amount: String, AMT: String) {
+       
+        if getisRegistered() {
+           
+            let deepLinkKey = UserDefaults.Keys.deepLinkingVersion.rawValue
+
+            let currentValue = UserDefaults.standard.string(forKey: deepLinkKey)
+
+            switch currentValue { //Deep Linking SDK
+                
+            case "1":
+                    
+                let VC = storyboard?.instantiateViewController(identifier: "TicketViewController") as! TicketViewController
+                
+                switch dLTranType {
+                   
+                case .PREAUTH:
+                    
+                    VC.tranType = TransType.PRE_AUTH
+                    VC.saleAmt = amount
+                    dlTxnType = DeepLinkTransType.PREAUTH
+                    titlename = Constant.PreAuth.rawValue
+                    
+                case .REFUND:
+                    
+                    VC.tranType = TransType.REFUND
+                    VC.saleAmt = amount
+                    dlTxnType = DeepLinkTransType.REFUND
+                    titlename =  Constant.Refund.rawValue
+                    
+                default:
+                    VC.tranType = TransType.SALE
+                    VC.saleAmt = amount
+                    dlTxnType = DeepLinkTransType.SALE
+                    titlename =  Constant.Sale.rawValue
+                }
+                    
+                navigationController?.pushViewController(VC, animated: true)
+                    
+            default: // InApp SDK
+                
+                switch tranType {
+                    
+                case .SALE:
+                    let VC = storyboard?.instantiateViewController(identifier: "TicketViewController") as! TicketViewController
+                    VC.tranType = TransType.SALE
+                    VC.saleAmt = amount
+                    titlename = Constant.Sale.rawValue
+                    navigationController?.pushViewController(VC, animated: true)
+                case .REFUND:
+                    let VC = storyboard?.instantiateViewController(identifier: "TicketViewController") as! TicketViewController
+                    VC.tranType = TransType.REFUND
+                    VC.saleAmt = amount
+                    titlename = Constant.Refund.rawValue
+                    navigationController?.pushViewController(VC, animated: true)
+                case .PRE_AUTH:
+                    let VC = storyboard?.instantiateViewController(identifier: "TicketViewController") as! TicketViewController
+                    VC.tranType = TransType.PRE_AUTH
+                    VC.saleAmt = amount
+                    titlename = Constant.PreAuth.rawValue
+                    navigationController?.pushViewController(VC, animated: true)
+                case .TICKET:
+                    let VC = storyboard?.instantiateViewController(identifier: "TicketViewController") as! TicketViewController
+                    VC.tranType = TransType.TICKET
+                    VC.saleAmt = amount
+                    titlename = Constant.ticket.rawValue
+                    navigationController?.pushViewController(VC, animated: true)
+                default:
+                    let VC = storyboard?.instantiateViewController(identifier: "TicketViewController") as! TicketViewController
+                    VC.tranType = TransType.SALE
+                    VC.saleAmt = amount
+                    titlename = Constant.Sale.rawValue
+                    navigationController?.pushViewController(VC, animated: true)
+                }
+            }
+          
+        } else {
+            showAlert(title: Constant.Alert.rawValue, msg: Constant.registerAndProcessTransaction.rawValue)
         }
-    }
-    
-    func checkSaleType(amount: String) {
-        readerInstance.delegate = self
-        let payload = TxnData(amount: amount, tipAmount: "", currencyCode: .usd, tranType: tranType)
-        print(">>>payload",payload)
-      
-        startLoading()
-        readerInstance.startTransaction(param: payload)
     }
     
 }
+
 
 //MARK: ITap Delegates
 @available(iOS 15.4, *)
@@ -130,21 +202,18 @@ extension CollectionListVC: IposgoDelegate {
     
     func didReceiveError(error: String?, code: Int?)  {
     
-        print(">>>>Eroro",error)
-        
-        
         DispatchQueue.main.async { [self] in
             stopLoading()
         }
         switch nullStringToEmpty(string: error) {
             
-        case nullStringToEmpty(string: "Transaction canceled by the merchant/card holder"):
+        case nullStringToEmpty(string: Constant.cardCancelled.rawValue):
             return
             
         default:
             DispatchQueue.main.async { [self] in
                
-                showAlert(title: "Alert", msg: nullStringToEmpty(string: error))
+                showAlert(title: Constant.Alert.rawValue, msg: nullStringToEmpty(string: error))
                 self.readerInstance.cleanup(delegate: self)
             }
             return

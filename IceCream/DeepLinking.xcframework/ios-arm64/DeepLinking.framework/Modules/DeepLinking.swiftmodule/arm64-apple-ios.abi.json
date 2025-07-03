@@ -1,0 +1,4490 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "DeepLinking",
+    "printedName": "DeepLinking",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeepLinking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DPProtocol",
+        "printedName": "DPProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didReceiveResponse",
+            "printedName": "didReceiveResponse(sucess:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking10DPProtocolP18didReceiveResponse6sucessy10Foundation3URLVSg_tF",
+            "mangledName": "$s11DeepLinking10DPProtocolP18didReceiveResponse6sucessy10Foundation3URLVSg_tF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.DPProtocol>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.DPProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceiveResp_Error",
+            "printedName": "didReceiveResp_Error(err:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking10DPProtocolP20didReceiveResp_Error3errySSSg_tF",
+            "mangledName": "$s11DeepLinking10DPProtocolP20didReceiveResp_Error3errySSSg_tF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.DPProtocol>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.DPProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11DeepLinking10DPProtocolP",
+        "mangledName": "$s11DeepLinking10DPProtocolP",
+        "moduleName": "DeepLinking",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DLProtocolV2",
+        "printedName": "DLProtocolV2",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didReceiveV2Response",
+            "printedName": "didReceiveV2Response(success:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking12DLProtocolV2P010didReceiveD8Response7successy10Foundation3URLVSg_tF",
+            "mangledName": "$s11DeepLinking12DLProtocolV2P010didReceiveD8Response7successy10Foundation3URLVSg_tF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.DLProtocolV2>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.DLProtocolV2>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceive_TransactionResponse",
+            "printedName": "didReceive_TransactionResponse(res:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking12DLProtocolV2P30didReceive_TransactionResponse3resySSSg_tF",
+            "mangledName": "$s11DeepLinking12DLProtocolV2P30didReceive_TransactionResponse3resySSSg_tF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.DLProtocolV2>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.DLProtocolV2>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceiveRespV2Error",
+            "printedName": "didReceiveRespV2Error(err:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking12DLProtocolV2P014didReceiveRespD5Error3errySSSg_tF",
+            "mangledName": "$s11DeepLinking12DLProtocolV2P014didReceiveRespD5Error3errySSSg_tF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.DLProtocolV2>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.DLProtocolV2>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11DeepLinking12DLProtocolV2P",
+        "mangledName": "$s11DeepLinking12DLProtocolV2P",
+        "moduleName": "DeepLinking",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeepLinking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VoidPayloadParameter",
+        "printedName": "VoidPayloadParameter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "rrn",
+            "printedName": "rrn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking20VoidPayloadParameterP3rrnSSvp",
+            "mangledName": "$s11DeepLinking20VoidPayloadParameterP3rrnSSvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking20VoidPayloadParameterP3rrnSSvg",
+                "mangledName": "$s11DeepLinking20VoidPayloadParameterP3rrnSSvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.VoidPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.VoidPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tranType",
+            "printedName": "tranType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TransType",
+                "printedName": "DeepLinking.TransType",
+                "usr": "s:11DeepLinking9TransTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking20VoidPayloadParameterP8tranTypeAA05TransG0Ovp",
+            "mangledName": "$s11DeepLinking20VoidPayloadParameterP8tranTypeAA05TransG0Ovp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "overriding": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking20VoidPayloadParameterP8tranTypeAA05TransG0Ovg",
+                "mangledName": "$s11DeepLinking20VoidPayloadParameterP8tranTypeAA05TransG0Ovg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.VoidPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.VoidPayloadParameter>",
+                "protocolReq": true,
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "showApprovalScreen",
+            "printedName": "showApprovalScreen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking20VoidPayloadParameterP18showApprovalScreenSbSgvp",
+            "mangledName": "$s11DeepLinking20VoidPayloadParameterP18showApprovalScreenSbSgvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking20VoidPayloadParameterP18showApprovalScreenSbSgvg",
+                "mangledName": "$s11DeepLinking20VoidPayloadParameterP18showApprovalScreenSbSgvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.VoidPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.VoidPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "prepareDict",
+            "printedName": "prepareDict()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking20VoidPayloadParameterPAAE11prepareDictSDyS2SGyF",
+            "mangledName": "$s11DeepLinking20VoidPayloadParameterPAAE11prepareDictSDyS2SGyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.VoidPayloadParameter>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.VoidPayloadParameter>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11DeepLinking20VoidPayloadParameterP",
+        "mangledName": "$s11DeepLinking20VoidPayloadParameterP",
+        "moduleName": "DeepLinking",
+        "genericSig": "<τ_0_0 : DeepLinking.CommandVoid>",
+        "sugared_genericSig": "<Self : DeepLinking.CommandVoid>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CommandVoid",
+            "printedName": "CommandVoid",
+            "usr": "s:11DeepLinking11CommandVoidP",
+            "mangledName": "$s11DeepLinking11CommandVoidP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CommandVoid",
+        "printedName": "CommandVoid",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "tranType",
+            "printedName": "tranType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TransType",
+                "printedName": "DeepLinking.TransType",
+                "usr": "s:11DeepLinking9TransTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking11CommandVoidP8tranTypeAA05TransF0Ovp",
+            "mangledName": "$s11DeepLinking11CommandVoidP8tranTypeAA05TransF0Ovp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking11CommandVoidP8tranTypeAA05TransF0Ovg",
+                "mangledName": "$s11DeepLinking11CommandVoidP8tranTypeAA05TransF0Ovg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.CommandVoid>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.CommandVoid>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "prepareDict",
+            "printedName": "prepareDict()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking11CommandVoidP11prepareDictSDyS2SGyF",
+            "mangledName": "$s11DeepLinking11CommandVoidP11prepareDictSDyS2SGyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.CommandVoid>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.CommandVoid>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "prepareString",
+            "printedName": "prepareString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking11CommandVoidP13prepareStringSSSgyKF",
+            "mangledName": "$s11DeepLinking11CommandVoidP13prepareStringSSSgyKF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.CommandVoid>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.CommandVoid>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkIsValid",
+            "printedName": "checkIsValid()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking11CommandVoidP12checkIsValidSbyF",
+            "mangledName": "$s11DeepLinking11CommandVoidP12checkIsValidSbyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.CommandVoid>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.CommandVoid>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "print",
+            "printedName": "print()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking11CommandVoidP5printyyF",
+            "mangledName": "$s11DeepLinking11CommandVoidP5printyyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.CommandVoid>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.CommandVoid>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkIsValid",
+            "printedName": "checkIsValid()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking11CommandVoidPAAE12checkIsValidSbyF",
+            "mangledName": "$s11DeepLinking11CommandVoidPAAE12checkIsValidSbyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.CommandVoid>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.CommandVoid>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "prepareString",
+            "printedName": "prepareString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking11CommandVoidPAAE13prepareStringSSSgyKF",
+            "mangledName": "$s11DeepLinking11CommandVoidPAAE13prepareStringSSSgyKF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.CommandVoid>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.CommandVoid>",
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "print",
+            "printedName": "print()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking11CommandVoidPAAE5printyyF",
+            "mangledName": "$s11DeepLinking11CommandVoidPAAE5printyyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.CommandVoid>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.CommandVoid>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11DeepLinking11CommandVoidP",
+        "mangledName": "$s11DeepLinking11CommandVoidP",
+        "moduleName": "DeepLinking",
+        "genericSig": "<τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+        "sugared_genericSig": "<Self : Swift.Decodable, Self : Swift.Encodable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeepLinking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeepLinking"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Wrapper",
+        "printedName": "Wrapper",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Wrapper",
+                "printedName": "DeepLinking.Wrapper",
+                "usr": "s:11DeepLinking7WrapperC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11DeepLinking7WrapperCACycfc",
+            "mangledName": "$s11DeepLinking7WrapperCACycfc",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "makeARequestBasedOnTPN",
+            "printedName": "makeARequestBasedOnTPN(tpnNo:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DPProtocol",
+                "printedName": "any DeepLinking.DPProtocol",
+                "usr": "s:11DeepLinking10DPProtocolP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7WrapperC22makeARequestBasedOnTPN5tpnNo8delegateySSSg_AA10DPProtocol_ptF",
+            "mangledName": "$s11DeepLinking7WrapperC22makeARequestBasedOnTPN5tpnNo8delegateySSSg_AA10DPProtocol_ptF",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeARequestBasedOnTransactionTypes",
+            "printedName": "makeARequestBasedOnTransactionTypes(type:Amount:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DPProtocol",
+                "printedName": "any DeepLinking.DPProtocol",
+                "usr": "s:11DeepLinking10DPProtocolP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7WrapperC35makeARequestBasedOnTransactionTypes4type6Amount8delegateySSSg_AhA10DPProtocol_ptF",
+            "mangledName": "$s11DeepLinking7WrapperC35makeARequestBasedOnTransactionTypes4type6Amount8delegateySSSg_AhA10DPProtocol_ptF",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadParameter",
+            "printedName": "downloadParameter(param:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any DeepLinking.Register)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Register",
+                    "printedName": "any DeepLinking.Register",
+                    "usr": "s:11DeepLinking8RegisterP"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DLProtocolV2",
+                "printedName": "any DeepLinking.DLProtocolV2",
+                "usr": "s:11DeepLinking12DLProtocolV2P"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7WrapperC17downloadParameter5param8delegateyAA8Register_pSg_AA12DLProtocolV2_ptF",
+            "mangledName": "$s11DeepLinking7WrapperC17downloadParameter5param8delegateyAA8Register_pSg_AA12DLProtocolV2_ptF",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startTransaction",
+            "printedName": "startTransaction(params:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayloadParameter",
+                "printedName": "any DeepLinking.PayloadParameter",
+                "usr": "s:11DeepLinking16PayloadParameterP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DLProtocolV2",
+                "printedName": "any DeepLinking.DLProtocolV2",
+                "usr": "s:11DeepLinking12DLProtocolV2P"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7WrapperC16startTransaction6params8delegateyAA16PayloadParameter_p_AA12DLProtocolV2_ptF",
+            "mangledName": "$s11DeepLinking7WrapperC16startTransaction6params8delegateyAA16PayloadParameter_p_AA12DLProtocolV2_ptF",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startVoid",
+            "printedName": "startVoid(params:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VoidPayloadParameter",
+                "printedName": "any DeepLinking.VoidPayloadParameter",
+                "usr": "s:11DeepLinking20VoidPayloadParameterP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DLProtocolV2",
+                "printedName": "any DeepLinking.DLProtocolV2",
+                "usr": "s:11DeepLinking12DLProtocolV2P"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7WrapperC9startVoid6params8delegateyAA0E16PayloadParameter_p_AA12DLProtocolV2_ptF",
+            "mangledName": "$s11DeepLinking7WrapperC9startVoid6params8delegateyAA0E16PayloadParameter_p_AA12DLProtocolV2_ptF",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startTicket",
+            "printedName": "startTicket(params:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TicketPayloadParameter",
+                "printedName": "any DeepLinking.TicketPayloadParameter",
+                "usr": "s:11DeepLinking22TicketPayloadParameterP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DLProtocolV2",
+                "printedName": "any DeepLinking.DLProtocolV2",
+                "usr": "s:11DeepLinking12DLProtocolV2P"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7WrapperC11startTicket6params8delegateyAA0E16PayloadParameter_p_AA12DLProtocolV2_ptF",
+            "mangledName": "$s11DeepLinking7WrapperC11startTicket6params8delegateyAA0E16PayloadParameter_p_AA12DLProtocolV2_ptF",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startBatchSettlement",
+            "printedName": "startBatchSettlement(delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DLProtocolV2",
+                "printedName": "any DeepLinking.DLProtocolV2",
+                "usr": "s:11DeepLinking12DLProtocolV2P"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7WrapperC20startBatchSettlement8delegateyAA12DLProtocolV2_p_tF",
+            "mangledName": "$s11DeepLinking7WrapperC20startBatchSettlement8delegateyAA12DLProtocolV2_p_tF",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "convertDictionaryToJSON",
+            "printedName": "convertDictionaryToJSON(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7WrapperC23convertDictionaryToJSONySSSgSDySSypGF",
+            "mangledName": "$s11DeepLinking7WrapperC23convertDictionaryToJSONySSSgSDySSypGF",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "parseURL",
+            "printedName": "parseURL(strURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7WrapperC8parseURL03strE0SS10Foundation0E0V_tF",
+            "mangledName": "$s11DeepLinking7WrapperC8parseURL03strE0SS10Foundation0E0V_tF",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "convertStringToDictionary",
+            "printedName": "convertStringToDictionary(text:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7WrapperC25convertStringToDictionary4textSDySSypGSgSS_tF",
+            "mangledName": "$s11DeepLinking7WrapperC25convertStringToDictionary4textSDySSypGSgSS_tF",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11DeepLinking7WrapperC",
+        "mangledName": "$s11DeepLinking7WrapperC",
+        "moduleName": "DeepLinking",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Register",
+        "printedName": "Register",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "tpn",
+            "printedName": "tpn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking8RegisterP3tpnSSvp",
+            "mangledName": "$s11DeepLinking8RegisterP3tpnSSvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking8RegisterP3tpnSSvg",
+                "mangledName": "$s11DeepLinking8RegisterP3tpnSSvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.Register>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.Register>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "merchantCode",
+            "printedName": "merchantCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking8RegisterP12merchantCodeSSvp",
+            "mangledName": "$s11DeepLinking8RegisterP12merchantCodeSSvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking8RegisterP12merchantCodeSSvg",
+                "mangledName": "$s11DeepLinking8RegisterP12merchantCodeSSvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.Register>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.Register>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "prepareDict",
+            "printedName": "prepareDict()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking8RegisterPAAE11prepareDictSDyS2SGyF",
+            "mangledName": "$s11DeepLinking8RegisterPAAE11prepareDictSDyS2SGyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.Register>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.Register>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11DeepLinking8RegisterP",
+        "mangledName": "$s11DeepLinking8RegisterP",
+        "moduleName": "DeepLinking",
+        "genericSig": "<τ_0_0 : DeepLinking.RegisterProtocol>",
+        "sugared_genericSig": "<Self : DeepLinking.RegisterProtocol>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RegisterProtocol",
+            "printedName": "RegisterProtocol",
+            "usr": "s:11DeepLinking16RegisterProtocolP",
+            "mangledName": "$s11DeepLinking16RegisterProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RegisterProtocol",
+        "printedName": "RegisterProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "prepareDict",
+            "printedName": "prepareDict()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking16RegisterProtocolP11prepareDictSDyS2SGyF",
+            "mangledName": "$s11DeepLinking16RegisterProtocolP11prepareDictSDyS2SGyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.RegisterProtocol>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.RegisterProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "prepareString",
+            "printedName": "prepareString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking16RegisterProtocolP13prepareStringSSSgyKF",
+            "mangledName": "$s11DeepLinking16RegisterProtocolP13prepareStringSSSgyKF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.RegisterProtocol>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.RegisterProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkIsValid",
+            "printedName": "checkIsValid()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking16RegisterProtocolP12checkIsValidSbyF",
+            "mangledName": "$s11DeepLinking16RegisterProtocolP12checkIsValidSbyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.RegisterProtocol>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.RegisterProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "print",
+            "printedName": "print()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking16RegisterProtocolP5printyyF",
+            "mangledName": "$s11DeepLinking16RegisterProtocolP5printyyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.RegisterProtocol>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.RegisterProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkIsValid",
+            "printedName": "checkIsValid()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking16RegisterProtocolPAAE12checkIsValidSbyF",
+            "mangledName": "$s11DeepLinking16RegisterProtocolPAAE12checkIsValidSbyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.RegisterProtocol>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.RegisterProtocol>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "prepareString",
+            "printedName": "prepareString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking16RegisterProtocolPAAE13prepareStringSSSgyKF",
+            "mangledName": "$s11DeepLinking16RegisterProtocolPAAE13prepareStringSSSgyKF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.RegisterProtocol>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.RegisterProtocol>",
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "print",
+            "printedName": "print()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking16RegisterProtocolPAAE5printyyF",
+            "mangledName": "$s11DeepLinking16RegisterProtocolPAAE5printyyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.RegisterProtocol>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.RegisterProtocol>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11DeepLinking16RegisterProtocolP",
+        "mangledName": "$s11DeepLinking16RegisterProtocolP",
+        "moduleName": "DeepLinking",
+        "genericSig": "<τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+        "sugared_genericSig": "<Self : Swift.Decodable, Self : Swift.Encodable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TicketPayloadParameter",
+        "printedName": "TicketPayloadParameter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking22TicketPayloadParameterP6amountSSSgvp",
+            "mangledName": "$s11DeepLinking22TicketPayloadParameterP6amountSSSgvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking22TicketPayloadParameterP6amountSSSgvg",
+                "mangledName": "$s11DeepLinking22TicketPayloadParameterP6amountSSSgvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.TicketPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.TicketPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tipAmount",
+            "printedName": "tipAmount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking22TicketPayloadParameterP9tipAmountSSSgvp",
+            "mangledName": "$s11DeepLinking22TicketPayloadParameterP9tipAmountSSSgvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking22TicketPayloadParameterP9tipAmountSSSgvg",
+                "mangledName": "$s11DeepLinking22TicketPayloadParameterP9tipAmountSSSgvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.TicketPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.TicketPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "feeAmount",
+            "printedName": "feeAmount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking22TicketPayloadParameterP9feeAmountSSSgvp",
+            "mangledName": "$s11DeepLinking22TicketPayloadParameterP9feeAmountSSSgvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking22TicketPayloadParameterP9feeAmountSSSgvg",
+                "mangledName": "$s11DeepLinking22TicketPayloadParameterP9feeAmountSSSgvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.TicketPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.TicketPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currencyCode",
+            "printedName": "currencyCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CurrencyCode",
+                "printedName": "DeepLinking.CurrencyCode",
+                "usr": "s:11DeepLinking12CurrencyCodeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking22TicketPayloadParameterP12currencyCodeAA08CurrencyG0Ovp",
+            "mangledName": "$s11DeepLinking22TicketPayloadParameterP12currencyCodeAA08CurrencyG0Ovp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "overriding": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CurrencyCode",
+                    "printedName": "DeepLinking.CurrencyCode",
+                    "usr": "s:11DeepLinking12CurrencyCodeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking22TicketPayloadParameterP12currencyCodeAA08CurrencyG0Ovg",
+                "mangledName": "$s11DeepLinking22TicketPayloadParameterP12currencyCodeAA08CurrencyG0Ovg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.TicketPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.TicketPayloadParameter>",
+                "protocolReq": true,
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tranType",
+            "printedName": "tranType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TransType",
+                "printedName": "DeepLinking.TransType",
+                "usr": "s:11DeepLinking9TransTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking22TicketPayloadParameterP8tranTypeAA05TransG0Ovp",
+            "mangledName": "$s11DeepLinking22TicketPayloadParameterP8tranTypeAA05TransG0Ovp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "overriding": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking22TicketPayloadParameterP8tranTypeAA05TransG0Ovg",
+                "mangledName": "$s11DeepLinking22TicketPayloadParameterP8tranTypeAA05TransG0Ovg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.TicketPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.TicketPayloadParameter>",
+                "protocolReq": true,
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "showTipScreen",
+            "printedName": "showTipScreen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking22TicketPayloadParameterP13showTipScreenSbSgvp",
+            "mangledName": "$s11DeepLinking22TicketPayloadParameterP13showTipScreenSbSgvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking22TicketPayloadParameterP13showTipScreenSbSgvg",
+                "mangledName": "$s11DeepLinking22TicketPayloadParameterP13showTipScreenSbSgvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.TicketPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.TicketPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "showBreakUpScreen",
+            "printedName": "showBreakUpScreen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking22TicketPayloadParameterP17showBreakUpScreenSbSgvp",
+            "mangledName": "$s11DeepLinking22TicketPayloadParameterP17showBreakUpScreenSbSgvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking22TicketPayloadParameterP17showBreakUpScreenSbSgvg",
+                "mangledName": "$s11DeepLinking22TicketPayloadParameterP17showBreakUpScreenSbSgvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.TicketPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.TicketPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "showApprovalScreen",
+            "printedName": "showApprovalScreen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking22TicketPayloadParameterP18showApprovalScreenSbSgvp",
+            "mangledName": "$s11DeepLinking22TicketPayloadParameterP18showApprovalScreenSbSgvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking22TicketPayloadParameterP18showApprovalScreenSbSgvg",
+                "mangledName": "$s11DeepLinking22TicketPayloadParameterP18showApprovalScreenSbSgvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.TicketPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.TicketPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rrn",
+            "printedName": "rrn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking22TicketPayloadParameterP3rrnSSvp",
+            "mangledName": "$s11DeepLinking22TicketPayloadParameterP3rrnSSvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking22TicketPayloadParameterP3rrnSSvg",
+                "mangledName": "$s11DeepLinking22TicketPayloadParameterP3rrnSSvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.TicketPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.TicketPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "prepareDict",
+            "printedName": "prepareDict()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking22TicketPayloadParameterPAAE11prepareDictSDyS2SGyF",
+            "mangledName": "$s11DeepLinking22TicketPayloadParameterPAAE11prepareDictSDyS2SGyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.TicketPayloadParameter>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.TicketPayloadParameter>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11DeepLinking22TicketPayloadParameterP",
+        "mangledName": "$s11DeepLinking22TicketPayloadParameterP",
+        "moduleName": "DeepLinking",
+        "genericSig": "<τ_0_0 : DeepLinking.Command>",
+        "sugared_genericSig": "<Self : DeepLinking.Command>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Command",
+            "printedName": "Command",
+            "usr": "s:11DeepLinking7CommandP",
+            "mangledName": "$s11DeepLinking7CommandP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayloadParameter",
+        "printedName": "PayloadParameter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking16PayloadParameterP6amountSSvp",
+            "mangledName": "$s11DeepLinking16PayloadParameterP6amountSSvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking16PayloadParameterP6amountSSvg",
+                "mangledName": "$s11DeepLinking16PayloadParameterP6amountSSvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.PayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.PayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tipAmount",
+            "printedName": "tipAmount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking16PayloadParameterP9tipAmountSSSgvp",
+            "mangledName": "$s11DeepLinking16PayloadParameterP9tipAmountSSSgvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking16PayloadParameterP9tipAmountSSSgvg",
+                "mangledName": "$s11DeepLinking16PayloadParameterP9tipAmountSSSgvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.PayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.PayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "feeAmount",
+            "printedName": "feeAmount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking16PayloadParameterP9feeAmountSSSgvp",
+            "mangledName": "$s11DeepLinking16PayloadParameterP9feeAmountSSSgvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking16PayloadParameterP9feeAmountSSSgvg",
+                "mangledName": "$s11DeepLinking16PayloadParameterP9feeAmountSSSgvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.PayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.PayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currencyCode",
+            "printedName": "currencyCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CurrencyCode",
+                "printedName": "DeepLinking.CurrencyCode",
+                "usr": "s:11DeepLinking12CurrencyCodeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking16PayloadParameterP12currencyCodeAA08CurrencyF0Ovp",
+            "mangledName": "$s11DeepLinking16PayloadParameterP12currencyCodeAA08CurrencyF0Ovp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "overriding": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CurrencyCode",
+                    "printedName": "DeepLinking.CurrencyCode",
+                    "usr": "s:11DeepLinking12CurrencyCodeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking16PayloadParameterP12currencyCodeAA08CurrencyF0Ovg",
+                "mangledName": "$s11DeepLinking16PayloadParameterP12currencyCodeAA08CurrencyF0Ovg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.PayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.PayloadParameter>",
+                "protocolReq": true,
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tranType",
+            "printedName": "tranType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TransType",
+                "printedName": "DeepLinking.TransType",
+                "usr": "s:11DeepLinking9TransTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking16PayloadParameterP8tranTypeAA05TransF0Ovp",
+            "mangledName": "$s11DeepLinking16PayloadParameterP8tranTypeAA05TransF0Ovp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "overriding": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking16PayloadParameterP8tranTypeAA05TransF0Ovg",
+                "mangledName": "$s11DeepLinking16PayloadParameterP8tranTypeAA05TransF0Ovg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.PayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.PayloadParameter>",
+                "protocolReq": true,
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "showTipScreen",
+            "printedName": "showTipScreen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking16PayloadParameterP13showTipScreenSbSgvp",
+            "mangledName": "$s11DeepLinking16PayloadParameterP13showTipScreenSbSgvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking16PayloadParameterP13showTipScreenSbSgvg",
+                "mangledName": "$s11DeepLinking16PayloadParameterP13showTipScreenSbSgvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.PayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.PayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "showBreakUpScreen",
+            "printedName": "showBreakUpScreen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking16PayloadParameterP17showBreakUpScreenSbSgvp",
+            "mangledName": "$s11DeepLinking16PayloadParameterP17showBreakUpScreenSbSgvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking16PayloadParameterP17showBreakUpScreenSbSgvg",
+                "mangledName": "$s11DeepLinking16PayloadParameterP17showBreakUpScreenSbSgvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.PayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.PayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "showApprovalScreen",
+            "printedName": "showApprovalScreen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking16PayloadParameterP18showApprovalScreenSbSgvp",
+            "mangledName": "$s11DeepLinking16PayloadParameterP18showApprovalScreenSbSgvp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking16PayloadParameterP18showApprovalScreenSbSgvg",
+                "mangledName": "$s11DeepLinking16PayloadParameterP18showApprovalScreenSbSgvg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.PayloadParameter>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.PayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "prepareDict",
+            "printedName": "prepareDict()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking16PayloadParameterPAAE11prepareDictSDyS2SGyF",
+            "mangledName": "$s11DeepLinking16PayloadParameterPAAE11prepareDictSDyS2SGyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.PayloadParameter>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.PayloadParameter>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11DeepLinking16PayloadParameterP",
+        "mangledName": "$s11DeepLinking16PayloadParameterP",
+        "moduleName": "DeepLinking",
+        "genericSig": "<τ_0_0 : DeepLinking.Command>",
+        "sugared_genericSig": "<Self : DeepLinking.Command>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Command",
+            "printedName": "Command",
+            "usr": "s:11DeepLinking7CommandP",
+            "mangledName": "$s11DeepLinking7CommandP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Command",
+        "printedName": "Command",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "currencyCode",
+            "printedName": "currencyCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CurrencyCode",
+                "printedName": "DeepLinking.CurrencyCode",
+                "usr": "s:11DeepLinking12CurrencyCodeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking7CommandP12currencyCodeAA08CurrencyE0Ovp",
+            "mangledName": "$s11DeepLinking7CommandP12currencyCodeAA08CurrencyE0Ovp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CurrencyCode",
+                    "printedName": "DeepLinking.CurrencyCode",
+                    "usr": "s:11DeepLinking12CurrencyCodeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking7CommandP12currencyCodeAA08CurrencyE0Ovg",
+                "mangledName": "$s11DeepLinking7CommandP12currencyCodeAA08CurrencyE0Ovg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.Command>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.Command>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tranType",
+            "printedName": "tranType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TransType",
+                "printedName": "DeepLinking.TransType",
+                "usr": "s:11DeepLinking9TransTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking7CommandP8tranTypeAA05TransE0Ovp",
+            "mangledName": "$s11DeepLinking7CommandP8tranTypeAA05TransE0Ovp",
+            "moduleName": "DeepLinking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking7CommandP8tranTypeAA05TransE0Ovg",
+                "mangledName": "$s11DeepLinking7CommandP8tranTypeAA05TransE0Ovg",
+                "moduleName": "DeepLinking",
+                "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.Command>",
+                "sugared_genericSig": "<Self where Self : DeepLinking.Command>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "prepareDict",
+            "printedName": "prepareDict()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7CommandP11prepareDictSDyS2SGyF",
+            "mangledName": "$s11DeepLinking7CommandP11prepareDictSDyS2SGyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.Command>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.Command>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "prepareString",
+            "printedName": "prepareString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7CommandP13prepareStringSSSgyKF",
+            "mangledName": "$s11DeepLinking7CommandP13prepareStringSSSgyKF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.Command>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.Command>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkIsValid",
+            "printedName": "checkIsValid()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7CommandP12checkIsValidSbyF",
+            "mangledName": "$s11DeepLinking7CommandP12checkIsValidSbyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.Command>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.Command>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "print",
+            "printedName": "print()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7CommandP5printyyF",
+            "mangledName": "$s11DeepLinking7CommandP5printyyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.Command>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.Command>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkIsValid",
+            "printedName": "checkIsValid()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7CommandPAAE12checkIsValidSbyF",
+            "mangledName": "$s11DeepLinking7CommandPAAE12checkIsValidSbyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.Command>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.Command>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "prepareString",
+            "printedName": "prepareString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7CommandPAAE13prepareStringSSSgyKF",
+            "mangledName": "$s11DeepLinking7CommandPAAE13prepareStringSSSgyKF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.Command>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.Command>",
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "print",
+            "printedName": "print()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking7CommandPAAE5printyyF",
+            "mangledName": "$s11DeepLinking7CommandPAAE5printyyF",
+            "moduleName": "DeepLinking",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeepLinking.Command>",
+            "sugared_genericSig": "<Self where Self : DeepLinking.Command>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11DeepLinking7CommandP",
+        "mangledName": "$s11DeepLinking7CommandP",
+        "moduleName": "DeepLinking",
+        "genericSig": "<τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+        "sugared_genericSig": "<Self : Swift.Decodable, Self : Swift.Encodable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeepLinking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeepLinking"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeepLinking"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IPOSGOAppWrapper",
+        "printedName": "IPOSGOAppWrapper",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IPOSGOAppWrapper",
+                "printedName": "DeepLinking.IPOSGOAppWrapper",
+                "usr": "s:11DeepLinking16IPOSGOAppWrapperC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11DeepLinking16IPOSGOAppWrapperCACycfc",
+            "mangledName": "$s11DeepLinking16IPOSGOAppWrapperCACycfc",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "makeARequestBasedOnTPN",
+            "printedName": "makeARequestBasedOnTPN(result:msg:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DPProtocol",
+                "printedName": "any DeepLinking.DPProtocol",
+                "usr": "s:11DeepLinking10DPProtocolP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking16IPOSGOAppWrapperC22makeARequestBasedOnTPN6result3msg8delegateySSSg_AhA10DPProtocol_ptF",
+            "mangledName": "$s11DeepLinking16IPOSGOAppWrapperC22makeARequestBasedOnTPN6result3msg8delegateySSSg_AhA10DPProtocol_ptF",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeArequestBasedOnEnity",
+            "printedName": "makeArequestBasedOnEnity(result:response:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DPProtocol",
+                "printedName": "any DeepLinking.DPProtocol",
+                "usr": "s:11DeepLinking10DPProtocolP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking16IPOSGOAppWrapperC24makeArequestBasedOnEnity6result8response8delegateySSSg_SDySSypGAA10DPProtocol_ptF",
+            "mangledName": "$s11DeepLinking16IPOSGOAppWrapperC24makeArequestBasedOnEnity6result8response8delegateySSSg_SDySSypGAA10DPProtocol_ptF",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "convertDictionaryToJSON",
+            "printedName": "convertDictionaryToJSON(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking16IPOSGOAppWrapperC23convertDictionaryToJSONySSSgSDySSypGF",
+            "mangledName": "$s11DeepLinking16IPOSGOAppWrapperC23convertDictionaryToJSONySSSgSDySSypGF",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "parseURL",
+            "printedName": "parseURL(strURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking16IPOSGOAppWrapperC8parseURL03strF0SS10Foundation0F0V_tF",
+            "mangledName": "$s11DeepLinking16IPOSGOAppWrapperC8parseURL03strF0SS10Foundation0F0V_tF",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "convertStringToDictionary",
+            "printedName": "convertStringToDictionary(text:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DeepLinking16IPOSGOAppWrapperC25convertStringToDictionary4textSDySSypGSgSS_tF",
+            "mangledName": "$s11DeepLinking16IPOSGOAppWrapperC25convertStringToDictionary4textSDySSypGSgSS_tF",
+            "moduleName": "DeepLinking",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11DeepLinking16IPOSGOAppWrapperC",
+        "mangledName": "$s11DeepLinking16IPOSGOAppWrapperC",
+        "moduleName": "DeepLinking",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeepLinking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CurrencyCode",
+        "printedName": "CurrencyCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "usd",
+            "printedName": "usd",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeepLinking.CurrencyCode.Type) -> DeepLinking.CurrencyCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CurrencyCode",
+                    "printedName": "DeepLinking.CurrencyCode",
+                    "usr": "s:11DeepLinking12CurrencyCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeepLinking.CurrencyCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CurrencyCode",
+                        "printedName": "DeepLinking.CurrencyCode",
+                        "usr": "s:11DeepLinking12CurrencyCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11DeepLinking12CurrencyCodeO3usdyA2CmF",
+            "mangledName": "$s11DeepLinking12CurrencyCodeO3usdyA2CmF",
+            "moduleName": "DeepLinking"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DeepLinking.CurrencyCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CurrencyCode",
+                    "printedName": "DeepLinking.CurrencyCode",
+                    "usr": "s:11DeepLinking12CurrencyCodeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11DeepLinking12CurrencyCodeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s11DeepLinking12CurrencyCodeO8rawValueACSgSS_tcfc",
+            "moduleName": "DeepLinking",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking12CurrencyCodeO8rawValueSSvp",
+            "mangledName": "$s11DeepLinking12CurrencyCodeO8rawValueSSvp",
+            "moduleName": "DeepLinking",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking12CurrencyCodeO8rawValueSSvg",
+                "mangledName": "$s11DeepLinking12CurrencyCodeO8rawValueSSvg",
+                "moduleName": "DeepLinking",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11DeepLinking12CurrencyCodeO",
+        "mangledName": "$s11DeepLinking12CurrencyCodeO",
+        "moduleName": "DeepLinking",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "MPOS_GenerateTransactionId",
+        "printedName": "MPOS_GenerateTransactionId(digits:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "usr": "s:Si"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:11DeepLinking26MPOS_GenerateTransactionId6digitsSSSi_tF",
+        "mangledName": "$s11DeepLinking26MPOS_GenerateTransactionId6digitsSSSi_tF",
+        "moduleName": "DeepLinking",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TransType",
+        "printedName": "TransType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "SALE",
+            "printedName": "SALE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeepLinking.TransType.Type) -> DeepLinking.TransType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeepLinking.TransType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransType",
+                        "printedName": "DeepLinking.TransType",
+                        "usr": "s:11DeepLinking9TransTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11DeepLinking9TransTypeO4SALEyA2CmF",
+            "mangledName": "$s11DeepLinking9TransTypeO4SALEyA2CmF",
+            "moduleName": "DeepLinking"
+          },
+          {
+            "kind": "Var",
+            "name": "REFUND",
+            "printedName": "REFUND",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeepLinking.TransType.Type) -> DeepLinking.TransType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeepLinking.TransType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransType",
+                        "printedName": "DeepLinking.TransType",
+                        "usr": "s:11DeepLinking9TransTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11DeepLinking9TransTypeO6REFUNDyA2CmF",
+            "mangledName": "$s11DeepLinking9TransTypeO6REFUNDyA2CmF",
+            "moduleName": "DeepLinking"
+          },
+          {
+            "kind": "Var",
+            "name": "VOID",
+            "printedName": "VOID",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeepLinking.TransType.Type) -> DeepLinking.TransType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeepLinking.TransType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransType",
+                        "printedName": "DeepLinking.TransType",
+                        "usr": "s:11DeepLinking9TransTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11DeepLinking9TransTypeO4VOIDyA2CmF",
+            "mangledName": "$s11DeepLinking9TransTypeO4VOIDyA2CmF",
+            "moduleName": "DeepLinking"
+          },
+          {
+            "kind": "Var",
+            "name": "PREAUTH",
+            "printedName": "PREAUTH",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeepLinking.TransType.Type) -> DeepLinking.TransType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeepLinking.TransType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransType",
+                        "printedName": "DeepLinking.TransType",
+                        "usr": "s:11DeepLinking9TransTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11DeepLinking9TransTypeO7PREAUTHyA2CmF",
+            "mangledName": "$s11DeepLinking9TransTypeO7PREAUTHyA2CmF",
+            "moduleName": "DeepLinking"
+          },
+          {
+            "kind": "Var",
+            "name": "TICKET",
+            "printedName": "TICKET",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeepLinking.TransType.Type) -> DeepLinking.TransType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeepLinking.TransType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransType",
+                        "printedName": "DeepLinking.TransType",
+                        "usr": "s:11DeepLinking9TransTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11DeepLinking9TransTypeO6TICKETyA2CmF",
+            "mangledName": "$s11DeepLinking9TransTypeO6TICKETyA2CmF",
+            "moduleName": "DeepLinking"
+          },
+          {
+            "kind": "Var",
+            "name": "SETTLEMENTS",
+            "printedName": "SETTLEMENTS",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeepLinking.TransType.Type) -> DeepLinking.TransType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeepLinking.TransType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransType",
+                        "printedName": "DeepLinking.TransType",
+                        "usr": "s:11DeepLinking9TransTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11DeepLinking9TransTypeO11SETTLEMENTSyA2CmF",
+            "mangledName": "$s11DeepLinking9TransTypeO11SETTLEMENTSyA2CmF",
+            "moduleName": "DeepLinking"
+          },
+          {
+            "kind": "Var",
+            "name": "VOIDSALE",
+            "printedName": "VOIDSALE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeepLinking.TransType.Type) -> DeepLinking.TransType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeepLinking.TransType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransType",
+                        "printedName": "DeepLinking.TransType",
+                        "usr": "s:11DeepLinking9TransTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11DeepLinking9TransTypeO8VOIDSALEyA2CmF",
+            "mangledName": "$s11DeepLinking9TransTypeO8VOIDSALEyA2CmF",
+            "moduleName": "DeepLinking"
+          },
+          {
+            "kind": "Var",
+            "name": "VOIDREFUND",
+            "printedName": "VOIDREFUND",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeepLinking.TransType.Type) -> DeepLinking.TransType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeepLinking.TransType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransType",
+                        "printedName": "DeepLinking.TransType",
+                        "usr": "s:11DeepLinking9TransTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11DeepLinking9TransTypeO10VOIDREFUNDyA2CmF",
+            "mangledName": "$s11DeepLinking9TransTypeO10VOIDREFUNDyA2CmF",
+            "moduleName": "DeepLinking"
+          },
+          {
+            "kind": "Var",
+            "name": "SETTINGS",
+            "printedName": "SETTINGS",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeepLinking.TransType.Type) -> DeepLinking.TransType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeepLinking.TransType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransType",
+                        "printedName": "DeepLinking.TransType",
+                        "usr": "s:11DeepLinking9TransTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11DeepLinking9TransTypeO8SETTINGSyA2CmF",
+            "mangledName": "$s11DeepLinking9TransTypeO8SETTINGSyA2CmF",
+            "moduleName": "DeepLinking"
+          },
+          {
+            "kind": "Var",
+            "name": "UPGRADEAPP",
+            "printedName": "UPGRADEAPP",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeepLinking.TransType.Type) -> DeepLinking.TransType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeepLinking.TransType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransType",
+                        "printedName": "DeepLinking.TransType",
+                        "usr": "s:11DeepLinking9TransTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11DeepLinking9TransTypeO10UPGRADEAPPyA2CmF",
+            "mangledName": "$s11DeepLinking9TransTypeO10UPGRADEAPPyA2CmF",
+            "moduleName": "DeepLinking"
+          },
+          {
+            "kind": "Var",
+            "name": "CASH",
+            "printedName": "CASH",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeepLinking.TransType.Type) -> DeepLinking.TransType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeepLinking.TransType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransType",
+                        "printedName": "DeepLinking.TransType",
+                        "usr": "s:11DeepLinking9TransTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11DeepLinking9TransTypeO4CASHyA2CmF",
+            "mangledName": "$s11DeepLinking9TransTypeO4CASHyA2CmF",
+            "moduleName": "DeepLinking"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DeepLinking.TransType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransType",
+                    "printedName": "DeepLinking.TransType",
+                    "usr": "s:11DeepLinking9TransTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11DeepLinking9TransTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s11DeepLinking9TransTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "DeepLinking",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DeepLinking9TransTypeO8rawValueSSvp",
+            "mangledName": "$s11DeepLinking9TransTypeO8rawValueSSvp",
+            "moduleName": "DeepLinking",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DeepLinking9TransTypeO8rawValueSSvg",
+                "mangledName": "$s11DeepLinking9TransTypeO8rawValueSSvg",
+                "moduleName": "DeepLinking",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11DeepLinking9TransTypeO",
+        "mangledName": "$s11DeepLinking9TransTypeO",
+        "moduleName": "DeepLinking",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "nullStringToEmpty",
+        "printedName": "nullStringToEmpty(string:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:11DeepLinking17nullStringToEmpty6stringS2SSg_tF",
+        "mangledName": "$s11DeepLinking17nullStringToEmpty6stringS2SSg_tF",
+        "moduleName": "DeepLinking",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeepLinking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeepLinking"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Wrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 312,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 182,
+      "length": 5,
+      "value": "\"840\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 619,
+      "length": 3,
+      "value": "\"$\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 738,
+      "length": 6,
+      "value": "\"sale\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 763,
+      "length": 8,
+      "value": "\"refund\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 788,
+      "length": 6,
+      "value": "\"void\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 814,
+      "length": 10,
+      "value": "\"pre auth\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 843,
+      "length": 8,
+      "value": "\"ticket\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 875,
+      "length": 13,
+      "value": "\"settlements\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 909,
+      "length": 11,
+      "value": "\"void sale\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 943,
+      "length": 13,
+      "value": "\"void refund\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 977,
+      "length": 10,
+      "value": "\"settings\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1010,
+      "length": 12,
+      "value": "\"upgradeApp\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1039,
+      "length": 6,
+      "value": "\"CASH\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1344,
+      "length": 14,
+      "value": "\"ogApplink:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1381,
+      "length": 18,
+      "value": "\"invokeApplink:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1420,
+      "length": 5,
+      "value": "\"tpn\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1444,
+      "length": 17,
+      "value": "\"applicationType\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1482,
+      "length": 8,
+      "value": "\"IPOSGO\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1508,
+      "length": 6,
+      "value": "\"JSON\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1530,
+      "length": 14,
+      "value": "\"446423293056\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1581,
+      "length": 51,
+      "value": "\"https:\/\/apps.apple.com\/us\/app\/iposgo\/id6444673674\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1646,
+      "length": 6,
+      "value": "\"sale\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1666,
+      "length": 6,
+      "value": "\"void\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1686,
+      "length": 8,
+      "value": "\"refund\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1708,
+      "length": 10,
+      "value": "\"pre auth\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1732,
+      "length": 8,
+      "value": "\"ticket\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1754,
+      "length": 7,
+      "value": "\"Batch\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1779,
+      "length": 12,
+      "value": "\"sdkVersion\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1803,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1820,
+      "length": 5,
+      "value": "\"Amt\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1843,
+      "length": 4,
+      "value": "\"V2\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1867,
+      "length": 14,
+      "value": "\"merchantCode\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1958,
+      "length": 14,
+      "value": "\"Enter Amount\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1989,
+      "length": 6,
+      "value": "\"sale\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 2014,
+      "length": 8,
+      "value": "\"refund\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 2039,
+      "length": 6,
+      "value": "\"void\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 2065,
+      "length": 10,
+      "value": "\"pre auth\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 2094,
+      "length": 8,
+      "value": "\"ticket\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 2126,
+      "length": 13,
+      "value": "\"settlements\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 2160,
+      "length": 11,
+      "value": "\"void sale\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 2194,
+      "length": 13,
+      "value": "\"void refund\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 2228,
+      "length": 10,
+      "value": "\"settings\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 2261,
+      "length": 12,
+      "value": "\"upgradeApp\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 2290,
+      "length": 6,
+      "value": "\"CASH\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/ipossystems-tap-on-phone-ios-09c23e948cab\/DeepLinking\/Wrapper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 2315,
+      "length": 9,
+      "value": "\" Wallet\""
+    }
+  ]
+}

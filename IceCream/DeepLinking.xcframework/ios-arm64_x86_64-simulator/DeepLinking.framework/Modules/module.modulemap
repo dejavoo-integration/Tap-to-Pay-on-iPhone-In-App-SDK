@@ -1,0 +1,11 @@
+framework module DeepLinking {
+  umbrella header "DeepLinking.h"
+  export *
+
+  module * { export * }
+}
+
+module DeepLinking.Swift {
+  header "DeepLinking-Swift.h"
+  requires objc
+}

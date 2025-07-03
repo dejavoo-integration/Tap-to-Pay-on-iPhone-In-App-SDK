@@ -1,0 +1,155 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DeepLinking
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+@_exported import DeepLinking
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol DPProtocol {
+  func didReceiveResponse(sucess: Foundation.URL?)
+  func didReceiveResp_Error(err: Swift.String?)
+}
+public protocol DLProtocolV2 {
+  func didReceiveV2Response(success: Foundation.URL?)
+  func didReceive_TransactionResponse(res: Swift.String?)
+  func didReceiveRespV2Error(err: Swift.String?)
+}
+public protocol VoidPayloadParameter : DeepLinking.CommandVoid {
+  var rrn: Swift.String { get }
+  var tranType: DeepLinking.TransType { get }
+  var showApprovalScreen: Swift.Bool? { get }
+}
+public protocol CommandVoid : Swift.Decodable, Swift.Encodable {
+  var tranType: DeepLinking.TransType { get }
+  func prepareDict() -> [Swift.String : Swift.String]
+  func prepareString() throws -> Swift.String?
+  func checkIsValid() -> Swift.Bool
+  func print()
+}
+extension DeepLinking.CommandVoid {
+  public func checkIsValid() -> Swift.Bool
+  public func prepareString() throws -> Swift.String?
+  public func print()
+}
+extension DeepLinking.VoidPayloadParameter {
+  public func prepareDict() -> [Swift.String : Swift.String]
+}
+public class Wrapper {
+  public init()
+  public func makeARequestBasedOnTPN(tpnNo: Swift.String?, delegate: any DeepLinking.DPProtocol)
+  public func makeARequestBasedOnTransactionTypes(type: Swift.String?, Amount: Swift.String?, delegate: any DeepLinking.DPProtocol)
+  public func downloadParameter(param: (any DeepLinking.Register)?, delegate: any DeepLinking.DLProtocolV2)
+  public func startTransaction(params: any DeepLinking.PayloadParameter, delegate: any DeepLinking.DLProtocolV2)
+  public func startVoid(params: any DeepLinking.VoidPayloadParameter, delegate: any DeepLinking.DLProtocolV2)
+  public func startTicket(params: any DeepLinking.TicketPayloadParameter, delegate: any DeepLinking.DLProtocolV2)
+  public func startBatchSettlement(delegate: any DeepLinking.DLProtocolV2)
+  public func convertDictionaryToJSON(_ dictionary: [Swift.String : Any]) -> Swift.String?
+  public func parseURL(strURL: Foundation.URL) -> Swift.String
+  public func convertStringToDictionary(text: Swift.String) -> [Swift.String : Any]?
+  @objc deinit
+}
+public protocol Register : DeepLinking.RegisterProtocol {
+  var tpn: Swift.String { get }
+  var merchantCode: Swift.String { get }
+}
+public protocol RegisterProtocol : Swift.Decodable, Swift.Encodable {
+  func prepareDict() -> [Swift.String : Swift.String]
+  func prepareString() throws -> Swift.String?
+  func checkIsValid() -> Swift.Bool
+  func print()
+}
+extension DeepLinking.RegisterProtocol {
+  public func checkIsValid() -> Swift.Bool
+  public func prepareString() throws -> Swift.String?
+  public func print()
+}
+extension DeepLinking.Register {
+  public func prepareDict() -> [Swift.String : Swift.String]
+}
+public protocol TicketPayloadParameter : DeepLinking.Command {
+  var amount: Swift.String? { get }
+  var tipAmount: Swift.String? { get }
+  var feeAmount: Swift.String? { get }
+  var currencyCode: DeepLinking.CurrencyCode { get }
+  var tranType: DeepLinking.TransType { get }
+  var showTipScreen: Swift.Bool? { get }
+  var showBreakUpScreen: Swift.Bool? { get }
+  var showApprovalScreen: Swift.Bool? { get }
+  var rrn: Swift.String { get }
+}
+extension DeepLinking.TicketPayloadParameter {
+  public func prepareDict() -> [Swift.String : Swift.String]
+}
+public protocol PayloadParameter : DeepLinking.Command {
+  var amount: Swift.String { get }
+  var tipAmount: Swift.String? { get }
+  var feeAmount: Swift.String? { get }
+  var currencyCode: DeepLinking.CurrencyCode { get }
+  var tranType: DeepLinking.TransType { get }
+  var showTipScreen: Swift.Bool? { get }
+  var showBreakUpScreen: Swift.Bool? { get }
+  var showApprovalScreen: Swift.Bool? { get }
+}
+public protocol Command : Swift.Decodable, Swift.Encodable {
+  var currencyCode: DeepLinking.CurrencyCode { get }
+  var tranType: DeepLinking.TransType { get }
+  func prepareDict() -> [Swift.String : Swift.String]
+  func prepareString() throws -> Swift.String?
+  func checkIsValid() -> Swift.Bool
+  func print()
+}
+extension DeepLinking.PayloadParameter {
+  public func prepareDict() -> [Swift.String : Swift.String]
+}
+extension DeepLinking.Command {
+  public func checkIsValid() -> Swift.Bool
+  public func prepareString() throws -> Swift.String?
+  public func print()
+}
+public class IPOSGOAppWrapper {
+  public init()
+  public func makeARequestBasedOnTPN(result: Swift.String?, msg: Swift.String?, delegate: any DeepLinking.DPProtocol)
+  public func makeArequestBasedOnEnity(result: Swift.String?, response: [Swift.String : Any], delegate: any DeepLinking.DPProtocol)
+  public func convertDictionaryToJSON(_ dictionary: [Swift.String : Any]) -> Swift.String?
+  public func parseURL(strURL: Foundation.URL) -> Swift.String
+  public func convertStringToDictionary(text: Swift.String) -> [Swift.String : Any]?
+  @objc deinit
+}
+public enum CurrencyCode : Swift.String, Swift.Codable {
+  case usd
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public func MPOS_GenerateTransactionId(digits: Swift.Int) -> Swift.String
+public enum TransType : Swift.String, Swift.Codable {
+  case SALE
+  case REFUND
+  case VOID
+  case PREAUTH
+  case TICKET
+  case SETTLEMENTS
+  case VOIDSALE
+  case VOIDREFUND
+  case SETTINGS
+  case UPGRADEAPP
+  case CASH
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public func nullStringToEmpty(string: Swift.String?) -> Swift.String
+extension DeepLinking.CurrencyCode : Swift.Equatable {}
+extension DeepLinking.CurrencyCode : Swift.Hashable {}
+extension DeepLinking.CurrencyCode : Swift.RawRepresentable {}
+extension DeepLinking.TransType : Swift.Equatable {}
+extension DeepLinking.TransType : Swift.Hashable {}
+extension DeepLinking.TransType : Swift.RawRepresentable {}

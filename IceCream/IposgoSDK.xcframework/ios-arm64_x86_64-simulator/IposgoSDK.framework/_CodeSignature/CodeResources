@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/IposgoSDK-Swift.h</key>
 		<data>
-		6G21WQ/UnqYqJVMXrPSuka6QbUk=
+		xdSJpnt81lvgLVImzY0GKN2aaqA=
 		</data>
 		<key>Headers/iPOSSDK.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>IPOSDB.momd/IPOSDB.mom</key>
 		<data>
-		qElwV37b7QlfTp577sVHripQnx8=
+		/EEuVkFhzch+BhvluwHQr737wH4=
 		</data>
 		<key>IPOSDB.momd/VersionInfo.plist</key>
 		<data>
@@ -22,51 +22,63 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Zh6AwCoti2SKrUuuXwnqhDTTlgw=
+		eJNhYFo7vY84i6kyrXYJMDxPMO0=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		trR4kbh517TGStqpnNRHK0BUVs8=
+		Nw82xhRj0qs0BOPhNsqZIRcSaD8=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		IR8bsTVBjg4Ra/SFCNPIOn4Nsxg=
+		uH0VUBl9gW+OFvy2MW1V/L4nJSw=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		cuWMqlal+lwpE5NDaX5lxcroMo8=
+		2a1/shYHNfNFWAMDBR4uj4c3rEs=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		IR8bsTVBjg4Ra/SFCNPIOn4Nsxg=
+		uH0VUBl9gW+OFvy2MW1V/L4nJSw=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		W2KLAPdZ2lRiuCK9Gj2A2CUZg3E=
+		Ld3c684Y5cfZLz3uqNVHB16luRY=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		trR4kbh517TGStqpnNRHK0BUVs8=
+		Nw82xhRj0qs0BOPhNsqZIRcSaD8=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		pceZTV3Ipbop34irPCYIXFV125w=
+		KlggOAq4QOXVUySJ2Ik7ogJ6gRU=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		A08H6Apyl2pKVPny96qXw3bvq/o=
+		V4V9XOk9c/Wdz25GYcaYIMNKgEg=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pceZTV3Ipbop34irPCYIXFV125w=
+		KlggOAq4QOXVUySJ2Ik7ogJ6gRU=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		g5IFtjGk1CBIvSlgoPai4rUhyQY=
+		7AUF3VQ3lZlwB8gUor7g7G06yFw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		1UekUH/VEuaUlSK3Dw+WRlgxS7g=
+		</data>
+		<key>Sheet.storyboardc/ExternalPayViewController.nib</key>
+		<data>
+		3YX7pQP9toONoFpUpu8IohgqJcs=
+		</data>
+		<key>Sheet.storyboardc/Info.plist</key>
+		<data>
+		YfrWjpht552/LqQXRhAw8AVA944=
+		</data>
+		<key>Sheet.storyboardc/YUD-A4-kuR-view-IAA-yv-m1y.nib</key>
+		<data>
+		0ZNxCMtz46n/UHZnBezYOzV/Jhg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			taA2wp0Ck6djpDB02I5DV+xYqEI8zsOHDYtap6r/msI=
+			etLTmQNSggTcyjUXbdblcqcZYL9OfV35DwnEcCYg5Oc=
 			</data>
 		</dict>
 		<key>Headers/iPOSSDK.h</key>
@@ -89,7 +101,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jF2XtWvKdjBGec9KSfKxRuxR5nmHHwAohsTZ40ZL8X4=
+			Ux8JN/ACdMQ3gclOAbd9DLYc6YpKIgFGdfo+CSLTxPU=
 			</data>
 		</dict>
 		<key>IPOSDB.momd/VersionInfo.plist</key>
@@ -103,70 +115,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BjtODcDhIR18lzhC54t4rlcHLzoBtA2B3nC3036rI0M=
+			siHghZy4w2QiCdfNs5ZJJb2q/MhsSBt403q68yCOVqY=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AZSwToAo/mKdmfsZjqAsgcBhsNFlAWbu+y58o88BL+U=
+			6bPNEfYN5jIW57t3YiErWCCc+K4MUbIurp/HvMyDsmA=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jkb158EtHKiT6HVJ1fB2JRj5C4fwu5ha+Gr7JLQJUyQ=
+			QrJOzI/ADwN3QyH+5NywXCbTX38y9Vgyyc7bVF84MQY=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AZSwToAo/mKdmfsZjqAsgcBhsNFlAWbu+y58o88BL+U=
+			6bPNEfYN5jIW57t3YiErWCCc+K4MUbIurp/HvMyDsmA=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9nzIJJKrnYgdpE8m20M+hgEf/pM2HJAef5Q/7tR+Zls=
+			urLvtcMjOACE+X55jDYo5IpGlG8fZQoJqG/ULzkMkDU=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BjtODcDhIR18lzhC54t4rlcHLzoBtA2B3nC3036rI0M=
+			siHghZy4w2QiCdfNs5ZJJb2q/MhsSBt403q68yCOVqY=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tq8c7HfE7VwxbvOkwvHuAOkgixNmDewLApuNA959+m0=
+			fhIdPe9qFp/O1C5uTEtmv0YaDAzEqxsPmgH8EYJy7Mo=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2AIkT7v2cCUdNk6Xk96Bkp/aYeJr476N6fpgfB6q+ag=
+			r3i9YqA4ulLUTkpOx1APV0sQ/KlJEzbG31P+vvYlJkw=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tq8c7HfE7VwxbvOkwvHuAOkgixNmDewLApuNA959+m0=
+			fhIdPe9qFp/O1C5uTEtmv0YaDAzEqxsPmgH8EYJy7Mo=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2AQdM24G1n+nm4DzFlzmydUQC5blzmIrUPxZxfdY2OA=
+			gwu7ztYNaOrQg2zqdwIYCHQFOVn5tjJFLzs04ySYS6o=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -174,6 +186,27 @@
 			<key>hash2</key>
 			<data>
 			GqUeZXNAMqthlVV9p8rqMoN7JgxE/W8HrYCeGvuoK7s=
+			</data>
+		</dict>
+		<key>Sheet.storyboardc/ExternalPayViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XAGCft/zsTofkZoKlqjkpB+iLm9flER5RtspPlB7UNQ=
+			</data>
+		</dict>
+		<key>Sheet.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7CbWI7eWraeZGHQKnUwk6Ngvsl1MoEqIhvncDao3l6M=
+			</data>
+		</dict>
+		<key>Sheet.storyboardc/YUD-A4-kuR-view-IAA-yv-m1y.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DaaxrLibh1t/Ah+ejlY5YqZ3rwhMFYWU0hGYMKJOtks=
 			</data>
 		</dict>
 	</dict>

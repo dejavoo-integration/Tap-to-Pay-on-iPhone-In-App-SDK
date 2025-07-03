@@ -7,14 +7,31 @@
 
 import UIKit
 import IposgoSDK
+import DeepLinking
+
+protocol RegisterDeepLinking {
+    
+    func didReceiveDeepLink(isFromDlFlow:  Bool?)
+}
+
+extension RegistrationViewController : RegisterDeepLinking {
+    func didReceiveDeepLink(isFromDlFlow: Bool?) {
+        self.isFromDLFlow = isFromDlFlow ?? true
+    }
+}
 
 class RegistrationViewController: BaseViewController {
     
+    
+   
     @IBOutlet weak var titlelb:UILabel!
     @IBOutlet weak var txt: UITextView!
     @IBOutlet weak var tpnTxtFld: UITextField!
     let readerInstance = IposgoReader()
     @IBOutlet weak var merchantCode: UITextField!
+    let dLReaderInstance = Wrapper()
+    var isFromDLFlow = false
+    var callBackMessage: String = ""
     
     
     override func viewDidLoad() {
@@ -22,17 +39,21 @@ class RegistrationViewController: BaseViewController {
        
         merchantCode.keyboardType = .numberPad
         tpnTxtFld.keyboardType = .numberPad
+        
         tpnTxtFld.delegate = self
         merchantCode.delegate = self
-        NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
-      
         
+        NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
+        
+   
     }
     
     @objc func appDidBecomeActive() {
          
-        readerInstance.delegate = self
-        readerInstance.checkDeviceConfiguration()
+        if UserDefaults.standard.string(forKey: UserDefaults.Keys.inAppSDKVersion.rawValue) == "1" {
+            readerInstance.delegate = self
+            readerInstance.checkDeviceConfiguration()
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -41,7 +62,19 @@ class RegistrationViewController: BaseViewController {
       
 
     override func viewWillAppear(_ animated: Bool) {
-        titlelb.text = titlename
+        titlelb.text = Constant.Registration.rawValue
+        
+        
+        if callBackMessage != "" {
+            txt.text = callBackMessage
+        }
+        if let tpn = UserDefaults.standard.string(forKey: UserDefaults.Keys.tpn.rawValue){
+            tpnTxtFld.text = tpn
+        }
+        if let merchantcode = UserDefaults.standard.string(forKey: UserDefaults.Keys.merchantCode.rawValue){
+            merchantCode.text = merchantcode
+        }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -58,26 +91,40 @@ class RegistrationViewController: BaseViewController {
         self.tpnTxtFld.endEditing(true)
         
         guard nullStringToEmpty(string: tpnTxtFld.text) != "" else {
-            let alert = UIAlertController(title: "Alert", message: "Enter TPN", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            let alert = UIAlertController(title: Constant.Alert.rawValue, message: Constant.enterTPN.rawValue, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: Constant.ok.rawValue, style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             return
         }
         
         guard nullStringToEmpty(string: merchantCode.text) != "" else {
-            let alert = UIAlertController(title: "Alert", message: "Enter Merchant Code", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            let alert = UIAlertController(title: Constant.Alert.rawValue, message: Constant.merchantCode.rawValue, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: Constant.ok.rawValue, style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             return
         }
         
         LoaDer.showOverlay(view: self.view)
-        let payload = RegisterData(tpn: nullStringToEmpty(string: tpnTxtFld.text), merchantCode: nullStringToEmpty(string: merchantCode.text))
-        readerInstance.delegate = self
-        Task {
-            
-            readerInstance.downloadParameter(param: payload)
-        }
+        
+            if isFromDLFlow == true {
+                
+                deeplinkingRegistration()
+                
+            } else { // InApp SDK
+                let payload = RegisterData(tpn:  tpnTxtFld.text ?? "", merchantCode: merchantCode.text ?? "")
+                readerInstance.delegate = self
+                
+                Task {
+                    
+                    readerInstance.downloadParameter(param: payload)
+                }
+            }
+    }
+    
+    func deeplinkingRegistration()  {
+       
+        let payload = DeepLinkingRegisterData(tpn:  tpnTxtFld.text ?? "", merchantCode:  merchantCode.text ?? "")
+        dLReaderInstance.downloadParameter(param: payload , delegate: self)
         
     }
 
@@ -96,15 +143,15 @@ extension RegistrationViewController: IposgoDelegate {
         }
         switch nullStringToEmpty(string: error) {
             
-        case nullStringToEmpty(string: "Transaction canceled by the merchant/card holder"):
+        case nullStringToEmpty(string: Constant.cardCancelled.rawValue):
             return
             
         default:
             
             DispatchQueue.main.async { [self] in
               
-                let alert = UIAlertController(title: "Alert", message: nullStringToEmpty(string: error), preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+                let alert = UIAlertController(title: Constant.Alert.rawValue, message: nullStringToEmpty(string: error), preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: Constant.ok.rawValue, style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
                 self.readerInstance.cleanup(delegate: self)
             }
@@ -122,45 +169,36 @@ extension RegistrationViewController: IposgoDelegate {
        
             LoaDer.hideOverlayView()
             
-            if nullStringToEmpty(string: message) == "Device is ready for tap to pay now" {
-                UserDefaults.standard.setValue(true, forKey: "termsConditionsAccepted")
-                UserDefaults.standard.setValue(true, forKey: "isRegistered")
+            if nullStringToEmpty(string: message) == UserDefaults.Keys.deviceReadyStatus.rawValue {
+                
+                UserDefaults.standard.setValue(true, forKey: UserDefaults.Keys.termsConditionsAccepted.rawValue)
+                UserDefaults.standard.setValue(true, forKey: UserDefaults.Keys.isRegistered.rawValue)
+                
+                let inAppKey = UserDefaults.Keys.inAppSDKVersion.rawValue
+                let deepLinkKey = UserDefaults.Keys.deepLinkingVersion.rawValue
+                let tpn = UserDefaults.Keys.tpn.rawValue
+                let merchantcode = UserDefaults.Keys.merchantCode.rawValue
+                UserDefaults.standard.set("1", forKey: inAppKey)
+                UserDefaults.standard.set("0", forKey: deepLinkKey)
+                
+                UserDefaults.standard.set(tpnTxtFld.text, forKey: tpn)
+                UserDefaults.standard.set(merchantCode.text, forKey: merchantcode)
+                
+               
                 //Navigation
-                showAlertAction(title: "Success", message: "Device is ready for tap to pay now")
+                guard let VC = self.storyboard?.instantiateViewController(identifier: "SDKConfigurationVC") as? SDKConfigurationVC else { return }
+                VC.delegate = self
+                self.navigationController?.pushViewController(VC, animated: true)
+                
             } else {
+                
                 self.txt.text = nullStringToEmpty(string: message)
             }
    
         }
+        
     }
     
-    func showAlertAction(title: String, message: String){
-        
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action:UIAlertAction!) in
-                let VC = self.storyboard?.instantiateViewController(identifier: "CollectionListVC") as! CollectionListVC
-                titlename = "Sale"
-                VC.tranType = .SALE
-                txnType = .SALE
-                self.navigationController?.pushViewController(VC, animated: true)
-           
-        }))
-        
-        self.present(alert, animated: true, completion: nil)
-    }
-    
-    func routetoCollectionVC(){
-        if let targetVC = self.navigationController?.viewControllers.first(where: { $0 is CollectionListVC }) {
-            self.navigationController?.popToViewController(targetVC, animated: true)
-            titlename = "Sale"
-            txnType = .SALE
-          
-            targetVC.viewWillAppear(true)
-        }else{
-            let VC = self.storyboard?.instantiateViewController(identifier: "CollectionListVC") as! CollectionListVC
-            self.navigationController?.pushViewController(VC, animated: true)
-        }
-    }
     
 }
 

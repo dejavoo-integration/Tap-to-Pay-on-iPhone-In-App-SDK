@@ -24,7 +24,9 @@ class MenuViewController: UIViewController {
                      MenuItem(title: "Refund",image: "dollarsign.circle.fill"),
                      MenuItem(title: "PreAuth",image: "dollarsign.circle.fill"),
                      MenuItem(title: "Void",image: "ticket.fill"),
-                     MenuItem(title: "Ticket",image: "ticket.fill")]
+                     MenuItem(title: "Ticket",image: "ticket.fill"),
+                     MenuItem(title: "Batch Settlement", image: "filemenu.and.cursorarrow"),
+                     MenuItem(title: "Configuration",image: "switch.2")]
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(_:)))
         swipeLeft.direction = .left
         view.addGestureRecognizer(swipeLeft)

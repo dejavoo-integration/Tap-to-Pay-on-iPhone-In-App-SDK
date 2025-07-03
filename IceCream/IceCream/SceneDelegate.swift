@@ -6,11 +6,17 @@
 //
 
 import UIKit
+import DeepLinking
+import IposgoSDK
+
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var navigationController: UINavigationController?
+    //Create a variable to access the methods
+    var readerInstance = IposgoReader()
+    var dlReaderInstance = Wrapper()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -50,3 +56,96 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+extension SceneDelegate {
+    
+    public func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        
+        let newURL = URL(string:  (nullStringToEmpty(string: URLContexts.first?.url.absoluteString)))
+        let getResponse =  dlReaderInstance.parseURL(strURL: newURL!)
+        if let data = getResponse.data(using: .utf8) {
+            do {
+                if let jsonDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                    print("Converted JSON Dictionary: \(jsonDict)")
+                    
+                    let responseCode = jsonDict["ResponseCode"] as? String
+                    let Spin_Response = jsonDict["Spin_Response"] as? [String:Any]
+                    let extData = Spin_Response?["ExtData"] as? [String: Any]
+                    
+                    if responseCode == "00" && extData?.count == 0 { //Reg success
+                        readerInstance.deiniteSessionOFReaderAndConfigurations()
+                        routeToSDKVC(res: getResponse, regFlag: true)
+                    } else {
+                        
+                        if (UserDefaults.standard.value(forKey: UserDefaults.Keys.isFromVoidPreAuthList.rawValue) != nil) == true {
+                            UserDefaults.standard.removeObject(forKey: UserDefaults.Keys.lastTransaction.rawValue)
+                        }
+                        
+                        if extData?.count ?? 0 > 0 {//Txn success or failure
+                            readerInstance.deiniteSessionOFReaderAndConfigurations()
+                            routeToCustomerCopy(responseDict: jsonDict, message: "")
+
+                        } else { //common failure
+                           
+                            let responseCode = jsonDict["responseCode"] as? String
+                            if responseCode == "00" && extData?.count == nil ||  extData?.count == 0 {
+                                readerInstance.deiniteSessionOFReaderAndConfigurations()
+                                routeToSDKVC(res: getResponse, regFlag: true)
+                            } else {
+                                readerInstance.deiniteSessionOFReaderAndConfigurations()
+                                routeToCustomerCopy(responseDict: [:], message: getResponse)
+                            }
+                            
+                        }
+                    }
+                }
+            } catch {
+                print("JSON parsing error: \(error)")
+            }
+        }
+      
+    }
+    
+    func routeToSDKVC(res: String, regFlag: Bool) {
+        //Redirect to TPN screen for user login
+        guard let regView =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SDKConfigurationVC") as? SDKConfigurationVC else { return }
+        let inAppKey = UserDefaults.Keys.inAppSDKVersion.rawValue
+        let deepLinkKey = UserDefaults.Keys.deepLinkingVersion.rawValue
+        UserDefaults.standard.set("1", forKey: deepLinkKey)
+        UserDefaults.standard.set("0", forKey: inAppKey)
+        regView.isFromCallBacK = true
+        let navigationController = UINavigationController(rootViewController: regView)
+        self.navigationController = navigationController
+        navigationController.navigationBar.isHidden = true
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+    }
+    
+    func routeToRegisterVC(res: String, regFlag: Bool) {
+        //Redirect to TPN screen for user login
+        guard let regView =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegistrationViewController") as? RegistrationViewController else { return }
+        let inAppKey = UserDefaults.Keys.inAppSDKVersion.rawValue
+        let deepLinkKey = UserDefaults.Keys.deepLinkingVersion.rawValue
+        UserDefaults.standard.set("1", forKey: deepLinkKey)
+        UserDefaults.standard.set("0", forKey: inAppKey)
+        regView.callBackMessage = res
+        let navigationController = UINavigationController(rootViewController: regView)
+        self.navigationController = navigationController
+        navigationController.navigationBar.isHidden = true
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+    }
+    
+    func routeToCustomerCopy(responseDict: [String:Any],message: String?) {
+        //Redirect to TPN screen for user login
+        guard let regView =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CustomerCopyViewController") as? CustomerCopyViewController else { return }
+        regView.isFromCallBack = true
+        regView.responseDict = responseDict
+        regView.errorMsg = nullStringToEmpty(string: message)
+        let navigationController = UINavigationController(rootViewController: regView)
+        self.navigationController = navigationController
+        navigationController.navigationBar.isHidden = true
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+    }
+    
+}

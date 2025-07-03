@@ -19,6 +19,8 @@ class ListTableViewCell: UITableViewCell {
     @IBOutlet weak var collectioncounttext:UITextField!
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        collectioncounttext.isUserInteractionEnabled = false
         backgroundview?.layer.cornerRadius = 9
         backgroundview?.dropShadow(scale: true)
         collectionImg.layer.cornerRadius = 9

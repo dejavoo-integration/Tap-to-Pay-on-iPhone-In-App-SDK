@@ -154,3 +154,34 @@ class func animatedImageWithSource(source: CGImageSource) -> UIImage? {
     return animation
 }
 }
+
+
+
+func loadGif(name: String) -> UIImage? {
+    guard let path = Bundle.main.path(forResource: name, ofType: "gif"),
+          let data = try? Data(contentsOf: URL(fileURLWithPath: path)) else {
+        return nil
+    }
+    
+    guard let source = CGImageSourceCreateWithData(data as CFData, nil) else {
+        return nil
+    }
+    
+    var images = [UIImage]()
+    var duration: TimeInterval = 0
+    
+    let count = CGImageSourceGetCount(source)
+    for i in 0..<count {
+        if let cgImage = CGImageSourceCreateImageAtIndex(source, i, nil) {
+            images.append(UIImage(cgImage: cgImage))
+        }
+        
+        if let properties = CGImageSourceCopyPropertiesAtIndex(source, i, nil) as? [CFString: Any],
+           let gifInfo = properties[kCGImagePropertyGIFDictionary] as? [CFString: Any],
+           let delayTime = gifInfo[kCGImagePropertyGIFDelayTime] as? NSNumber {
+            duration += delayTime.doubleValue
+        }
+    }
+    
+    return UIImage.animatedImage(with: images, duration: duration)
+}
