@@ -23,6 +23,7 @@ enum Constant : String {
     case Alert = "Alert"
     case Ticket = "Ticket"
     case ticket = "ticket"
+    case void = "void"
     case paymentSuccessMessage = "Your payment was successfully processed. Thank you!"
     case approval = "APPROVED"
     case cardCancelled = "Transaction canceled by the merchant/card holder"
@@ -36,6 +37,10 @@ enum Constant : String {
     case paymentDeclineMessage = "Your payment was decline with\n"
     case DECLINE = "DECLINE"
     case enterAmount = "Enter Amount"
+    case sendlinkError = "Please enter your email ID or phone number"
+    case invalidNumber = "Invalid Mobile Number"
+    case mailAddress = "Invalid Email Address"
+     
 }
 
 enum ParamKey : String {

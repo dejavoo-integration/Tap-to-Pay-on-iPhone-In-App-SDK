@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		18631C812DF0199300ED3C49 /* DeepLinking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18631C7E2DF0198E00ED3C49 /* DeepLinking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		188F3D282E24E70700BD6806 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18FA4E662DE8A51C00F95B94 /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = 18FA4E652DE8A51C00F95B94 /* SwiftyGif */; };
-		7E2BF8792E13BAB50035477E /* IposgoSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2BF8782E13BAB50035477E /* IposgoSDK.xcframework */; };
+		7E79F0182E815A240031F745 /* IposgoSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E79F0172E815A240031F745 /* IposgoSDK.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,6 +21,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				18631C812DF0199300ED3C49 /* DeepLinking.xcframework in Embed Frameworks */,
+				188F3D282E24E70700BD6806 /* (null) in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,8 +30,8 @@
 
 /* Begin PBXFileReference section */
 		18631C7E2DF0198E00ED3C49 /* DeepLinking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DeepLinking.xcframework; sourceTree = "<group>"; };
-		7E2BF8782E13BAB50035477E /* IposgoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IposgoSDK.xcframework; sourceTree = "<group>"; };
 		7E671C1E2D50D2A400505427 /* IceCream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E79F0172E815A240031F745 /* IposgoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IposgoSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -59,7 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18FA4E662DE8A51C00F95B94 /* SwiftyGif in Frameworks */,
-				7E2BF8792E13BAB50035477E /* IposgoSDK.xcframework in Frameworks */,
+				7E79F0182E815A240031F745 /* IposgoSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				18631C7E2DF0198E00ED3C49 /* DeepLinking.xcframework */,
-				7E2BF8782E13BAB50035477E /* IposgoSDK.xcframework */,
+				7E79F0172E815A240031F745 /* IposgoSDK.xcframework */,
 				7E671C202D50D2A400505427 /* IceCream */,
 				7E671C1F2D50D2A400505427 /* Products */,
 			);
@@ -174,7 +176,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "/Users/apple/Documents/DV-Demo/iposgo-dl-sdk-ios/IceCream/ipogo.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8869D8BJD2;
@@ -209,7 +211,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "/Users/apple/Documents/DV-Demo/iposgo-dl-sdk-ios/IceCream/ipogo.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8869D8BJD2;

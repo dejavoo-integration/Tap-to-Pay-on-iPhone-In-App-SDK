@@ -640,6 +640,270 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "LinkExpiry",
+        "printedName": "LinkExpiry",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "OneDay",
+            "printedName": "OneDay",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IposgoSDK.LinkExpiry.Type) -> IposgoSDK.LinkExpiry",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkExpiry",
+                    "printedName": "IposgoSDK.LinkExpiry",
+                    "usr": "s:9IposgoSDK10LinkExpiryO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IposgoSDK.LinkExpiry.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkExpiry",
+                        "printedName": "IposgoSDK.LinkExpiry",
+                        "usr": "s:9IposgoSDK10LinkExpiryO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9IposgoSDK10LinkExpiryO6OneDayyA2CmF",
+            "mangledName": "$s9IposgoSDK10LinkExpiryO6OneDayyA2CmF",
+            "moduleName": "IposgoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "OneWeek",
+            "printedName": "OneWeek",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IposgoSDK.LinkExpiry.Type) -> IposgoSDK.LinkExpiry",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkExpiry",
+                    "printedName": "IposgoSDK.LinkExpiry",
+                    "usr": "s:9IposgoSDK10LinkExpiryO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IposgoSDK.LinkExpiry.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkExpiry",
+                        "printedName": "IposgoSDK.LinkExpiry",
+                        "usr": "s:9IposgoSDK10LinkExpiryO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9IposgoSDK10LinkExpiryO7OneWeekyA2CmF",
+            "mangledName": "$s9IposgoSDK10LinkExpiryO7OneWeekyA2CmF",
+            "moduleName": "IposgoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "OneMonth",
+            "printedName": "OneMonth",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IposgoSDK.LinkExpiry.Type) -> IposgoSDK.LinkExpiry",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkExpiry",
+                    "printedName": "IposgoSDK.LinkExpiry",
+                    "usr": "s:9IposgoSDK10LinkExpiryO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IposgoSDK.LinkExpiry.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkExpiry",
+                        "printedName": "IposgoSDK.LinkExpiry",
+                        "usr": "s:9IposgoSDK10LinkExpiryO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9IposgoSDK10LinkExpiryO8OneMonthyA2CmF",
+            "mangledName": "$s9IposgoSDK10LinkExpiryO8OneMonthyA2CmF",
+            "moduleName": "IposgoSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "IposgoSDK.LinkExpiry?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkExpiry",
+                    "printedName": "IposgoSDK.LinkExpiry",
+                    "usr": "s:9IposgoSDK10LinkExpiryO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9IposgoSDK10LinkExpiryO8rawValueACSgSS_tcfc",
+            "mangledName": "$s9IposgoSDK10LinkExpiryO8rawValueACSgSS_tcfc",
+            "moduleName": "IposgoSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK10LinkExpiryO8rawValueSSvp",
+            "mangledName": "$s9IposgoSDK10LinkExpiryO8rawValueSSvp",
+            "moduleName": "IposgoSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK10LinkExpiryO8rawValueSSvg",
+                "mangledName": "$s9IposgoSDK10LinkExpiryO8rawValueSSvg",
+                "moduleName": "IposgoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9IposgoSDK10LinkExpiryO",
+        "mangledName": "$s9IposgoSDK10LinkExpiryO",
+        "moduleName": "IposgoSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "PaymentMethod",
         "printedName": "PaymentMethod",
         "children": [
@@ -752,6 +1016,43 @@
             "declKind": "EnumElement",
             "usr": "s:9IposgoSDK13PaymentMethodO2QRyA2CmF",
             "mangledName": "$s9IposgoSDK13PaymentMethodO2QRyA2CmF",
+            "moduleName": "IposgoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "SendLink",
+            "printedName": "SendLink",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IposgoSDK.PaymentMethod.Type) -> IposgoSDK.PaymentMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentMethod",
+                    "printedName": "IposgoSDK.PaymentMethod",
+                    "usr": "s:9IposgoSDK13PaymentMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IposgoSDK.PaymentMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentMethod",
+                        "printedName": "IposgoSDK.PaymentMethod",
+                        "usr": "s:9IposgoSDK13PaymentMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9IposgoSDK13PaymentMethodO8SendLinkyA2CmF",
+            "mangledName": "$s9IposgoSDK13PaymentMethodO8SendLinkyA2CmF",
             "moduleName": "IposgoSDK"
           },
           {
@@ -2035,6 +2336,181 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK16PayloadParameterP11descriptionSSSgvp",
+            "mangledName": "$s9IposgoSDK16PayloadParameterP11descriptionSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK16PayloadParameterP11descriptionSSSgvg",
+                "mangledName": "$s9IposgoSDK16PayloadParameterP11descriptionSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.PayloadParameter>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.PayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "Linkexpiry",
+            "printedName": "Linkexpiry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "IposgoSDK.LinkExpiry?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkExpiry",
+                    "printedName": "IposgoSDK.LinkExpiry",
+                    "usr": "s:9IposgoSDK10LinkExpiryO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK16PayloadParameterP10LinkexpiryAA10LinkExpiryOSgvp",
+            "mangledName": "$s9IposgoSDK16PayloadParameterP10LinkexpiryAA10LinkExpiryOSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "overriding": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "IposgoSDK.LinkExpiry?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkExpiry",
+                        "printedName": "IposgoSDK.LinkExpiry",
+                        "usr": "s:9IposgoSDK10LinkExpiryO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK16PayloadParameterP10LinkexpiryAA10LinkExpiryOSgvg",
+                "mangledName": "$s9IposgoSDK16PayloadParameterP10LinkexpiryAA10LinkExpiryOSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.PayloadParameter>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.PayloadParameter>",
+                "protocolReq": true,
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "referenceNo",
+            "printedName": "referenceNo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK16PayloadParameterP11referenceNoSSSgvp",
+            "mangledName": "$s9IposgoSDK16PayloadParameterP11referenceNoSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK16PayloadParameterP11referenceNoSSSgvg",
+                "mangledName": "$s9IposgoSDK16PayloadParameterP11referenceNoSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.PayloadParameter>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.PayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "prepareDict",
             "printedName": "prepareDict()",
@@ -2501,6 +2977,181 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK18StatusCheckPayloadP11descriptionSSSgvp",
+            "mangledName": "$s9IposgoSDK18StatusCheckPayloadP11descriptionSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK18StatusCheckPayloadP11descriptionSSSgvg",
+                "mangledName": "$s9IposgoSDK18StatusCheckPayloadP11descriptionSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.StatusCheckPayload>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.StatusCheckPayload>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "Linkexpiry",
+            "printedName": "Linkexpiry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "IposgoSDK.LinkExpiry?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkExpiry",
+                    "printedName": "IposgoSDK.LinkExpiry",
+                    "usr": "s:9IposgoSDK10LinkExpiryO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK18StatusCheckPayloadP10LinkexpiryAA10LinkExpiryOSgvp",
+            "mangledName": "$s9IposgoSDK18StatusCheckPayloadP10LinkexpiryAA10LinkExpiryOSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "overriding": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "IposgoSDK.LinkExpiry?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkExpiry",
+                        "printedName": "IposgoSDK.LinkExpiry",
+                        "usr": "s:9IposgoSDK10LinkExpiryO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK18StatusCheckPayloadP10LinkexpiryAA10LinkExpiryOSgvg",
+                "mangledName": "$s9IposgoSDK18StatusCheckPayloadP10LinkexpiryAA10LinkExpiryOSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.StatusCheckPayload>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.StatusCheckPayload>",
+                "protocolReq": true,
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "referenceNo",
+            "printedName": "referenceNo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK18StatusCheckPayloadP11referenceNoSSSgvp",
+            "mangledName": "$s9IposgoSDK18StatusCheckPayloadP11referenceNoSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK18StatusCheckPayloadP11referenceNoSSSgvg",
+                "mangledName": "$s9IposgoSDK18StatusCheckPayloadP11referenceNoSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.StatusCheckPayload>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.StatusCheckPayload>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "prepareDict",
             "printedName": "prepareDict()",
@@ -2936,6 +3587,181 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK22TicketPayloadParameterP11descriptionSSSgvp",
+            "mangledName": "$s9IposgoSDK22TicketPayloadParameterP11descriptionSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK22TicketPayloadParameterP11descriptionSSSgvg",
+                "mangledName": "$s9IposgoSDK22TicketPayloadParameterP11descriptionSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.TicketPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.TicketPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "Linkexpiry",
+            "printedName": "Linkexpiry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "IposgoSDK.LinkExpiry?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkExpiry",
+                    "printedName": "IposgoSDK.LinkExpiry",
+                    "usr": "s:9IposgoSDK10LinkExpiryO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK22TicketPayloadParameterP10LinkexpiryAA10LinkExpiryOSgvp",
+            "mangledName": "$s9IposgoSDK22TicketPayloadParameterP10LinkexpiryAA10LinkExpiryOSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "overriding": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "IposgoSDK.LinkExpiry?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkExpiry",
+                        "printedName": "IposgoSDK.LinkExpiry",
+                        "usr": "s:9IposgoSDK10LinkExpiryO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK22TicketPayloadParameterP10LinkexpiryAA10LinkExpiryOSgvg",
+                "mangledName": "$s9IposgoSDK22TicketPayloadParameterP10LinkexpiryAA10LinkExpiryOSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.TicketPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.TicketPayloadParameter>",
+                "protocolReq": true,
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "referenceNo",
+            "printedName": "referenceNo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK22TicketPayloadParameterP11referenceNoSSSgvp",
+            "mangledName": "$s9IposgoSDK22TicketPayloadParameterP11referenceNoSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK22TicketPayloadParameterP11referenceNoSSSgvg",
+                "mangledName": "$s9IposgoSDK22TicketPayloadParameterP11referenceNoSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.TicketPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.TicketPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "prepareDict",
             "printedName": "prepareDict()",
@@ -3218,6 +4044,181 @@
                 "declKind": "Accessor",
                 "usr": "s:9IposgoSDK20VoidPayloadParameterP5emailSSSgvg",
                 "mangledName": "$s9IposgoSDK20VoidPayloadParameterP5emailSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.VoidPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.VoidPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK20VoidPayloadParameterP11descriptionSSSgvp",
+            "mangledName": "$s9IposgoSDK20VoidPayloadParameterP11descriptionSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK20VoidPayloadParameterP11descriptionSSSgvg",
+                "mangledName": "$s9IposgoSDK20VoidPayloadParameterP11descriptionSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.VoidPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.VoidPayloadParameter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "Linkexpiry",
+            "printedName": "Linkexpiry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "IposgoSDK.LinkExpiry?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkExpiry",
+                    "printedName": "IposgoSDK.LinkExpiry",
+                    "usr": "s:9IposgoSDK10LinkExpiryO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK20VoidPayloadParameterP10LinkexpiryAA10LinkExpiryOSgvp",
+            "mangledName": "$s9IposgoSDK20VoidPayloadParameterP10LinkexpiryAA10LinkExpiryOSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "overriding": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "IposgoSDK.LinkExpiry?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkExpiry",
+                        "printedName": "IposgoSDK.LinkExpiry",
+                        "usr": "s:9IposgoSDK10LinkExpiryO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK20VoidPayloadParameterP10LinkexpiryAA10LinkExpiryOSgvg",
+                "mangledName": "$s9IposgoSDK20VoidPayloadParameterP10LinkexpiryAA10LinkExpiryOSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.VoidPayloadParameter>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.VoidPayloadParameter>",
+                "protocolReq": true,
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "referenceNo",
+            "printedName": "referenceNo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK20VoidPayloadParameterP11referenceNoSSSgvp",
+            "mangledName": "$s9IposgoSDK20VoidPayloadParameterP11referenceNoSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK20VoidPayloadParameterP11referenceNoSSSgvg",
+                "mangledName": "$s9IposgoSDK20VoidPayloadParameterP11referenceNoSSSgvg",
                 "moduleName": "IposgoSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.VoidPayloadParameter>",
                 "sugared_genericSig": "<Self where Self : IposgoSDK.VoidPayloadParameter>",
@@ -3569,6 +4570,64 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "Linkexpiry",
+            "printedName": "Linkexpiry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "IposgoSDK.LinkExpiry?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkExpiry",
+                    "printedName": "IposgoSDK.LinkExpiry",
+                    "usr": "s:9IposgoSDK10LinkExpiryO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK7CommandP10LinkexpiryAA10LinkExpiryOSgvp",
+            "mangledName": "$s9IposgoSDK7CommandP10LinkexpiryAA10LinkExpiryOSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "IposgoSDK.LinkExpiry?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkExpiry",
+                        "printedName": "IposgoSDK.LinkExpiry",
+                        "usr": "s:9IposgoSDK10LinkExpiryO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK7CommandP10LinkexpiryAA10LinkExpiryOSgvg",
+                "mangledName": "$s9IposgoSDK7CommandP10LinkexpiryAA10LinkExpiryOSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.Command>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.Command>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Function",
@@ -4025,6 +5084,64 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Var",
+            "name": "Linkexpiry",
+            "printedName": "Linkexpiry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "IposgoSDK.LinkExpiry?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkExpiry",
+                    "printedName": "IposgoSDK.LinkExpiry",
+                    "usr": "s:9IposgoSDK10LinkExpiryO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK11StatusCheckP10LinkexpiryAA10LinkExpiryOSgvp",
+            "mangledName": "$s9IposgoSDK11StatusCheckP10LinkexpiryAA10LinkExpiryOSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "IposgoSDK.LinkExpiry?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkExpiry",
+                        "printedName": "IposgoSDK.LinkExpiry",
+                        "usr": "s:9IposgoSDK10LinkExpiryO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK11StatusCheckP10LinkexpiryAA10LinkExpiryOSgvg",
+                "mangledName": "$s9IposgoSDK11StatusCheckP10LinkexpiryAA10LinkExpiryOSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.StatusCheck>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.StatusCheck>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "checkIsValid",
             "printedName": "checkIsValid()",
@@ -4303,6 +5420,181 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK7ReceiptP11descriptionSSSgvp",
+            "mangledName": "$s9IposgoSDK7ReceiptP11descriptionSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK7ReceiptP11descriptionSSSgvg",
+                "mangledName": "$s9IposgoSDK7ReceiptP11descriptionSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.Receipt>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.Receipt>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "Linkexpiry",
+            "printedName": "Linkexpiry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "IposgoSDK.LinkExpiry?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkExpiry",
+                    "printedName": "IposgoSDK.LinkExpiry",
+                    "usr": "s:9IposgoSDK10LinkExpiryO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK7ReceiptP10LinkexpiryAA10LinkExpiryOSgvp",
+            "mangledName": "$s9IposgoSDK7ReceiptP10LinkexpiryAA10LinkExpiryOSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "overriding": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "IposgoSDK.LinkExpiry?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkExpiry",
+                        "printedName": "IposgoSDK.LinkExpiry",
+                        "usr": "s:9IposgoSDK10LinkExpiryO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK7ReceiptP10LinkexpiryAA10LinkExpiryOSgvg",
+                "mangledName": "$s9IposgoSDK7ReceiptP10LinkexpiryAA10LinkExpiryOSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.Receipt>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.Receipt>",
+                "protocolReq": true,
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "referenceNo",
+            "printedName": "referenceNo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK7ReceiptP11referenceNoSSSgvp",
+            "mangledName": "$s9IposgoSDK7ReceiptP11referenceNoSSSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK7ReceiptP11referenceNoSSSgvg",
+                "mangledName": "$s9IposgoSDK7ReceiptP11referenceNoSSSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.Receipt>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.Receipt>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "prepareDict",
             "printedName": "prepareDict()",
@@ -4552,6 +5844,48 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK15ReprintProtocolP11descriptionSSvp",
+            "mangledName": "$s9IposgoSDK15ReprintProtocolP11descriptionSSvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK15ReprintProtocolP11descriptionSSvg",
+                "mangledName": "$s9IposgoSDK15ReprintProtocolP11descriptionSSvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.ReprintProtocol>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.ReprintProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "prepareDict",
             "printedName": "prepareDict()",
@@ -4660,6 +5994,64 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "Linkexpiry",
+            "printedName": "Linkexpiry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "IposgoSDK.LinkExpiry?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkExpiry",
+                    "printedName": "IposgoSDK.LinkExpiry",
+                    "usr": "s:9IposgoSDK10LinkExpiryO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK15ReprintProtocolP10LinkexpiryAA10LinkExpiryOSgvp",
+            "mangledName": "$s9IposgoSDK15ReprintProtocolP10LinkexpiryAA10LinkExpiryOSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "IposgoSDK.LinkExpiry?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkExpiry",
+                        "printedName": "IposgoSDK.LinkExpiry",
+                        "usr": "s:9IposgoSDK10LinkExpiryO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK15ReprintProtocolP10LinkexpiryAA10LinkExpiryOSgvg",
+                "mangledName": "$s9IposgoSDK15ReprintProtocolP10LinkexpiryAA10LinkExpiryOSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.ReprintProtocol>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.ReprintProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Function",
@@ -4929,6 +6321,64 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "Linkexpiry",
+            "printedName": "Linkexpiry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "IposgoSDK.LinkExpiry?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkExpiry",
+                    "printedName": "IposgoSDK.LinkExpiry",
+                    "usr": "s:9IposgoSDK10LinkExpiryO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IposgoSDK11CommandVoidP10LinkexpiryAA10LinkExpiryOSgvp",
+            "mangledName": "$s9IposgoSDK11CommandVoidP10LinkexpiryAA10LinkExpiryOSgvp",
+            "moduleName": "IposgoSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "IposgoSDK.LinkExpiry?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkExpiry",
+                        "printedName": "IposgoSDK.LinkExpiry",
+                        "usr": "s:9IposgoSDK10LinkExpiryO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IposgoSDK11CommandVoidP10LinkexpiryAA10LinkExpiryOSgvg",
+                "mangledName": "$s9IposgoSDK11CommandVoidP10LinkexpiryAA10LinkExpiryOSgvg",
+                "moduleName": "IposgoSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : IposgoSDK.CommandVoid>",
+                "sugared_genericSig": "<Self where Self : IposgoSDK.CommandVoid>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Function",
@@ -43029,231 +44479,231 @@
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1906,
+      "offset": 1901,
       "length": 23,
       "value": "\"v2\/open-batch-filter\/\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1954,
+      "offset": 1949,
       "length": 25,
       "value": "\"v3\/batch-tipped-report\/\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2001,
+      "offset": 1996,
       "length": 26,
       "value": "\"v2\/batch-details-filter\/\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2054,
+      "offset": 2049,
       "length": 25,
       "value": "\"v1\/latest-closed-batch\/\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2133,
+      "offset": 2128,
       "length": 20,
       "value": "\"v2\/inventory\/items\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2186,
+      "offset": 2181,
       "length": 30,
       "value": "\"v2\/inventory\/items\/addOrEdit\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2244,
+      "offset": 2239,
       "length": 28,
       "value": "\"v2\/inventory\/items\/delete\/\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2305,
+      "offset": 2300,
       "length": 18,
       "value": "\"registerMerchant\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2855,
+      "offset": 2850,
       "length": 7,
       "value": "\"token\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2881,
+      "offset": 2876,
       "length": 9,
       "value": "\"ExpDate\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2909,
+      "offset": 2904,
       "length": 9,
       "value": "\"secCode\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2935,
+      "offset": 2930,
       "length": 7,
       "value": "\"PanNo\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2959,
+      "offset": 2954,
       "length": 7,
       "value": "\"Phone\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2983,
+      "offset": 2978,
       "length": 7,
       "value": "\"Label\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3005,
+      "offset": 3000,
       "length": 5,
       "value": "\"Amt\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3028,
+      "offset": 3023,
       "length": 8,
       "value": "\"ProfId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3051,
+      "offset": 3046,
       "length": 5,
       "value": "\"Tpn\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3075,
+      "offset": 3070,
       "length": 9,
       "value": "\"TraceNo\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3104,
+      "offset": 3099,
       "length": 10,
       "value": "\"CardType\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3132,
+      "offset": 3127,
       "length": 8,
       "value": "\"TxType\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3161,
+      "offset": 3156,
       "length": 11,
       "value": "\"EntryMode\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3193,
+      "offset": 3188,
       "length": 11,
       "value": "\"DateNTime\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3225,
+      "offset": 3220,
       "length": 11,
       "value": "\"InvoiceTx\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3252,
+      "offset": 3247,
       "length": 6,
       "value": "\"SlNo\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3274,
+      "offset": 3269,
       "length": 6,
       "value": "\"Type\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3299,
+      "offset": 3294,
       "length": 9,
       "value": "\"BaseAmt\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3328,
+      "offset": 3323,
       "length": 10,
       "value": "\"Currency\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3357,
+      "offset": 3352,
       "length": 9,
       "value": "\"AmtData\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3382,
+      "offset": 3377,
       "length": 6,
       "value": "\"Card\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3410,
+      "offset": 3405,
       "length": 12,
       "value": "\"CardHolder\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3440,
+      "offset": 3435,
       "length": 8,
       "value": "\"Amount\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3468,
+      "offset": 3463,
       "length": 10,
       "value": "\"TxDetail\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebServiceKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3500,
+      "offset": 3495,
       "length": 12,
       "value": "\"DeviceInfo\""
     },
@@ -43595,204 +45045,225 @@
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2503,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2522,
+      "length": 3,
+      "value": "\"7\""
+    },
+    {
+      "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2542,
+      "length": 4,
+      "value": "\"30\""
+    },
+    {
+      "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2732,
+      "offset": 2850,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2750,
+      "offset": 2868,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2770,
+      "offset": 2888,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2792,
+      "offset": 2910,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2812,
+      "offset": 2930,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2836,
+      "offset": 2954,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2860,
+      "offset": 2978,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2882,
+      "offset": 3000,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3040,
+      "offset": 3158,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3058,
+      "offset": 3176,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3083,
+      "offset": 3201,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3104,
+      "offset": 3222,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3177,
+      "offset": 3295,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3208,
+      "offset": 3326,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3243,
+      "offset": 3361,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3328,
+      "offset": 3446,
       "length": 6,
       "value": "\"sale\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3353,
+      "offset": 3471,
       "length": 8,
       "value": "\"refund\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3378,
+      "offset": 3496,
       "length": 6,
       "value": "\"void\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3404,
+      "offset": 3522,
       "length": 10,
       "value": "\"pre auth\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3433,
+      "offset": 3551,
       "length": 8,
       "value": "\"ticket\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3465,
+      "offset": 3583,
       "length": 13,
       "value": "\"settlements\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3499,
+      "offset": 3617,
       "length": 11,
       "value": "\"void sale\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3533,
+      "offset": 3651,
       "length": 13,
       "value": "\"void refund\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3570,
+      "offset": 3688,
       "length": 15,
       "value": "\"void pre auth\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3608,
+      "offset": 3726,
       "length": 13,
       "value": "\"void ticket\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3681,
+      "offset": 3799,
       "length": 104,
       "value": "\"<b><span style=\"color: #46A748;\"><br>\"PaymentCardData: \"<\/span><\/b><br><span style=\"color: #BB55E6\">\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3799,
+      "offset": 3917,
       "length": 102,
       "value": "\"<b><span style=\"color: #46A748;\"><br>\"TranscationId: \"<\/span><\/b><br><span style=\"color: #BB55E6\">\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3921,
+      "offset": 4039,
       "length": 106,
       "value": "\"<b><span style=\"color: #46A748;\"><br>\"General Card Data: \"<\/span><\/b><br><span style=\"color: #BB55E6\">\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ProximitiyReaderInterface\/ProximityConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4044,
+      "offset": 4162,
       "length": 106,
       "value": "\"<b><span style=\"color: #46A748;\"><br>\"Reader Identifier: \"<\/span><\/b><br><span style=\"color: #BB55E6\">\""
     },
@@ -44254,28 +45725,21 @@
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
       "kind": "StringLiteral",
-      "offset": 2692,
-      "length": 33,
-      "value": "\"v1\/external-payment-transaction\""
-    },
-    {
-      "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2751,
+      "offset": 2691,
       "length": 15,
       "value": "\"invoiceNumber\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
       "kind": "StringLiteral",
-      "offset": 2788,
+      "offset": 2728,
       "length": 11,
       "value": "\"slTX_MODE\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/CoreData\/UserDefaultsLocalDB\/UserDefaultsLocalManager.swift",
       "kind": "StringLiteral",
-      "offset": 2821,
+      "offset": 2761,
       "length": 19,
       "value": "\"com.denovo.ttpsdk\""
     },
@@ -44345,352 +45809,380 @@
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 7820,
+      "offset": 9684,
       "length": 24,
       "value": "\"merchantAuthentication\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 7867,
+      "offset": 9731,
       "length": 12,
       "value": "\"merchantId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 7914,
+      "offset": 9778,
       "length": 24,
       "value": "\"transactionReferenceId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 7969,
+      "offset": 9833,
       "length": 20,
       "value": "\"transactionRequest\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8017,
+      "offset": 9881,
       "length": 17,
       "value": "\"transactionType\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8053,
+      "offset": 9917,
       "length": 8,
       "value": "\"amount\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8089,
+      "offset": 9953,
       "length": 17,
       "value": "\"tipsInputPrompt\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8128,
+      "offset": 9992,
       "length": 11,
       "value": "\"tipAmount\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8164,
+      "offset": 10028,
       "length": 14,
       "value": "\"calculateFee\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8200,
+      "offset": 10064,
       "length": 11,
       "value": "\"feeAmount\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8232,
+      "offset": 10096,
       "length": 10,
       "value": "\"feeLabel\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8265,
+      "offset": 10129,
       "length": 12,
       "value": "\"feeRemoved\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8302,
+      "offset": 10166,
       "length": 14,
       "value": "\"calculateTax\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8339,
+      "offset": 10203,
       "length": 12,
       "value": "\"lTaxAmount\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8373,
+      "offset": 10237,
       "length": 11,
       "value": "\"lTaxLabel\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8407,
+      "offset": 10271,
       "length": 12,
       "value": "\"gTaxAmount\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8441,
+      "offset": 10305,
       "length": 11,
       "value": "\"gTaxLabel\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8483,
+      "offset": 10347,
       "length": 20,
       "value": "\"notificationOption\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8533,
+      "offset": 10397,
       "length": 19,
       "value": "\"notificationBySMS\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8577,
+      "offset": 10441,
       "length": 14,
       "value": "\"mobileNumber\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8616,
+      "offset": 10480,
       "length": 14,
       "value": "\"notifyByPOST\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8653,
+      "offset": 10517,
       "length": 12,
       "value": "\"authHeader\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8685,
+      "offset": 10549,
       "length": 9,
       "value": "\"postAPI\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8723,
+      "offset": 10587,
       "length": 18,
       "value": "\"notifyByRedirect\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8763,
+      "offset": 10627,
       "length": 11,
       "value": "\"returnUrl\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8797,
+      "offset": 10661,
       "length": 12,
       "value": "\"failureUrl\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8831,
+      "offset": 10695,
       "length": 11,
       "value": "\"cancelUrl\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8866,
+      "offset": 10730,
       "length": 13,
       "value": "\"preferences\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8907,
+      "offset": 10771,
       "length": 17,
       "value": "\"integrationType\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8952,
+      "offset": 10816,
       "length": 17,
       "value": "\"avsVerification\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 8990,
+      "offset": 10854,
       "length": 10,
       "value": "\"eReceipt\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9025,
+      "offset": 10889,
       "length": 14,
       "value": "\"customerName\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9065,
+      "offset": 10929,
       "length": 15,
       "value": "\"customerEmail\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9107,
+      "offset": 10971,
       "length": 16,
       "value": "\"customerMobile\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9151,
+      "offset": 11015,
       "length": 17,
       "value": "\"personalization\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9188,
+      "offset": 11052,
       "length": 9,
       "value": "\"logoUrl\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9221,
+      "offset": 11085,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9263,
+      "offset": 11127,
       "length": 18,
       "value": "\"payNowButtonText\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9306,
+      "offset": 11170,
       "length": 14,
       "value": "\"buttonColour\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9349,
+      "offset": 11213,
       "length": 18,
       "value": "\"cancelButtonText\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9399,
+      "offset": 11263,
       "length": 21,
       "value": "\"eReceiptInputPrompt\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9443,
+      "offset": 11307,
       "length": 12,
       "value": "\"themeColor\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9483,
+      "offset": 11347,
       "length": 17,
       "value": "\"txReferenceTag1\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9528,
+      "offset": 11392,
       "length": 17,
       "value": "\"txReferenceTag2\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9573,
+      "offset": 11437,
       "length": 17,
       "value": "\"txReferenceTag3\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9610,
+      "offset": 11474,
       "length": 9,
       "value": "\"gTaxFee\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9639,
+      "offset": 11503,
       "length": 9,
       "value": "\"lTaxFee\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9674,
+      "offset": 11538,
       "length": 15,
       "value": "\"isTagRequired\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9725,
+      "offset": 11589,
       "length": 25,
       "value": "\"externalIntegrationType\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
       "kind": "StringLiteral",
-      "offset": 9769,
+      "offset": 11633,
       "length": 8,
       "value": "\"tipFee\""
+    },
+    {
+      "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
+      "kind": "StringLiteral",
+      "offset": 11669,
+      "length": 17,
+      "value": "\"sendPaymentLink\""
+    },
+    {
+      "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
+      "kind": "StringLiteral",
+      "offset": 11709,
+      "length": 12,
+      "value": "\"invoiceTxn\""
+    },
+    {
+      "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
+      "kind": "StringLiteral",
+      "offset": 11740,
+      "length": 8,
+      "value": "\"expiry\""
+    },
+    {
+      "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/ExternalPay\/ExternalPaymentdictionaryFormation.swift",
+      "kind": "StringLiteral",
+      "offset": 11775,
+      "length": 16,
+      "value": "\"invoiceRefCode\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/DeviceAlert\/DeviceInfo\/DeviceInfo.swift",
@@ -46403,170 +47895,170 @@
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1500,
+      "offset": 1354,
+      "length": 37,
+      "value": "\"Please enter valid reference number\""
+    },
+    {
+      "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1420,
+      "length": 103,
+      "value": "\"Tips can only be added by the customer from the payment page. So, the tip you entered will be removed\""
+    },
+    {
+      "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1692,
       "length": 34,
       "value": "\"https:\/\/steam.denovosystem.tech\/\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1555,
+      "offset": 1747,
       "length": 30,
       "value": "\"https:\/\/steam.ipospays.tech\/\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1607,
+      "offset": 1799,
       "length": 29,
       "value": "\"https:\/\/steam.ipospays.com\/\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1659,
+      "offset": 1851,
       "length": 31,
       "value": "\"https:\/\/psteam.ipospays.tech\/\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1736,
+      "offset": 1928,
       "length": 46,
       "value": "\"api-key cG9ydGFsLVRlbXA9VG9rZW4tcGhhc2UtMg==\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1802,
+      "offset": 1994,
       "length": 46,
       "value": "\"api-key cG9ydGFsLVRlbXA9VG9rZW4tcGhhc2UtMQ==\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1897,
+      "offset": 2089,
       "length": 12,
       "value": "\"TapOnPhone\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1930,
+      "offset": 2122,
       "length": 7,
       "value": "\"apple\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1970,
+      "offset": 2162,
       "length": 7,
       "value": "\"Apple\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2009,
+      "offset": 2201,
       "length": 11,
       "value": "\"Apple Pay\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2061,
+      "offset": 2253,
       "length": 6,
       "value": "\"CRDT\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2115,
+      "offset": 2307,
       "length": 39,
       "value": "\"https:\/\/payment.denovosystem.tech\/api\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2177,
+      "offset": 2369,
       "length": 34,
       "value": "\"https:\/\/payment.ipospays.com\/api\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2233,
+      "offset": 2425,
       "length": 35,
       "value": "\"https:\/\/payment.ipospays.tech\/api\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2294,
+      "offset": 2486,
       "length": 36,
       "value": "\"https:\/\/ppayment.ipospays.tech\/api\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2374,
+      "offset": 2566,
       "length": 35,
       "value": "\"https:\/\/api.denovosystem.tech\/api\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2430,
+      "offset": 2622,
       "length": 31,
       "value": "\"https:\/\/api.ipospays.tech\/api\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2483,
+      "offset": 2675,
       "length": 30,
       "value": "\"https:\/\/api.ipospays.com\/api\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2538,
-      "length": 36,
-      "value": "\"https:\/\/papi.denovosystem.tech\/api\""
+      "offset": 2730,
+      "length": 32,
+      "value": "\"https:\/\/papi.ipospays.tech\/api\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2621,
+      "offset": 2809,
       "length": 46,
       "value": "\"u2kzjqBQVZxziqSmnaCPuckhuvJB9aRaO7Z5m\/XRKxc=\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2688,
+      "offset": 2876,
       "length": 46,
       "value": "\"u2kzjqBQVZxziqSmnaCPuckhuvJB9aRaO7Z5m\/XRKxc=\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2755,
+      "offset": 2943,
       "length": 46,
       "value": "\"u2kzjqBQVZxziqSmnaCPuckhuvJB9aRaO7Z5m\/XRKxc=\""
-    },
-    {
-      "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2849,
-      "length": 46,
-      "value": "\"IcSvIMhURwVUXJZ1uR0URhKMGUGEU2zBoTfp0FSmt4M=\""
-    },
-    {
-      "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 2942,
-      "length": 46,
-      "value": "\"C2MPD\/gxnsyTe7bCH73AclES\/tUHYbRQ3sqPq06BWDY=\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
@@ -46578,1106 +48070,1120 @@
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3147,
+      "offset": 3130,
+      "length": 46,
+      "value": "\"C2MPD\/gxnsyTe7bCH73AclES\/tUHYbRQ3sqPq06BWDY=\""
+    },
+    {
+      "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 3225,
+      "length": 46,
+      "value": "\"IcSvIMhURwVUXJZ1uR0URhKMGUGEU2zBoTfp0FSmt4M=\""
+    },
+    {
+      "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 3335,
       "length": 31,
       "value": "\"https:\/\/api.denovosystem.tech\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3205,
+      "offset": 3393,
       "length": 27,
       "value": "\"https:\/\/api.ipospays.tech\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3260,
+      "offset": 3448,
       "length": 26,
       "value": "\"https:\/\/api.ipospays.com\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3317,
-      "length": 32,
-      "value": "\"https:\/\/papi.denovosystem.tech\""
+      "offset": 3505,
+      "length": 28,
+      "value": "\"https:\/\/papi.ipospays.tech\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3417,
+      "offset": 3601,
       "length": 14,
       "value": "\"serialNumber\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3456,
+      "offset": 3640,
       "length": 16,
       "value": "\"manufacturerId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3496,
+      "offset": 3680,
       "length": 15,
       "value": "\"deviceModelId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3544,
+      "offset": 3728,
       "length": 24,
       "value": "\"applicationSignatureId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3590,
+      "offset": 3774,
       "length": 13,
       "value": "\"buildNumber\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3617,
+      "offset": 3801,
       "length": 5,
       "value": "\"tpn\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3647,
+      "offset": 3831,
       "length": 16,
       "value": "\"deviceUniqueId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3685,
+      "offset": 3869,
       "length": 13,
       "value": "\"merchantKey\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3786,
+      "offset": 3970,
       "length": 14,
       "value": "\"serialNumber\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3827,
+      "offset": 4011,
       "length": 16,
       "value": "\"manufacturerId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3869,
+      "offset": 4053,
       "length": 15,
       "value": "\"deviceModelId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3919,
+      "offset": 4103,
       "length": 24,
       "value": "\"applicationSignatureId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3967,
+      "offset": 4151,
       "length": 13,
       "value": "\"buildNumber\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3996,
+      "offset": 4180,
       "length": 5,
       "value": "\"tpn\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4030,
+      "offset": 4214,
       "length": 18,
       "value": "\"isDeviceSupports\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4072,
+      "offset": 4256,
       "length": 13,
       "value": "\"deviceModel\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4111,
+      "offset": 4295,
       "length": 15,
       "value": "\"deviceVersion\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4149,
+      "offset": 4333,
       "length": 12,
       "value": "\"identifier\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4190,
+      "offset": 4374,
       "length": 12,
       "value": "\"statusCode\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4226,
+      "offset": 4410,
       "length": 5,
       "value": "\"200\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4259,
+      "offset": 4443,
       "length": 17,
       "value": "\"downloadReqTime\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4301,
+      "offset": 4485,
       "length": 14,
       "value": "\"downloadType\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4333,
+      "offset": 4517,
       "length": 7,
       "value": "\"PARAM\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4369,
+      "offset": 4553,
       "length": 18,
       "value": "\"downloadDuration\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4411,
+      "offset": 4595,
       "length": 13,
       "value": "\"downloadLog\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4444,
+      "offset": 4628,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4479,
+      "offset": 4663,
       "length": 31,
       "value": "\"Param downloaded successfully\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4562,
+      "offset": 4746,
       "length": 16,
       "value": "\"deviceUniqueId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4602,
+      "offset": 4786,
       "length": 13,
       "value": "\"merchantKey\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4717,
+      "offset": 4901,
       "length": 13,
       "value": "\"base64Image\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4745,
+      "offset": 4929,
       "length": 6,
       "value": "\"txId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4770,
+      "offset": 4954,
       "length": 10,
       "value": "\"txBaseId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4800,
+      "offset": 4984,
       "length": 11,
       "value": "\"commMedia\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4833,
+      "offset": 5017,
       "length": 13,
       "value": "\"phoneNumber\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4862,
+      "offset": 5046,
       "length": 7,
       "value": "\"email\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4891,
+      "offset": 5075,
       "length": 13,
       "value": "\"buildNumber\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4929,
+      "offset": 5113,
       "length": 16,
       "value": "\"customFeeLabel\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4972,
+      "offset": 5156,
       "length": 18,
       "value": "\"merchantFeeLabel\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5010,
+      "offset": 5194,
       "length": 11,
       "value": "\"discLabel\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5045,
+      "offset": 5229,
       "length": 15,
       "value": "\"localTaxLabel\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5084,
+      "offset": 5268,
       "length": 15,
       "value": "\"stateTaxLabel\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5120,
+      "offset": 5304,
       "length": 12,
       "value": "\"txDuration\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5151,
+      "offset": 5335,
       "length": 10,
       "value": "\"tagLabel\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5180,
+      "offset": 5364,
       "length": 10,
       "value": "\"tagValue\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5212,
+      "offset": 5396,
       "length": 13,
       "value": "\"customField\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5249,
+      "offset": 5433,
       "length": 15,
       "value": "\"deviceModelId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5284,
+      "offset": 5468,
       "length": 11,
       "value": "\"surveyAns\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5317,
+      "offset": 5501,
       "length": 13,
       "value": "\"surveyQuest\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5344,
+      "offset": 5528,
       "length": 5,
       "value": "\"aid\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5367,
+      "offset": 5551,
       "length": 9,
       "value": "\"appName\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5406,
+      "offset": 5590,
       "length": 21,
       "value": "\"additionalEntryMode\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5447,
+      "offset": 5631,
       "length": 11,
       "value": "\"pinStatus\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5477,
+      "offset": 5661,
       "length": 10,
       "value": "\"batchNum\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5505,
+      "offset": 5689,
       "length": 9,
       "value": "\"posType\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5536,
+      "offset": 5720,
       "length": 13,
       "value": "\"paymentType\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5571,
+      "offset": 5755,
       "length": 13,
       "value": "\"entryLegend\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5602,
+      "offset": 5786,
       "length": 9,
       "value": "\"AIDName\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5634,
+      "offset": 5818,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5674,
+      "offset": 5858,
       "length": 18,
       "value": "\"verficationLine1\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5720,
+      "offset": 5904,
       "length": 19,
       "value": "\"verificationLine2\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5763,
+      "offset": 5947,
       "length": 15,
       "value": "\"refundPolicy1\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5802,
+      "offset": 5986,
       "length": 15,
       "value": "\"refundPolicy2\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5843,
+      "offset": 6027,
       "length": 17,
       "value": "\"savingsMsgLabel\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5882,
+      "offset": 6066,
       "length": 13,
       "value": "\"itemDetails\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5920,
+      "offset": 6104,
       "length": 16,
       "value": "\"inventoryItems\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5956,
+      "offset": 6140,
       "length": 11,
       "value": "\"CardItems\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6074,
+      "offset": 6258,
       "length": 13,
       "value": "\"information\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6108,
+      "offset": 6292,
       "length": 10,
       "value": "\"Response\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6139,
+      "offset": 6323,
       "length": 10,
       "value": "\"RespCode\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6169,
+      "offset": 6353,
       "length": 9,
       "value": "\"TxRefNo\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6198,
+      "offset": 6382,
       "length": 9,
       "value": "\"RespMsg\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6227,
+      "offset": 6411,
       "length": 9,
       "value": "\"BatchNo\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6254,
+      "offset": 6438,
       "length": 7,
       "value": "\"HTxId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6277,
+      "offset": 6461,
       "length": 5,
       "value": "\"Rrn\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6300,
+      "offset": 6484,
       "length": 7,
       "value": "\"DTxId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6329,
+      "offset": 6513,
       "length": 11,
       "value": "\"MaskedPan\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6358,
+      "offset": 6542,
       "length": 7,
       "value": "\"Label\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6381,
+      "offset": 6565,
       "length": 5,
       "value": "\"AID\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6403,
+      "offset": 6587,
       "length": 6,
       "value": "\"Card\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6431,
+      "offset": 6615,
       "length": 11,
       "value": "\"InvoiceNo\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6464,
+      "offset": 6648,
       "length": 11,
       "value": "\"DateNTime\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6492,
+      "offset": 6676,
       "length": 5,
       "value": "\"Tpn\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6517,
+      "offset": 6701,
       "length": 9,
       "value": "\"TraceNo\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6549,
+      "offset": 6733,
       "length": 12,
       "value": "\"Sub_Charge\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6580,
+      "offset": 6764,
       "length": 8,
       "value": "\"DueAmt\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6605,
+      "offset": 6789,
       "length": 6,
       "value": "\"TCDF\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6627,
+      "offset": 6811,
       "length": 10,
       "value": "\"SignFlag\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6658,
+      "offset": 6842,
       "length": 10,
       "value": "\"TxDetail\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6689,
+      "offset": 6873,
       "length": 10,
       "value": "\"ChdToken\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6719,
+      "offset": 6903,
       "length": 9,
       "value": "\"AppCode\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6747,
+      "offset": 6931,
       "length": 8,
       "value": "\"dueAmt\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6811,
+      "offset": 6995,
       "length": 3,
       "value": "\"8\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6835,
+      "offset": 7019,
       "length": 4,
       "value": "\"21\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6866,
+      "offset": 7050,
       "length": 23,
       "value": "\"NO SIGNATURE REQUIRED\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6911,
+      "offset": 7095,
       "length": 12,
       "value": "\"No Refunds\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6951,
+      "offset": 7135,
       "length": 19,
       "value": "\"Store Credit Only\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6993,
+      "offset": 7177,
       "length": 12,
       "value": "\"TapOnPhone\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7026,
+      "offset": 7210,
       "length": 13,
       "value": "\"CREDIT CARD\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7060,
+      "offset": 7244,
       "length": 11,
       "value": "\"CHIP READ\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7095,
+      "offset": 7279,
       "length": 13,
       "value": "\"MERCHANDISE\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7127,
+      "offset": 7311,
       "length": 8,
       "value": "\"CREDIT\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7156,
+      "offset": 7340,
       "length": 10,
       "value": "\"CardType\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7257,
+      "offset": 7441,
       "length": 15,
       "value": "\"Spin_Response\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7290,
+      "offset": 7474,
       "length": 7,
       "value": "\"RefId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7318,
+      "offset": 7502,
       "length": 10,
       "value": "\"AuthCode\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7346,
+      "offset": 7530,
       "length": 7,
       "value": "\"PNRef\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7374,
+      "offset": 7558,
       "length": 10,
       "value": "\"TransNum\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7407,
+      "offset": 7591,
       "length": 12,
       "value": "\"ResultCode\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7439,
+      "offset": 7623,
       "length": 9,
       "value": "\"Message\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7468,
+      "offset": 7652,
       "length": 9,
       "value": "\"RespMsg\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7501,
+      "offset": 7685,
       "length": 13,
       "value": "\"PaymentType\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7534,
+      "offset": 7718,
       "length": 9,
       "value": "\"ExtData\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7562,
+      "offset": 7746,
       "length": 8,
       "value": "\"Amount\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7586,
+      "offset": 7770,
       "length": 5,
       "value": "\"Tip\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7607,
+      "offset": 7791,
       "length": 5,
       "value": "\"Fee\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7633,
+      "offset": 7817,
       "length": 10,
       "value": "\"BatchNum\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7665,
+      "offset": 7849,
       "length": 11,
       "value": "\"AcntLast4\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7699,
+      "offset": 7883,
       "length": 12,
       "value": "\"AcntFirst4\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7732,
+      "offset": 7916,
       "length": 10,
       "value": "\"FeeLabel\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7765,
+      "offset": 7949,
       "length": 12,
       "value": "\"BaseAmount\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7797,
+      "offset": 7981,
       "length": 9,
       "value": "\"TaxCity\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7828,
+      "offset": 8012,
       "length": 11,
       "value": "\"Tax1Label\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7860,
+      "offset": 8044,
       "length": 10,
       "value": "\"TaxState\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7892,
+      "offset": 8076,
       "length": 11,
       "value": "\"Tax2Label\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7924,
+      "offset": 8108,
       "length": 10,
       "value": "\"RespCode\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7950,
+      "offset": 8134,
       "length": 5,
       "value": "\"RRN\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7976,
+      "offset": 8160,
       "length": 10,
       "value": "\"TraceNum\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8008,
+      "offset": 8192,
       "length": 11,
       "value": "\"HostTxnId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8037,
+      "offset": 8221,
       "length": 7,
       "value": "\"txnId\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8064,
+      "offset": 8248,
       "length": 9,
       "value": "\"TxnType\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8095,
+      "offset": 8279,
       "length": 11,
       "value": "\"EntryType\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8127,
+      "offset": 8311,
       "length": 10,
       "value": "\"TotalAmt\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8159,
+      "offset": 8343,
       "length": 11,
       "value": "\"TaxAmount\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8191,
+      "offset": 8375,
       "length": 10,
       "value": "\"txnLabel\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8225,
+      "offset": 8409,
       "length": 13,
       "value": "\"networkMode\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8259,
+      "offset": 8443,
       "length": 10,
       "value": "\"DateTime\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8291,
+      "offset": 8475,
       "length": 11,
       "value": "\"iPOSToken\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8331,
+      "offset": 8515,
       "length": 18,
       "value": "\"HostResponseCode\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8381,
+      "offset": 8565,
       "length": 21,
       "value": "\"HostResponseMessage\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8423,
+      "offset": 8607,
       "length": 10,
       "value": "\"CardType\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8453,
+      "offset": 8637,
       "length": 9,
       "value": "\"dueAmnt\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8495,
+      "offset": 8679,
       "length": 22,
       "value": "\"isPartialApprovalTxn\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8542,
+      "offset": 8726,
       "length": 14,
       "value": "\"approvedAmnt\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8575,
+      "offset": 8759,
       "length": 8,
       "value": "\"Voided\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8606,
+      "offset": 8790,
       "length": 12,
       "value": "\"FeeRemoved\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8687,
+      "offset": 8871,
       "length": 16,
       "value": "\"tpnBatchNumber\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8719,
+      "offset": 8903,
       "length": 9,
       "value": "\"txnType\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8751,
+      "offset": 8935,
       "length": 15,
       "value": "\"invoiceNumber\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8784,
+      "offset": 8968,
       "length": 11,
       "value": "\"maskedPan\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8816,
+      "offset": 9000,
       "length": 14,
       "value": "\"approvalCode\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8892,
+      "offset": 9076,
       "length": 9,
       "value": "\"isPrint\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8919,
+      "offset": 9103,
       "length": 7,
       "value": "\"email\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8944,
+      "offset": 9128,
       "length": 7,
       "value": "\"phone\""
     },
     {
       "filePath": "\/Users\/pradeepkumararige\/Documents\/SDK_InAppNew\/tap-on-phone-ios\/WebServiceHandler\/WebConstant\/WebConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8968,
+      "offset": 9152,
       "length": 6,
       "value": "\"txId\""
     },

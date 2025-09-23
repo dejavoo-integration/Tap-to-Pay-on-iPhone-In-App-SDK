@@ -51,6 +51,7 @@ class CollectionListVC: BaseViewController {
         dLTranType = .SALE
         cellRegister()
         
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -30,6 +30,8 @@ class CustomerCopyViewController: UIViewController {
     var isFromBatchSettlementInApp: Bool?
     var readerInstance = IposgoReader()
     let activityIndicator = UIActivityIndicatorView(style: .large)
+    var isFromVoid = false
+    var entity : TxDetailEntity?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +68,9 @@ class CustomerCopyViewController: UIViewController {
         
        
         txnTypeLbl.text = nullStringToEmpty(string: txType).uppercased()
-        txnAmtLbl.text =  totalAmt
+        
+        txnAmtLbl.text = isFromVoid ? "$" + (entity?.amount ?? "") : totalAmt
+       
         cardNumberLbl.text = "XXXX \(last4Digits)"
         
         if responseCode != "00"{

@@ -34,8 +34,18 @@ public enum CurrencyCode : Swift.String, Swift.Codable {
     get
   }
 }
+public enum LinkExpiry : Swift.String, Swift.Codable {
+  case OneDay
+  case OneWeek
+  case OneMonth
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public enum PaymentMethod : Swift.Codable {
-  case Tap, KeyIn, QR
+  case Tap, KeyIn, QR, SendLink
   public static func == (a: IposgoSDK.PaymentMethod, b: IposgoSDK.PaymentMethod) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public func encode(to encoder: any Swift.Encoder) throws
@@ -83,6 +93,9 @@ public protocol PayloadParameter : IposgoSDK.Command {
   var currencyCode: IposgoSDK.CurrencyCode { get }
   var tranType: IposgoSDK.TransType { get }
   var payType: IposgoSDK.PaymentMethod? { get }
+  var description: Swift.String? { get }
+  var Linkexpiry: IposgoSDK.LinkExpiry? { get }
+  var referenceNo: Swift.String? { get }
 }
 public protocol Register : IposgoSDK.RegisterProtocol {
   var tpn: Swift.String { get }
@@ -93,6 +106,9 @@ public protocol StatusCheckPayload : IposgoSDK.StatusCheck {
   var txnTimeStamp: Swift.String { get }
   var phoneNo: Swift.String? { get }
   var email: Swift.String? { get }
+  var description: Swift.String? { get }
+  var Linkexpiry: IposgoSDK.LinkExpiry? { get }
+  var referenceNo: Swift.String? { get }
 }
 public protocol TicketPayloadParameter : IposgoSDK.Command {
   var amount: Swift.String { get }
@@ -102,12 +118,18 @@ public protocol TicketPayloadParameter : IposgoSDK.Command {
   var rrn: Swift.String { get }
   var phoneNo: Swift.String? { get }
   var email: Swift.String? { get }
+  var description: Swift.String? { get }
+  var Linkexpiry: IposgoSDK.LinkExpiry? { get }
+  var referenceNo: Swift.String? { get }
 }
 public protocol VoidPayloadParameter : IposgoSDK.CommandVoid {
   var tranType: IposgoSDK.TransType { get }
   var rrn: Swift.String { get }
   var phoneNo: Swift.String? { get }
   var email: Swift.String? { get }
+  var description: Swift.String? { get }
+  var Linkexpiry: IposgoSDK.LinkExpiry? { get }
+  var referenceNo: Swift.String? { get }
 }
 extension IposgoSDK.PayloadParameter {
   public func prepareDict() -> [Swift.String : Swift.String]
@@ -132,6 +154,7 @@ public protocol Command : Swift.Decodable, Swift.Encodable {
   func prepareString() throws -> Swift.String?
   func checkIsValid() -> Swift.Bool
   func print()
+  var Linkexpiry: IposgoSDK.LinkExpiry? { get }
 }
 public protocol RegisterProtocol : Swift.Decodable, Swift.Encodable {
   func prepareDict() -> [Swift.String : Swift.String]
@@ -144,20 +167,26 @@ public protocol StatusCheck : Swift.Decodable, Swift.Encodable {
   func prepareString() throws -> Swift.String?
   func checkIsValid() -> Swift.Bool
   func print()
+  var Linkexpiry: IposgoSDK.LinkExpiry? { get }
 }
 public protocol Receipt : IposgoSDK.ReprintProtocol {
   var txId: Swift.String { get }
   var phoneNo: Swift.String? { get }
   var email: Swift.String? { get }
+  var description: Swift.String? { get }
+  var Linkexpiry: IposgoSDK.LinkExpiry? { get }
+  var referenceNo: Swift.String? { get }
 }
 public protocol ReprintProtocol : Swift.Decodable, Swift.Encodable {
   var txId: Swift.String { get }
   var phoneNo: Swift.String? { get }
   var email: Swift.String? { get }
+  var description: Swift.String { get }
   func prepareDict() -> [Swift.String : Swift.String]
   func prepareString() throws -> Swift.String?
   func checkIsValid() -> Swift.Bool
   func print()
+  var Linkexpiry: IposgoSDK.LinkExpiry? { get }
 }
 extension IposgoSDK.Receipt {
   public func prepareDict() -> [Swift.String : Swift.String]
@@ -188,6 +217,7 @@ public protocol CommandVoid : Swift.Decodable, Swift.Encodable {
   func prepareString() throws -> Swift.String?
   func checkIsValid() -> Swift.Bool
   func print()
+  var Linkexpiry: IposgoSDK.LinkExpiry? { get }
 }
 extension IposgoSDK.CommandVoid {
   public func checkIsValid() -> Swift.Bool
@@ -1648,6 +1678,9 @@ extension IposgoSDK.Enviroment : Swift.RawRepresentable {}
 extension IposgoSDK.CurrencyCode : Swift.Equatable {}
 extension IposgoSDK.CurrencyCode : Swift.Hashable {}
 extension IposgoSDK.CurrencyCode : Swift.RawRepresentable {}
+extension IposgoSDK.LinkExpiry : Swift.Equatable {}
+extension IposgoSDK.LinkExpiry : Swift.Hashable {}
+extension IposgoSDK.LinkExpiry : Swift.RawRepresentable {}
 extension IposgoSDK.PaymentMethod : Swift.Equatable {}
 extension IposgoSDK.PaymentMethod : Swift.Hashable {}
 extension IposgoSDK.TransType : Swift.Equatable {}

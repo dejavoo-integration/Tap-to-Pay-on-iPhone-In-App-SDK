@@ -12,6 +12,7 @@ import DeepLinking
 
 class TicketViewController: BaseViewController {
     
+    @IBOutlet weak var sendLink: UIButton!
     @IBOutlet weak var feeTxtFld: UITextField!
     @IBOutlet weak var voidTicketBut: UIButton!
     var entity: TxDetailEntity?
@@ -27,7 +28,6 @@ class TicketViewController: BaseViewController {
     @IBOutlet weak var qrPaybut: UIButton!
     var dlReaderInstance = Wrapper()
     var payType:PaymentMethod?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,9 +47,24 @@ class TicketViewController: BaseViewController {
         // Add the activity indicator to the view
         self.view.addSubview(activityIndicator)
         
+        
+    }
+    func sendLinkEnable() -> Bool {
+        
+        let sdkBundleId = "com.denovo.ttpsdk"
+        let customDefaults = UserDefaults(suiteName: sdkBundleId)
+         let txnTypeEntity =  customDefaults?.value(forKey: "sltx_type") as? [String] ?? [""]
+        
+        if txnTypeEntity.contains("9") {
+            return true
+        }else{
+            return false
+        }
+       
     }
     
     @IBAction func goBackVC(_ sender: UIButton) {
+        
         if let viewControllers = navigationController?.viewControllers {
             for vc in viewControllers {
                 if let targetVC = vc as? CollectionListVC {
@@ -94,6 +109,8 @@ class TicketViewController: BaseViewController {
             
             key_inPaybut.isHidden = true
             qrPaybut.isHidden = true
+            sendLink.isHidden = true
+            
             
             tip.isHidden = readerInstance.TipConfiguration() == true ? false : true
             feeTxtFld.isHidden = true
@@ -119,16 +136,16 @@ class TicketViewController: BaseViewController {
             switch tranType {
                 
             case .PRE_AUTH,.REFUND:
-                
+                sendLink.isHidden = true
                 qrPaybut.isHidden = true
                 key_inPaybut.isHidden = false
                 
             case .SALE:
                 qrPaybut.isHidden = false
                 key_inPaybut.isHidden = false
-                
+                sendLink.isHidden = false
             default:
-                
+                sendLink.isHidden = true
                 qrPaybut.isHidden = true
                 key_inPaybut.isHidden = true
                
@@ -136,8 +153,20 @@ class TicketViewController: BaseViewController {
             
             
         }
-       
+        if sendLinkEnable() == false{
+            sendLink.isHidden = true
+        }
             
+    }
+    
+    @IBAction func sendlinkAction(_ sender: Any) {
+            goSendLinkVc()
+    }
+    func goSendLinkVc() {
+        guard let VC = self.storyboard?.instantiateViewController(identifier: "SendLinkViewController") as? SendLinkViewController else {return}
+        VC.amount = amtTxtFld.text ?? ""
+        VC.tipAmount = tip.text ?? ""
+        navigationController?.pushViewController(VC, animated: true)
     }
     
     // Call this function to start the loader
@@ -337,7 +366,7 @@ extension TicketViewController: IposgoDelegate {
             print("data....responseDict:\(String(describing: responseDict))")
             if responseDict != nil || responseDict?.count ?? 0 > 0 {
                 stopLoading()
-                let VC = storyboard?.instantiateViewController(identifier: "CustomerCopyViewController") as! CustomerCopyViewController
+                guard let VC = self.storyboard?.instantiateViewController(identifier: "CustomerCopyViewController") as? CustomerCopyViewController else { return }
                 VC.responseDict = responseDict
                 VC.payType = payType
                 navigationController?.pushViewController(VC, animated: true)

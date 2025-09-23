@@ -68,6 +68,8 @@ struct DeepLinkingRegisterData : DLRegisterData {
 
 //MARK: -In App Sale param
 struct TxnData : InAppPayloadParameter {
+    var Linkexpiry: IposgoSDK.LinkExpiry?
+    
   
     var amount: String
     var tipAmount: String?
@@ -76,6 +78,8 @@ struct TxnData : InAppPayloadParameter {
     var email: String?
     var phoneNo: String?
     var payType: PaymentMethod?
+    var description: String?
+    var referenceNo: String?
 }
 
 //MARK: - DL Sale param
@@ -92,6 +96,7 @@ struct DLTxnData : DLPayloadParameter {
 
 //MARK: -InApp Ticket param
 struct TicketTxnData : InAppPayTicketPayloadParameter {
+    var Linkexpiry: IposgoSDK.LinkExpiry?
     
     var amount: String
     var tipAmount: String?
@@ -101,6 +106,9 @@ struct TicketTxnData : InAppPayTicketPayloadParameter {
     var email: String?
     var phoneNo: String?
     var payType: PaymentMethod?
+    var description: String?
+    var expiryLinkDate: String?
+    var referenceNo: String?
     
 }
 
@@ -123,6 +131,10 @@ struct VoidTxnData : InAppVoidPayloadParameter {
     var tranType: IposgoSDK.TransType
     var email: String?
     var phoneNo: String?
+    var description: String?
+    var expiryLinkDate: String?
+    var referenceNo: String?
+    var Linkexpiry: IposgoSDK.LinkExpiry?
 }
 
 //MARK: - VOID Param

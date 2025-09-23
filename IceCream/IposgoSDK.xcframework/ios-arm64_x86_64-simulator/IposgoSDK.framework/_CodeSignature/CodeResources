@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Nw82xhRj0qs0BOPhNsqZIRcSaD8=
+		4sdaxg0jA7Ziwtiy27bWf+dqApc=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		uH0VUBl9gW+OFvy2MW1V/L4nJSw=
+		t7PuzQzof/PIzHSHVR5cQdPraxI=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		uH0VUBl9gW+OFvy2MW1V/L4nJSw=
+		t7PuzQzof/PIzHSHVR5cQdPraxI=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Ld3c684Y5cfZLz3uqNVHB16luRY=
+		LpzonBUZ3Mc3H0dfFWP3DMpvWQ0=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Nw82xhRj0qs0BOPhNsqZIRcSaD8=
+		4sdaxg0jA7Ziwtiy27bWf+dqApc=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		KlggOAq4QOXVUySJ2Ik7ogJ6gRU=
+		ADmpmKZEiskOC5Aqz94pFueOmJE=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		KlggOAq4QOXVUySJ2Ik7ogJ6gRU=
+		ADmpmKZEiskOC5Aqz94pFueOmJE=
 		</data>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7AUF3VQ3lZlwB8gUor7g7G06yFw=
+		qg7fqqPpTMo3r1DrlvPdnJ0XjCU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -115,14 +115,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			siHghZy4w2QiCdfNs5ZJJb2q/MhsSBt403q68yCOVqY=
+			go2PQRts4uGjwed2XSfer+Cr4rI5OC258DVQEmO8Fdk=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6bPNEfYN5jIW57t3YiErWCCc+K4MUbIurp/HvMyDsmA=
+			qs//QqA5Fvj5CgeZ8fb0x/4W/weWUYPSyB2aw9o/8Jo=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -136,28 +136,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6bPNEfYN5jIW57t3YiErWCCc+K4MUbIurp/HvMyDsmA=
+			qs//QqA5Fvj5CgeZ8fb0x/4W/weWUYPSyB2aw9o/8Jo=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			urLvtcMjOACE+X55jDYo5IpGlG8fZQoJqG/ULzkMkDU=
+			oAZCMZiyuTXWqL9IFsMXAFINRnBSsPx4UmFtvhMRTI0=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			siHghZy4w2QiCdfNs5ZJJb2q/MhsSBt403q68yCOVqY=
+			go2PQRts4uGjwed2XSfer+Cr4rI5OC258DVQEmO8Fdk=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fhIdPe9qFp/O1C5uTEtmv0YaDAzEqxsPmgH8EYJy7Mo=
+			batml5OkMrcXLSAaRXmFuEPawlQu6krh8hVyg46AVTk=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -171,14 +171,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fhIdPe9qFp/O1C5uTEtmv0YaDAzEqxsPmgH8EYJy7Mo=
+			batml5OkMrcXLSAaRXmFuEPawlQu6krh8hVyg46AVTk=
 			</data>
 		</dict>
 		<key>Modules/IposgoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gwu7ztYNaOrQg2zqdwIYCHQFOVn5tjJFLzs04ySYS6o=
+			SLnf56tc19MxguG+MwFDS4wMXQlf1uo+9mSwNWAdvBg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

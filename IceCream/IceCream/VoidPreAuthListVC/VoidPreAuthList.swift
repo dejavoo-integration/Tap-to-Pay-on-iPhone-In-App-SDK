@@ -125,8 +125,8 @@ class VoidPreAuthList: BaseViewController {
             switch nullStringToEmpty(string: transactionType) {
                 
             case Constant.ticket.rawValue:
-
-                let VC = storyboard?.instantiateViewController(identifier: "TicketViewController") as! TicketViewController
+                
+                guard let VC = self.storyboard?.instantiateViewController(identifier: "TicketViewController") as? TicketViewController else { return }
                 VC.tranType = TransType.TICKET
                 VC.entity = entity
                 dlTxnType = DeepLinkTransType.TICKET
@@ -351,6 +351,15 @@ extension VoidPreAuthList: IposgoDelegate {
                     
                     let VC = storyboard?.instantiateViewController(identifier: "CustomerCopyViewController") as! CustomerCopyViewController
                     VC.responseDict = responseDict
+                    switch nullStringToEmpty(string: transactionType) {
+                        
+                    case Constant.void.rawValue:
+                        VC.isFromVoid = true
+                        VC.entity = self.entity
+                    default:
+                        VC.isFromVoid = false
+                    }
+                   
                     navigationController?.pushViewController(VC, animated: true)
                 }
                 

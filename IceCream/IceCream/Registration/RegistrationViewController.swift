@@ -45,7 +45,13 @@ class RegistrationViewController: BaseViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
         
-   
+        
+//        tpnTxtFld.text = "794525543578"
+//        merchantCode.text = "469849821415"
+        
+      
+        
+     
     }
     
     @objc func appDidBecomeActive() {
